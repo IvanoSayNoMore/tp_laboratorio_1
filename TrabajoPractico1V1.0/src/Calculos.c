@@ -9,57 +9,57 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#define AUMENTO 1.25
+#define DESCUENTO 0.9
+#define BITCOIN 4606954.55
 
-
-void utnCalcularCostos(float parametroPivot, float parametroA, float parametroB,float* parametroAconDescuento,
+void utnCalcularValores(float parametroPivot, float parametroA, float parametroB,float* parametroAconDescuento,
 		float* parametroBconDescuento,float* parametroAconAumento,float* parametroBconAumento,float* valorPorUnidadParametroB,
-		float* valorPorUnidadParametroA,float* difDeValores)
+		float* valorPorUnidadParametroA,float* difDeValores,float* parametroABitcoin, float* parametroBBitcoin)
 {
-	float parAconDescuento;
-	float parBconDescuento;
-	float parAconAumento;
-	float parBconAumento;
-	float parAporUnidad;
-	float parBporUnidad;
-	float diferenciaDeValores;
+	float valorAux;
 
-	utnCostoConDescuento(parametroA,&parAconDescuento);
-	*parametroAconDescuento=parAconDescuento;
-	utnCostoConDescuento(parametroB,&parBconDescuento);
-	*parametroBconDescuento=parBconDescuento;
+	porcentajeDeUnValor(parametroA, AUMENTO,&valorAux);
+	*parametroAconAumento=valorAux;
+	porcentajeDeUnValor(parametroB, AUMENTO,&valorAux);
+	*parametroBconAumento=valorAux;
 
-	utnCostoConAumento(parametroA,&parAconAumento);
-	*parametroAconAumento=parAconAumento;
-	utnCostoConAumento(parametroB,&parBconAumento);
-	*parametroBconAumento=parBconAumento;
+	porcentajeDeUnValor(parametroA, DESCUENTO,&valorAux);
+	*parametroAconDescuento=valorAux;
+	porcentajeDeUnValor(parametroB, DESCUENTO,&valorAux);
+	*parametroBconDescuento=valorAux;
 
-	utnCostoUnitario(parametroB,parametroPivot,&parBporUnidad);
-	*valorPorUnidadParametroB=parBporUnidad;
-	utnCostoUnitario(parametroA,parametroPivot,&parAporUnidad);
-	*valorPorUnidadParametroA=parAporUnidad;
+	valorUnitario(parametroB,parametroPivot,&valorAux);
+	*valorPorUnidadParametroB=valorAux;
+	valorUnitario(parametroA,parametroPivot,&valorAux);
+	*valorPorUnidadParametroA=valorAux;
 
-	utnDiferenciaDeValores(parametroA,parametroB,&diferenciaDeValores);
-	*difDeValores=diferenciaDeValores;
+	diferenciaDeValores(parametroA,parametroB,&valorAux);
+	*difDeValores=valorAux;
+
+	valorAbitcoin(parametroA,&valorAux);
+	*parametroABitcoin=valorAux;
+	valorAbitcoin(parametroB,&valorAux);
+	*parametroBBitcoin=valorAux;
 }
 
-void utnCostoConAumento(float valorInicial, float* valorConRecargo)
+void porcentajeDeUnValor(float valorInicial, float valorPorcentaje, float* valorResultado)
 {
-	*valorConRecargo=(float)valorInicial*1.25;
+	*valorResultado=(float)valorInicial*valorPorcentaje;
 }
 
-void utnCostoConDescuento(float valorInicial,float* valorConDescuento )
+void valorAbitcoin(float valorInicial,float* valorABitcoin)
 {
-	*valorConDescuento=(float)valorInicial*0.9;
+	*valorABitcoin=(float)valorInicial/BITCOIN;
 }
 
-void utnCostoUnitario(float valorInicial,  float undiad, float* valorPorUnidad)
+void valorUnitario(float valorInicial,  float undiad, float* valorPorUnidad)
 {
-	float valorUnitario;
-	valorUnitario=valorInicial/undiad;
-	*valorPorUnidad=valorUnitario;
+
+	*valorPorUnidad=valorInicial/undiad;
 }
 
-void utnDiferenciaDeValores(float valorA, float valorB, float* valorResultado)
+void diferenciaDeValores(float valorA, float valorB, float* valorResultado)
 {
 	if(valorA>valorB||valorA==valorB)
 	{

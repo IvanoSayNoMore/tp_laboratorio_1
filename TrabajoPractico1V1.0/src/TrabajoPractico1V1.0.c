@@ -15,7 +15,7 @@
 #include "InPut.h"
 #include "ImprimirMostrar.h"
 #define MINIMODEKM 1500
-#define MINIMO 200
+#define MINIMO 15000
 #define MAXIMO 9999999
 #define REINTENTOS 3
 #define RETORNONEGATIVO 0
@@ -36,6 +36,8 @@ int main(void) {
 	float precioPorKmLatam;
 	float aerolineasConCredito;
 	float latamConCredito;
+	float aeroBitcoin;
+	float latamBitcoin;
 	float KM;
 	float precioLatam;
 	float precioAerolineas;
@@ -78,7 +80,7 @@ int main(void) {
 		switch(opcion)
 		{
 		case 1:
-			retornoGetNumero=(utnGetNumero(&KM,"Ingrese los KM a recorrer\n","Se cancela la carga de datos.\n"
+			retornoGetNumero=(utnGetNumero(&KM,"Ingrese los KM a recorrer\n","Recuerde que el minimo de km son 1500.\n Ingrese solo numeros\n"
 					,"Error en la carga de datos, desea intentar nuevamente?\n",MINIMODEKM, MAXIMO, REINTENTOS)==0);
 
 			if(retornoGetNumero==RETORNONEGATIVO)
@@ -90,14 +92,14 @@ int main(void) {
 			else
 			{
 				flagKm++;
-
 			}
 			break;
 
 		case 2:
 
 			retornoGetNumero=(utnGetNumero(&precioAerolineas,"Ingrese precio del vuelo de AEROLINEAS:\n"
-					,"Se cancela la carga de datos.\n","Error en la carga de datos, desea intentar nuevamente?\n",MINIMO, MAXIMO, REINTENTOS)==0);
+					,"Ingrese solo numeros. El precio minimo es de 15000\n","Error en la carga de datos, desea intentar nuevamente?\n"
+					,MINIMO, MAXIMO, REINTENTOS)==0);
 			if(retornoGetNumero==RETORNONEGATIVO)
 			{
 				puts("Se cancela la operacion\n");
@@ -109,7 +111,8 @@ int main(void) {
 			}
 
 			retornoGetNumero=(utnGetNumero(&precioLatam,"Ingrese precio del vuelo de LATAM:\n"
-					,"Se cancela la carga de datos.\n","Error en la carga de datos, desea intentar nuevamente?\n",MINIMO, MAXIMO, REINTENTOS)==0);
+					,"Ingrese solo numeros. El precio minimo es de 15000\n","Error en la carga de datos, desea intentar nuevamente?\n"
+					,MINIMO, MAXIMO, REINTENTOS)==0);
 			if(retornoGetNumero==RETORNONEGATIVO)
 			{
 				puts("Se cancela la operacion\n");
@@ -121,9 +124,9 @@ int main(void) {
 		case 3:
 			if(flagKm !=0 && flagVuelos!=0)
 			{
-				utnCalcularCostos(KM,precioAerolineas,precioLatam,&aerolineasConDebito,&latamConDebito,
+				utnCalcularValores(KM,precioAerolineas,precioLatam,&aerolineasConDebito,&latamConDebito,
 								&aerolineasConCredito,&latamConCredito,&precioPorKmLatam,
-								&precioPorKmAerolineas,&diferenciaDePrecios);
+								&precioPorKmAerolineas,&diferenciaDePrecios,&aeroBitcoin,&latamBitcoin);
 				flagCalculos++;
 				puts("Se han calculado los costos exitosamente.\n\n");
 			}
@@ -137,8 +140,8 @@ int main(void) {
 			if(flagCalculos)
 			{
 				utnMostrarResultados(KM,precioAerolineas,precioLatam,aerolineasConDebito,latamConDebito,
-						aerolineasConCredito,latamConCredito,precioPorKmLatam,
-						precioPorKmAerolineas,diferenciaDePrecios);
+						aerolineasConCredito,latamConCredito,precioPorKmLatam,precioPorKmAerolineas,diferenciaDePrecios,aeroBitcoin,latamBitcoin);
+
 				flagCalculos=0;
 				flagKm=0;
 				flagVuelos=0;
@@ -150,12 +153,13 @@ int main(void) {
 			break;
 
 		case 5:
-			utnCalcularCostos(KMFORZADOS,PRECIOAREOLINEASHARDC,PRECIOLAMATHARDC,&aerolineasConDebito,&latamConDebito,
+			utnCalcularValores(KMFORZADOS,PRECIOAREOLINEASHARDC,PRECIOLAMATHARDC,&aerolineasConDebito,&latamConDebito,
 											&aerolineasConCredito,&latamConCredito,&precioPorKmLatam,
-									  		&precioPorKmAerolineas,&diferenciaDePrecios);
+									  		&precioPorKmAerolineas,&diferenciaDePrecios,&aeroBitcoin,&latamBitcoin);
+
 			utnMostrarResultados(KMFORZADOS,PRECIOAREOLINEASHARDC,PRECIOLAMATHARDC,aerolineasConDebito,latamConDebito,
 					aerolineasConCredito,latamConCredito,precioPorKmLatam,
-					precioPorKmAerolineas,diferenciaDePrecios);
+					precioPorKmAerolineas,diferenciaDePrecios,aeroBitcoin,latamBitcoin);
 
 
 			break;
