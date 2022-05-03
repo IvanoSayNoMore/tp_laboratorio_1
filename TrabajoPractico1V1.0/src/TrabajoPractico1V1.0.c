@@ -74,6 +74,8 @@ int main(void) {
 		printf("5- Carga Forzada\n");
 
 		printf("6- Salir\n");
+
+
 		scanf("%d",&opcion);//Seleccion de usuario
 		fflush(stdin);//Por si ingresa caracter
 

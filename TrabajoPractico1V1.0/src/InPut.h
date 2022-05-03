@@ -23,4 +23,5 @@ int utnGetNumero(float* pNumeroIngresado, char* mensaje, char* mensajeFinal,char
 /// @return Retorna 0 si el usr deside continuar. -1 si no desea continuar.
 int utnVerificacionConChar(char* mensajeValidacion,char* mensajeFinal);
 
+
 #endif /* INPUT_H_ */

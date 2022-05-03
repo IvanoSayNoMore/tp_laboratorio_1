@@ -26,7 +26,7 @@ void utnMostrarResultados(float parametroPivot, float parametroA, float parametr
 			"Precio a Bitcoin.............: %.4f\n"
 			"Precio Unitario..............: %.2f\n",parametroB,parametroBconDescuento,parametroBconAumento,parametroBBitcoin,valorPorUnidadParametroB);
 
-	printf(	"\nLa diferencia es de..........: %.2f \n\n",difDeValores);
+	printf(	"\nLa diferencia es de........: %.2f \n\n",difDeValores);
 
 }
 
