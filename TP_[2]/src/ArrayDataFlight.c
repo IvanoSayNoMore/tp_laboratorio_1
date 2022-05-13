@@ -66,7 +66,7 @@ int changeDataFlight(DateFlight* dateFl,Flight* listFlight, int lenFlight,int le
 	do{
 		printf("El precio actual del vuelo es de %.2f\nSu codigo actual es el %s\n",dateFl->price,dateFl->flyCode);
 		if(utnGetNumero(&opcion, "Ingrese la op que desea modificar.\n1-Precio\n2-Codigo\n3-Cancelar \n"
-				,"\nPor favor, ingrese solo numeros\n", "Error al ingresar Opcion. Desea reintentar?\n", 1, 2, REINTENTOS)==RETORNOPOSITIVO)
+				,"\nPor favor, ingrese solo numeros\n", "Error al ingresar Opcion. Desea reintentar?\n", 1, 3, REINTENTOS)==RETORNOPOSITIVO)
 		{
 			switch(opcion)
 			{
@@ -102,6 +102,9 @@ int changeDataFlight(DateFlight* dateFl,Flight* listFlight, int lenFlight,int le
 			case 3:
 				puts("Se cancela la modificacion\n");
 				flagOk=RETORNOPOSITIVO;
+				break;
+			default:
+				puts("Error");
 				break;
 			}//Fin switch
 		}//Fin if getnumero
