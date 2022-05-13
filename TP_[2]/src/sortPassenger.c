@@ -10,180 +10,165 @@
 #include <stdlib.h>
 #include <stdlib.h>
 #include <string.h>
-#define FULL -1
-#define VUELOACTIVO 1
-//Ordena el array de pasajeros por apellido y tipo de pasajero de manera ascendente o
-//descendente.
-int sortPassengers(Passenger* list, int order,int len)
+#define FULL 0
+#define EMPTY -1
+
+int sortPassengers(Passenger* list,DateFlight* listDateFlight, int order,int lenPassenger, int lenFlight)
 {
+
+	//Listado de los pasajeros ordenados alfabéticamente por Apellido y Tipo de pasajero
 	int retorno=-1;
-	if (list != NULL && len > 0)
+	if (list != NULL && listDateFlight != NULL && lenPassenger > 0 && lenFlight > 0)
 	{
 		if(order==1)
 		{
-			sortAscByTipe(list,len);
+			sortAscByNameTipe(list,lenPassenger);
 			retorno=0;
 		}
 		else
 		{
-			sortDsdByTipe(list, len);
-			retorno = 0;
+			sortDsdByNameTipe(list,lenPassenger);
+			retorno=0;
 		}
 
 	}
 	return retorno;
 }
 
-int sortPassengersByCode(Passenger* list, int order, int len)
+void sortDsdByNameTipe(Passenger* list, int len)
 {
+	int estaOrdenado;
+	int j;
+	int valor;
 
-	int retorno=-1;
-	if (list != NULL && len > 0)
-	{
-		if(order==1)
+	do{
+		estaOrdenado=0;
+		j=0;
+		for(int i=0; i<len-1; i++)
 		{
-			sortAscByCode(list,len);
-			retorno=0;
-		}
-		else
+			if(list[i].isEmpty==FULL)
+			{
+				for(j=i+1;j<len;j++)
+				{
+					if(list[j].isEmpty==FULL)
+					{
+						valor=(strcmp(list[i].nameLastName.lastName,list[j].nameLastName.lastName)<0);
+						if(valor>0)
+						{
+							estaOrdenado=1;
+							soap(list, i,j);
+							break;
+						}
+						else
+						{
+							if(valor!=0 && list[i].typePassenger<list[j].typePassenger)
+							{
+								estaOrdenado=1;
+								soap(list, i,j);
+								break;
+							}
+						}
+					}
+
+				}
+			}
+
+		}//Fin for i
+		len--;
+	}while(estaOrdenado==1);
+}
+
+void sortAscByNameTipe(Passenger* list, int len)
+{
+	int estaOrdenado;
+	int j;
+	int valor;
+
+	do{
+		estaOrdenado=0;
+		j=0;
+		for(int i=0; i<len-1; i++)
 		{
-			sortDscByCode(list, len);
-			retorno = 0;
-		}
-
-	}
-	return retorno;
-
-}
-
-void sortAscByCode(Passenger* list, int len)
-{
-	int i;
-	int estaOrdenado;
-	int sizeDeCodigoVuelo;
-
-	if (list != NULL && len > 0)
-	{
-		do {
-				estaOrdenado = 1;
-				len--;
-				for (i = 0; i < len; i++)
-				{
-					sizeDeCodigoVuelo=sizeof(list[i].nameLastName.lastName);
-					if(list[i].isEmpty==FULL && list[i].statusFlight==VUELOACTIVO && strncmp(list[i].flycode,list[i+1].flycode,sizeDeCodigoVuelo)>0)
-					{
-						soap(list,i);
-						estaOrdenado = 0;
-					}
-
-				}//Fin For
-			  }while(estaOrdenado == 0);
-	}
-
-}
-
-void sortDscByCode(Passenger* list, int len)
-{
-	int i;
-	int estaOrdenado;
-	int sizeDeCodigoVuelo;
-
-	if (list != NULL && len > 0)
-	{
-		do {
-				estaOrdenado = 1;
-				len--;
-				for (i = 0; i < len; i++)
-				{
-					sizeDeCodigoVuelo=sizeof(list[i].nameLastName.lastName);
-					if(list[i].isEmpty==FULL && list[i].statusFlight==VUELOACTIVO && strncmp(list[i].flycode,list[i+1].flycode,sizeDeCodigoVuelo)<0)
-					{
-						soap(list,i);
-						estaOrdenado = 0;
-					}
-
-				}//Fin For
-			  }while(estaOrdenado == 0);
-	}
-
-}
-
-void sortAscByTipe(Passenger* list, int len)
-{
-	int i;
-	int estaOrdenado;
-	int sizeDeApellido;
-
-	if (list != NULL && len > 0)
-	{
-		do {
-			estaOrdenado = 1;
-			len--;
-			for (i = 0; i < len; i++)
+			if(list[i].isEmpty==FULL)
 			{
-				sizeDeApellido=sizeof(list[i].nameLastName.lastName);
-				if(list[i].isEmpty==FULL && strncmp(list[i].nameLastName.lastName,list[i+1].nameLastName.lastName,sizeDeApellido)>0)
+				for(j=i+1;j<len;j++)
 				{
-					soap(list,i);
-					estaOrdenado = 0;
-				}
-				else
-				{
-					if(list[i].isEmpty==FULL && strncmp(list[i].nameLastName.lastName,list[i+1].nameLastName.lastName,sizeDeApellido)==0
-							&& list[i].typePassenger<list[i+1].typePassenger)
+					if(list[j].isEmpty==FULL)
 					{
-							soap(list,i);
-							estaOrdenado = 0;
+						valor=(strcmp(list[i].nameLastName.lastName,list[j].nameLastName.lastName)>0);
+						if(valor>0)
+						{
+							estaOrdenado=1;
+							soap(list, i,j);
+							break;
+						}
+						else
+						{
+							if(valor!=0 && list[i].typePassenger>list[j].typePassenger)
+							{
+								estaOrdenado=1;
+								soap(list, i,j);
+								break;
+							}
+						}
 					}
+
 				}
+			}
 
-			}//Fin For
-		  }while(estaOrdenado == 0);
-
-	}//Fin if inicial
+		}//Fin for i
+		len--;
+	}while(estaOrdenado==1);
 
 }
 
-void sortDsdByTipe(Passenger* list, int len)
+
+int sortPassengersByCode(Passenger* list,DateFlight* dateFlight , int len)
 {
-	int i;
 	int estaOrdenado;
-	int sizeDeApellido;
+	int j;
+	int valor;
+	int auxPosicionA;
+	int auxPosicionB;
 
-	if (list != NULL && len > 0)
-	{
-		do{
-			estaOrdenado = 1;
-			len--;
-			for (i = 0; i < len; i++)
+	do{
+		estaOrdenado=0;
+		j=0;
+		for(int i=0; i<len-1; i++)
+		{
+			if(dateFlight[i].isEmpty==FULL)
 			{
-				sizeDeApellido=sizeof(list[i].nameLastName.lastName);
-				if(list[i].isEmpty==-1 && strncmp(list[i].nameLastName.lastName,list[i+1].nameLastName.lastName,sizeDeApellido)<0)
+				for(j=i+1;j<len;j++)
 				{
-					soap(list,i);
-					estaOrdenado = 0;
-				}
-				else
-				{
-					if(list[i].isEmpty==-1 && strncmp(list[i].nameLastName.lastName,list[i+1].nameLastName.lastName,sizeDeApellido)==0
-							&& list[i].typePassenger>list[i+1].typePassenger)
+					if(dateFlight[j].isEmpty==FULL)
 					{
-							soap(list,i);
-							estaOrdenado = 0;
+						valor=(strncmp(dateFlight[i].flyCode,dateFlight[j].flyCode,51)>0);
+						if(valor>0)
+						{
+							findPassengerById(list, dateFlight[i].idPasajero, &auxPosicionA, len);
+							findPassengerById(list, dateFlight[j].idPasajero, &auxPosicionB, len);
+							estaOrdenado=1;
+							soap(list, auxPosicionA,auxPosicionB);
+							break;
+						}
 					}
+
 				}
+			}
 
-			}//Fin For
-		  }while(estaOrdenado == 0);
-	}
-
+		}//Fin for i
+		len--;
+	}while(estaOrdenado==1);
+	return 0;
 }
 
-void soap(Passenger* list,int posicion)
+void soap(Passenger* list,int posicionA, int posicionB)
 {
-	Passenger aux;
-	aux = list[posicion];
-	list[posicion] = list[posicion + 1];
-	list[posicion + 1] = aux;
+	Passenger auxPassenger;
+	auxPassenger = list[posicionA];
+	list[posicionA] = list[posicionB];
+	list[posicionB] = auxPassenger;
+
 }
+
 

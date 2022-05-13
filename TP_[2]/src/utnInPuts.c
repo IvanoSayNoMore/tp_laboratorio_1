@@ -56,13 +56,18 @@ static int esNumerica(char* cadena)
 	int i=0;
 	if(cadena!=NULL)
 	{
-		if(cadena[0]=='-')
-		{
-			i=1;
-		}
+
 		for(;cadena[i] != '\0';i++)
 		{
-			if(cadena[i]>'9' || cadena[i]<'0')
+			if(i==0&&(cadena[i]=='-' || cadena[i] == '+' ))
+			{
+				continue;
+			}
+			if(i==0&&(cadena[i]==' '|| cadena[i]=='\n' || cadena==0))
+			{
+				break;
+			}
+			if(esCaracter(cadena, i)==0)
 			{
 				retorno=0;
 				break;
@@ -118,6 +123,7 @@ int utnGetNumero(int* pNumeroIngresado, char* mensaje, char* mensajeError,char* 
 				retorno=0;
 				break;
 			}
+
 			if(reintentos!=0 && retorno!=0)
 			{
 				verificacionFinal=utnVerificacionConChar(mensajeSeguirNoSeguir,mensajeError, "\n",0);
@@ -128,10 +134,9 @@ int utnGetNumero(int* pNumeroIngresado, char* mensaje, char* mensajeError,char* 
 				}
 				else
 				{
-					if(verificacionFinal==-2)
+					if(verificacionFinal==0)
 					{
 						reintentos--;
-						printf(mensajeError);
 					}
 				}
 			}
@@ -148,9 +153,9 @@ int utnGetNumero(int* pNumeroIngresado, char* mensaje, char* mensajeError,char* 
 
 int utnVerificacionConChar(char* mensajeValidacion,char* mensajePorSi, char* mensajePorNo,int validacion)
 {
-	int retorno=0;
+	int retorno;
 	char ingresoDeUsuario[5];
-	int seguir=1;
+	int seguir;
 	int reintentos=3;
 	int valido;
 	if(mensajeValidacion!=NULL && mensajePorSi!=NULL && mensajePorNo!=NULL)
@@ -160,6 +165,7 @@ int utnVerificacionConChar(char* mensajeValidacion,char* mensajePorSi, char* men
 			if(reintentos==0)
 			{
 				puts("No quedan intentos\n");
+				retorno = -2;
 				break;
 			}
 
@@ -172,42 +178,46 @@ int utnVerificacionConChar(char* mensajeValidacion,char* mensajePorSi, char* men
 					{
 						reintentos--;
 						printf("Por favor, ingrese solo letras. Quedan %d intentos\n",reintentos);
-						valido=1;
-						seguir=0;
+						valido = 1;
+						seguir = -1;
 						break;
 					}
 					else
 					{
 						ingresoDeUsuario[i]=tolower(ingresoDeUsuario[i]);
-						valido=0;
+						valido = 0;
 					}
 
 				}
 			}
-		}while(seguir==0);
-
-		if(valido==0)
-		{
-			if(strncmp(ingresoDeUsuario,"no",sizeof(ingresoDeUsuario))==validacion)
+			if(valido==0)
 			{
-				printf("\n %s \n",mensajePorNo);
-				retorno =-1;
-			}
-			else
-			{
-				if(strncmp(ingresoDeUsuario,"si",sizeof(ingresoDeUsuario))==validacion)
+				if(strncmp(ingresoDeUsuario,"no",sizeof(ingresoDeUsuario))==validacion)
 				{
-					printf("\n %s \n",mensajePorSi);
-					retorno =-2;
+					printf("\n %s \n",mensajePorNo);
+					retorno = -1;
+					seguir = 0;
 				}
 				else
 				{
-					puts("Respuesta incorrecta");
-					retorno=-3;
+					if(strncmp(ingresoDeUsuario,"si",sizeof(ingresoDeUsuario))==validacion)
+					{
+						printf("\n %s \n",mensajePorSi);
+						retorno = 0;
+						seguir = 0;
+					}
+					else
+					{
+						printf("Respuesta incorrecta, quedan %d intentos\n",reintentos);
+						reintentos--;
+						seguir = -1;
+					}
 				}
-			}
 
-		}//Fin if valido==0
+			}//Fin if valido==0
+
+		}while(seguir==-1);
+
 
 	}//Fin if inicial
 
@@ -229,9 +239,14 @@ int utnIngresarFlotante(char mensaje[],float* numeroFloat, int reintentos)
 			largoCadena=sizeof(cadenaNumero);
 			if(myGets(cadenaNumero,largoCadena)==0)
 			{
+				if((cadenaNumero[0]==' '|| cadenaNumero[0]==0)==1)
+				{
+					puts("No se permiten espacios, o enter de primera\n");
+					retorno=-1;
+				}
 				for(i=0;cadenaNumero[i] != '\0';i++)
 				{
-					if(cadenaNumero[i]>'9' || cadenaNumero[i]<'0')
+					if(esCaracter(cadenaNumero, i)==0)
 					{
 						if(cadenaNumero[i]=='.' && flagComa==0)
 						{
@@ -250,17 +265,18 @@ int utnIngresarFlotante(char mensaje[],float* numeroFloat, int reintentos)
 						seguir=1;
 					}
 				}//Fin For
-
 			}//Fin primer IF
 
 			if(retorno==-1)
 			{
 				if(reintentos>0)
 				{
-					if(utnVerificacionConChar("\nError al ingresar numero. Desea reintentar ?? Si o No.\n", "Continua\n", "Se cancela el ingreso\n",0)==-2)
+					if(utnVerificacionConChar("\nDesea reintentar ?? Si o No.\n", "Continua\n", "Se cancela el ingreso\n",0)==0)
 					{
 						reintentos--;
+						flagComa=0;
 						printf("Quedan %d intentos\n",reintentos);
+						retorno=0;
 						seguir=0;
 					}
 					else
@@ -327,7 +343,6 @@ int utnRecibeCadenaSoloCaracteres(char cadena[],char mensaje[],int reintentos,in
 			{
 				for(int i=0;auxiliarString[i]!='\0';i++)
 				{
-
 					if(esCaracter(auxiliarString, i)==-1)
 					{
 						reintentos--;
@@ -354,11 +369,11 @@ int utnRecibeCadenaSoloCaracteres(char cadena[],char mensaje[],int reintentos,in
 
 
 
-int utnIngresarAlfanumerico(char cadena[], char mensaje[], int tam)
+int utnIngresarAlfanumerico(char cadena[], char mensaje[],int reintentos, int tam)
 {
 	setbuf(stdout,NULL);
-	char auxiliarString[51];
-	int reintentar=-1;
+	char auxiliarString[tam];
+
 	int valido=0;
 	int retorno=-1;
 	int largo;
@@ -367,6 +382,11 @@ int utnIngresarAlfanumerico(char cadena[], char mensaje[], int tam)
 	{
 		do
 		{
+			if(reintentos==0)
+			{
+				retorno=-1;
+				break;
+			}
 			printf(mensaje);
 			myGets(auxiliarString, tam);
 			largo=strnlen(auxiliarString,sizeof(tam));
@@ -375,34 +395,47 @@ int utnIngresarAlfanumerico(char cadena[], char mensaje[], int tam)
 			{
 				valido=1;
 				puts("Ingreso demaciados caracteres\n");
-				if(utnVerificacionConChar("Desea volver a intentar? si o no", "Continua\n", "Adios",0)==-2)
+				if(utnVerificacionConChar("Desea volver a intentar? si o no", "Continua\n", "Adios",0)==0)
 				{
-					reintentar=1;
+					puts("Vuelva a ingresar :\n");
+					reintentos--;
 				}
 				else
 				{
 					break;
 				}
 			}
+
+			if(auxiliarString[0]==' '|| auxiliarString[0]=='\n' || largo==0)
+			{
+				reintentos--;
+
+				valido=1;
+				printf("Por favor, no ingrese espacios o enter en primer lugar. Quedan %d intentos\n",reintentos);
+				puts("Vuelva a ingresar :\n");
+			}
 			if(valido==0)
 			{
 				strncpy(cadena,auxiliarString,tam);
 				retorno=0;
+				break;
 			}
 
-		}while(reintentar==1);
+		}while(reintentos>0);
 
 	}
 
 	return retorno;
 }
 
-int pasajeTodoAminusculaOmayusculaConNum(char cadena[], int validez, int len)
+int pasajeTodoAminusculaOmayusculaConNum(char cadena[], int validez)
 {
 	int retorno=-1;
 	int i;
-	char cadenaAux[len];
-		for(i=0;i<len;i++)
+	int largoCadena;
+	largoCadena=strlen(cadena);
+	char cadenaAux[largoCadena];
+		for(i=0;i<largoCadena;i++)
 		{
 			if(cadena[i]<9 || cadena[i]>0)
 			{
@@ -417,27 +450,33 @@ int pasajeTodoAminusculaOmayusculaConNum(char cadena[], int validez, int len)
 
 			}
 		}//Fin ford
-	strncpy(cadena,cadenaAux,len);
+	strncpy(cadena,cadenaAux,largoCadena);
 	return retorno;
 
 }
-void utnToupper(char cadena[],int len)
+void utnToupper(char cadena[])
 {
-	char cadenaAux[len];
+
+	int largoCadena;
+	largoCadena=strlen(cadena);
+	char cadenaAux[largoCadena];
+	int flag=0;
 	if(cadena!=NULL)
 	{
-		for(int i=0;i<len;i++)
+		for(int i=0;i<=largoCadena;i++)
 		{
-			if(i==0)
+
+			if(flag==0)
 			{
 				cadenaAux[i]=toupper(cadena[i]);
+				flag++;
 			}
 			else
 			{
 				if(cadena[i]==' ')
 				{
-					cadenaAux[i+1]=toupper(cadena[i+1]);
-					i++;
+					cadenaAux[i]=cadena[i];
+					flag=0;
 				}
 				else
 				{
@@ -445,6 +484,13 @@ void utnToupper(char cadena[],int len)
 				}
 			}
 		}//Fin For
-		strncpy(cadena,cadenaAux,len);
+		strncpy(cadena,cadenaAux,largoCadena);
 	}
+}
+
+void contadorId(int* num)
+{
+	static int contador=0;
+	contador++;
+	*num=contador;
 }

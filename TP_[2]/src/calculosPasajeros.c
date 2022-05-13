@@ -4,14 +4,15 @@
  *  Created on: 1 may 2022
  *      Author: Usuario Programador
  */
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <string.h>
+//#include <ctype.h>
 #include "ArrayPassenger.h"
-#define EMPTY 0
-#define FULL -1
-void calculosPasajeros(Passenger* list, int* mayorAlPromedio,float* totalPrecios,float* promedioPrecios, int len)
+#define FULL 0
+#define EMPTY -1
+
+void flightCalculator(DateFlight* list, int* mayorAlPromedio,float* totalPrecios,float* promedioPrecios, int lenFlight)
 {
 
 	int i;
@@ -20,7 +21,7 @@ void calculosPasajeros(Passenger* list, int* mayorAlPromedio,float* totalPrecios
 	int auxMayoresAlPromedio=0;
 	float promedio;
 
-	for(i=0;i<len;i++)
+	for(i=0;i<lenFlight;i++)
 	{
 		if(list[i].isEmpty==FULL)
 		{
@@ -29,7 +30,7 @@ void calculosPasajeros(Passenger* list, int* mayorAlPromedio,float* totalPrecios
 		}
 	}
 	promedio=auxTotalSumaDePrecios/(float)auxTotalPasajeros;
-	for(i=0;i<len;i++)
+	for(i=0;i<lenFlight;i++)
 	{
 		if(list[i].isEmpty==FULL && list[i].price>promedio)
 		{

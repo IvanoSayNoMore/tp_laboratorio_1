@@ -38,21 +38,23 @@ void utnMostrarResultados(float parametroPivot, float parametroA, float parametr
 		float parametroBconDescuento,float parametroAconAumento,float parametroBconAumento,float valorPorUnidadParametroB,
 		float valorPorUnidadParametroA,float difDeValores);
 
-//float utnIngresarFlotante(char mensaje[]);
-
 int utnRecibeCadenaSoloCaracteres(char cadena[],char mensaje[],int reintentos,int tam);
 
-int utnIngresarAlfanumerico(char cadena[], char mensaje[], int tam);
-
+int utnIngresarAlfanumerico(char cadena[], char mensaje[],int reintentos, int tam);
 
 int validacionLetraNumero(char cadena[],char mensaje[],int codigoValidacion,int len, int reintentos);
 
 int utnIngresarFlotante(char mensaje[],float* numeroFloat, int reintentos);
 
+int pasajeTodoAminusculaOmayusculaConNum(char cadena[], int validez);
 
-int pasajeTodoAminusculaOmayusculaConNum(char cadena[], int validez, int len);
+void utnToupper(char cadena[]);
 
-void utnToupper(char cadena[],int len);
+/**
+ * \brief Contador para ID
+ * @param num devuelve un numero id
+ */
+void contadorId(int* num);
 
 
 
