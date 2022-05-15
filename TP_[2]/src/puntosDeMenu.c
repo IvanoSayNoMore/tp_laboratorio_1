@@ -52,7 +52,7 @@ int menuItemEnterPassenger(Flight* vuelo,Passenger* listPassager,DateFlight* lis
 		{
 			contadorId(&auxId);
 			if(addPassenger(punteroAPasajero,punteroDateFligh, auxId, auxName, auxLastName, auxPrice, auxTypePassenger,
-					auxFlyCode, lenPassager,lenFlight)==RETORNOPOSITIVO)
+					auxFlyCode)==RETORNOPOSITIVO)
 			{
 				printf("Se ha dado de alta correctamente con el ID N°: %d, \n",auxId);
 				retorno=RETORNOPOSITIVO;
@@ -280,28 +280,28 @@ int hardcodeMenuItem(Passenger* list,DateFlight* listFlight, int lenPasajeros, i
 	{
 
 	   contadorId(&auxId);
-	    if(addPassenger(list,listFlight, auxId, "Ivan", "CCedina  ", 15020.20, 2, "EA012F", lenPasajeros,lenVuelos)==RETORNOPOSITIVO)
+	    if(addPassenger(list,listFlight, auxId, "Ivan", "CCedina  ", 15020.20, 2, "EA012F")==RETORNOPOSITIVO)
 	    {
 	    	printf("Se ha dado de alta correctamente con el ID N°: %d \n",auxId);
 	    	retorno=0;
 	    }
 
 	    contadorId(&auxId);
-	    if(addPassenger(list,listFlight, auxId, "Aldana", "AAabella", 123500.20, 4, "EA012G", lenPasajeros,lenVuelos)==RETORNOPOSITIVO)
+	    if(addPassenger(list,listFlight, auxId, "Aldana", "AAabella", 123500.20, 4, "EA012G")==RETORNOPOSITIVO)
 	    {
 	    	printf("Se ha dado de alta correctamente con el ID N°: %d \n",auxId);
 	    	retorno=0;
 	    }
 
 	    contadorId(&auxId);
-	    if(addPassenger(list,listFlight, auxId, "Enano", "AAabella", 23300.20, 3,"EA012I", lenPasajeros,lenVuelos)==RETORNOPOSITIVO)
+	    if(addPassenger(list,listFlight, auxId, "Enano", "AAabella", 23300.20, 3,"EA012I")==RETORNOPOSITIVO)
 	    {
 	    	printf("Se ha dado de alta correctamente con el ID N°: %d \n",auxId);
 	    	retorno=0;
 	    }
 
 	    contadorId(&auxId);
-	    if(addPassenger(list,listFlight, auxId, "Abu", "Gris", 244300.20, 3, "EA012G", lenPasajeros,lenVuelos)==RETORNOPOSITIVO)
+	    if(addPassenger(list,listFlight, auxId, "Abu", "Gris", 244300.20, 3, "EA012G")==RETORNOPOSITIVO)
 	    {
 	    	printf("Se ha dado de alta correctamente con el ID N°: %d \n",auxId);
 	    	retorno=0;

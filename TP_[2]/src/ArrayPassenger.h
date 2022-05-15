@@ -33,7 +33,7 @@ typedef struct{
 /// @param flycode recibe por parametro el codigo del vuelo a ser asignado
 /// @param len recibe por parametro recibe el largo posible de pasajeros para validar si existe o no un espacio libre
 /// @return retorna 0 si salio bien. -1 si algo fallo
-int addPassenger(Passenger* listPassager,DateFlight* listFlight, int id, char name[],char lastName[],float price,int typePassenger, char flycode[], int lenPassagers, int lenFlight);
+int addPassenger(Passenger* listPassager,DateFlight* listFlight, int id, char name[],char lastName[],float price,int typePassenger, char flycode[]);
 
 /**
  * \brief solicita al usuario los datos del pasajero

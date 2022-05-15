@@ -37,7 +37,7 @@ int initPassengers(Passenger* list, int lenPassenger)
 	return retorno;
 }
 
-int addPassenger(Passenger* listPassager,DateFlight* listFlight, int id, char name[],char lastName[],float price,int typePassenger, char flycode[], int lenPassagers, int lenFlight)
+int addPassenger(Passenger* listPassager,DateFlight* listFlight, int id, char name[],char lastName[],float price,int typePassenger, char flycode[])
 {
 	int retorno=-1;
 
