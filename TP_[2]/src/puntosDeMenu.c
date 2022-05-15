@@ -40,7 +40,7 @@ int menuItemEnterPassenger(Flight* vuelo,Passenger* listPassager,DateFlight* lis
 			&& utnIsEmptyOrFullFlight(listFligt, EMPTY, lenFlight)!=RETORNONEGATIVO)
 	{
 		if(ingresPassenger(auxName, auxLastName, &auxTypePassenger,MAXIMOCADENA)==RETORNOPOSITIVO
-				&& ingresDataFlight(vuelo,&auxPrice, auxFlyCode,MAXIMOCADENACODIGOVUELO ,MAXIMOCADENA)==RETORNOPOSITIVO)
+				&& ingresDataFlight(vuelo,&auxPrice, auxFlyCode,MAXIMOCADENA,lenFlight)==RETORNOPOSITIVO)
 		{
 			contadorId(&auxId);
 			if(addPassenger(listPassager,listFligt, auxId, auxName, auxLastName, auxPrice, auxTypePassenger,

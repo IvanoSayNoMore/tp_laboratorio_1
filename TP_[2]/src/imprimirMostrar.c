@@ -7,7 +7,6 @@
 #define FULL 0
 #define EMPTY -1
 #include "imprimirMostrar.h"
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -82,7 +81,7 @@ int printListFlight(Flight* vuelo,int len)
 	puts("\nHay vuelos a :\n");
 	for(int i=0;i<len;i++)
 	{
-		if(vuelo[i].isEmtpy==FULL)
+		if(vuelo[i].isEmtpy==0)
 		{
 			printFlight(&vuelo[i]);
 		}

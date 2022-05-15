@@ -15,8 +15,8 @@
 #include "imprimirMostrar.h"
 #include <stdio.h>
 #include <stdlib.h>
-#define MAXIMOPASAJEROS 6
-#define MAXIMOVUELOS 5
+#define MAXIMOPASAJEROS 16
+#define MAXIMOVUELOS 8
 #define MINIMOOPCION 1
 #define ESTADOVUELOACTIVO 0
 #define ESTADOVUELOCANCELADO 1
@@ -37,10 +37,15 @@ int main(void){
     initPassengers(datosPasajeros, MAXIMOPASAJEROS);
     initDataFlight(datosVuelo, MAXIMOPASAJEROS);
     initFlight(vuelo, MAXIMOVUELOS);
+
     loadFlight(vuelo, "FRANCIA","EA012F",ESTADOVUELOACTIVO, MAXIMOVUELOS,51,51);
     loadFlight(vuelo, "POLONIA","EA012G",ESTADOVUELOACTIVO,MAXIMOVUELOS,51,51);
     loadFlight(vuelo, "INDONESIA","EA012H",ESTADOVUELOCANCELADO, MAXIMOVUELOS,51,51);
     loadFlight(vuelo, "IRLANDA","EA012I",ESTADOVUELOCANCELADO, MAXIMOVUELOS,51,51);
+    loadFlight(vuelo, "ALEMANIA","EA012J",ESTADOVUELOACTIVO, MAXIMOVUELOS,51,51);
+    loadFlight(vuelo, "GRECIA","EA012K",ESTADOVUELOACTIVO,MAXIMOVUELOS,51,51);
+    loadFlight(vuelo, "ITALIA","EA012Q",ESTADOVUELOCANCELADO, MAXIMOVUELOS,51,51);
+    loadFlight(vuelo, "NUEVA ZELANDA","EA012P",ESTADOVUELOCANCELADO, MAXIMOVUELOS,51,51);
 
     do{
     	if(utnGetNumero(&opcion, "Opcion 1: Altas\nOpcion 2: Modificar datos de vuelo o pasajero \nOpcion 3: Baja\nOpcion 4: Informar\nOpcion 5: Carga Forzada\nOpcion 6: Cambiar estado de vuelo\nOpcion 7: Salir\n"

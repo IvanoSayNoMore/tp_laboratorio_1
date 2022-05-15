@@ -19,7 +19,7 @@
 
 int loadFlight(Flight* list,char vuelo[],char codigoVuelo[],int estadoVuelo, int lenVuelos, int lenChar, int lenCharCode)
 {
-	int retorno;
+	int retorno=RETORNONEGATIVO;
 
     for(int i=0;i<lenVuelos;i++)
     {
@@ -78,13 +78,21 @@ int ingresDataFlight(Flight* list,float* price, char flycode[],int lenCharCodeFl
 	char auxChar[lenCharCodeFli];
 	int continuar=RETORNOPOSITIVO;
 
-
 	do{
 		//Precio
 		if(utnIngresarFlotante("\nIngrese el precio del vuelo\n",&auxFloat,REINTENTOS)!=RETORNONEGATIVO)
 		{
-			*price=auxFloat;
-			flagOk=RETORNOPOSITIVO;
+			if(auxFloat<15000 || auxFloat>20000)
+			{
+				puts("Error. El precio minimo es de 15000 y el maximo es de 20000");
+				flagOk=RETORNONEGATIVO;
+			}
+			else
+			{
+				*price=auxFloat;
+				flagOk=RETORNOPOSITIVO;
+			}
+
 		}
 		else
 		{
