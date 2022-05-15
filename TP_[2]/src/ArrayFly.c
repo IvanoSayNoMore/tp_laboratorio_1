@@ -92,7 +92,6 @@ int ingresDataFlight(Flight* list,float* price, char flycode[],int lenCharCodeFl
 				*price=auxFloat;
 				flagOk=RETORNOPOSITIVO;
 			}
-
 		}
 		else
 		{

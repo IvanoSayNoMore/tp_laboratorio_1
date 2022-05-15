@@ -40,34 +40,23 @@ int initPassengers(Passenger* list, int lenPassenger)
 int addPassenger(Passenger* listPassager,DateFlight* listFlight, int id, char name[],char lastName[],float price,int typePassenger, char flycode[], int lenPassagers, int lenFlight)
 {
 	int retorno=-1;
-	int espacioParaLastName;
-	int espacioParaFlight;
-	Passenger auxPasajero;
-	DateFlight auxVuelo;
+
 
 	if(listPassager!=NULL && listFlight!=NULL && name!=NULL && lastName!= NULL && flycode!=NULL)
 	{
-		espacioParaLastName=utnIsEmptyOrFullPassager(listPassager, EMPTY, lenPassagers);
-		espacioParaFlight=utnIsEmptyOrFullFlight(listFlight, EMPTY, lenFlight);
 
-		if(espacioParaLastName!=RETORNONEGATIVO && espacioParaFlight!=RETORNONEGATIVO)
-		{
-			auxPasajero.idPasajero=id;
-			strncpy(auxPasajero.nameLastName.lastName,lastName,sizeof(auxPasajero.nameLastName.lastName));
-			strncpy(auxPasajero.nameLastName.name,name,sizeof(auxPasajero.nameLastName.name));
-			auxPasajero.isEmpty=FULL;
-			auxPasajero.typePassenger=typePassenger;
+		listPassager->idPasajero=id;
+		strncpy(listPassager->nameLastName.lastName,lastName,sizeof(listPassager->nameLastName.lastName));
+		strncpy(listPassager->nameLastName.name,name,sizeof(listPassager->nameLastName.name));
+		listPassager->isEmpty=FULL;
+		listPassager->typePassenger=typePassenger;
 
-			auxVuelo.idPasajero=id;;
-			auxVuelo.price=price;
-			strncpy(auxVuelo.flyCode,flycode,sizeof(auxVuelo.flyCode));
-			auxVuelo.isEmpty=FULL;
+		listFlight->idPasajero=id;;
+		listFlight->price=price;
+		strncpy(listFlight->flyCode,flycode,sizeof(listFlight->flyCode));
+		listFlight->isEmpty=FULL;
 
-			listPassager[espacioParaLastName]=auxPasajero;
-			listFlight[espacioParaFlight]=auxVuelo;
-
-			retorno=RETORNOPOSITIVO;
-		}
+		retorno=RETORNOPOSITIVO;
 	}
 	return retorno;
 

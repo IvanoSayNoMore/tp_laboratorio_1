@@ -31,19 +31,27 @@ int menuItemEnterPassenger(Flight* vuelo,Passenger* listPassager,DateFlight* lis
     char auxName[MAXIMOCADENA];
     char auxLastName[MAXIMOCADENA];
     char auxFlyCode[MAXIMOCADENA];
+    int espacioPasenger;
+    int espacioFlight;
     int auxId;
     float auxPrice;
     int auxTypePassenger;
 	int retorno=RETORNONEGATIVO;
+	Passenger * punteroAPasajero;
+	DateFlight * punteroDateFligh;
 
-	if(utnIsEmptyOrFullPassager(listPassager, EMPTY, lenPassager)!=RETORNONEGATIVO
-			&& utnIsEmptyOrFullFlight(listFligt, EMPTY, lenFlight)!=RETORNONEGATIVO)
+	espacioPasenger=utnIsEmptyOrFullPassager(listPassager, EMPTY, lenPassager);
+	espacioFlight=utnIsEmptyOrFullFlight(listFligt, EMPTY, lenFlight);
+
+	if(espacioPasenger != RETORNONEGATIVO && espacioFlight != RETORNONEGATIVO)
 	{
+		 punteroAPasajero=&listPassager[espacioPasenger];
+		 punteroDateFligh=&listFligt[espacioFlight];
 		if(ingresPassenger(auxName, auxLastName, &auxTypePassenger,MAXIMOCADENA)==RETORNOPOSITIVO
-				&& ingresDataFlight(vuelo,&auxPrice, auxFlyCode,MAXIMOCADENA,lenFlight)==RETORNOPOSITIVO)
+				&& ingresDataFlight(vuelo,&auxPrice, auxFlyCode,MAXIMOCADENACODIGOVUELO ,lenFlight)==RETORNOPOSITIVO)
 		{
 			contadorId(&auxId);
-			if(addPassenger(listPassager,listFligt, auxId, auxName, auxLastName, auxPrice, auxTypePassenger,
+			if(addPassenger(punteroAPasajero,punteroDateFligh, auxId, auxName, auxLastName, auxPrice, auxTypePassenger,
 					auxFlyCode, lenPassager,lenFlight)==RETORNOPOSITIVO)
 			{
 				printf("Se ha dado de alta correctamente con el ID N°: %d, \n",auxId);
@@ -56,17 +64,19 @@ int menuItemEnterPassenger(Flight* vuelo,Passenger* listPassager,DateFlight* lis
 			retorno=RETORNONEGATIVO;
 		}
 
-	}//If espacioLibre
-	else
-	{
-		puts("No hay espacios para mas pasajeros  \n");
-		retorno=RETORNONEGATIVO;
-	}
+	 }
+
+
+//	}//If espacioLibre
+	//else
+//	{
+//		puts("No hay espacios para mas pasajeros  \n");
+//		retorno=RETORNONEGATIVO;
+//	}
 
 	return retorno;
 
 }
-
 int menuItemModify(Passenger* listDatePassenger,DateFlight* listDateFlight,Flight* listFlight, int lenPassager,int lenDataFlight,int lenFlight)
 {
 	int retorno=RETORNONEGATIVO;
