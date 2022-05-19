@@ -85,7 +85,7 @@ int main(void) {
 				//menuItemOrdenamientos(datosZona, datosCenso, datosPersona, MAXIMOZONAS, MAXIMOCENSISTAS);
 				break;
 			case 9:
-
+				menuItemInformes(datosZona, datosCenso, datosPersona, localidades, MAXIMOZONAS, MAXIMOCENSISTAS);
 				break;
 			case 10://LA PRUEBA DE FUEGO
 				menuItemHardCode(datosZona, datosCenso, datosPersona, MAXIMOZONAS, MAXIMOCENSISTAS);
