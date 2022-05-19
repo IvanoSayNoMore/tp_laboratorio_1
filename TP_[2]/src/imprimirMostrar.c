@@ -32,7 +32,7 @@ int printPassenger(Passenger* list,DateFlight* listDateFlight,Flight* vuelo, int
 	    			{
 	    				printOnePassenger(&list[i]);
 	    				printOneDestin(&listDateFlight[j], vuelo, lenPassenger, lenFlight);
-	    				break;
+
 	    			}
 	    		}
 
