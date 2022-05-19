@@ -22,6 +22,22 @@
 #define MAXOPCIONLOCALIDAD 5
 #define MINOPCIONLOCALIDAD 1
 
+int findLocalidadById(localidad* listlocalidad,int id,int* posicion, int lenLocalidad)
+{
+	int retorno=RETORNONEGATIVO;
+	int i;
+	for(i=0;i<lenLocalidad;i++)
+	{
+		if(listlocalidad[i].isEmpty==FULL && listlocalidad[i].id==id )
+		{
+			retorno=RETORNOPOSITIVO;
+			*posicion=i;
+			break;
+		}
+	}
+
+	return retorno;
+}
 
 int initLocalidad(localidad* listlocalidad, int lenLocalidad)
 {

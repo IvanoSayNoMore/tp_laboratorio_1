@@ -16,6 +16,7 @@
 #include <string.h>
 #define RETORNOPOSITIVO 0
 #define RETORNONEGATIVO -1
+#define REINTENTOS 3
 #define PENDIENTE -1
 #define FINALIZADO 0
 #define EMPTY 0
@@ -38,10 +39,27 @@ int printListCensistas(Person* listPerson,int lenPerson)
 		{
 			if(listPerson[i].isEmpty==FULL)
 			{
+
 				printOneCensista(&listPerson[i]);
 				puts("___________________________________________________________________________");
 				retorno=RETORNOPOSITIVO;
 			}
+		}
+	}
+	return retorno;
+}
+
+int printZonaLocalidad(datoZona* datoZona, localidad * listlocalidad,int lenLocalidad)
+{
+	int retorno=RETORNONEGATIVO;
+	for(int i=0;i<lenLocalidad;i++)
+	{
+		if(datoZona->localidadZona==listlocalidad[i].id)
+		{
+			printf("|%s\t         | %s   \n", datoZona->zonaCenso,listlocalidad[i].localidades);
+
+			retorno=RETORNOPOSITIVO;
+			break;
 		}
 	}
 	return retorno;
@@ -61,6 +79,7 @@ int printListCensistaByStatus(Person* listPerson,char mensaje[],int order,int le
 				if(listPerson[i].estadoActual==order)//ACTIVO
 				{
 					//printf("id %d nombre %s  apellido %s\n",listPerson[i].idCensista,listPerson[i].dataPerson.name,listPerson[i].dataPerson.lastName);
+
 					printOneCensista(&listPerson[i]);
 					retorno=RETORNOPOSITIVO;
 				}
@@ -90,6 +109,21 @@ int printLocalidad(localidad* localidad,int lenLocalidad)
 
 		retorno=RETORNOPOSITIVO;
 	}
+	return retorno;
+}
+
+int printOneLocalidad(localidad* localidad)
+{
+	int retorno=RETORNONEGATIVO;
+	puts("LOCALIDADES: ");
+
+		if(localidad->isEmpty==FULL)
+		{
+			printf(" %s\n",localidad->localidades);
+		}
+
+		retorno=RETORNOPOSITIVO;
+
 	return retorno;
 }
 
@@ -169,19 +203,51 @@ int printAllZone(datoZona* listDatoZona,Person* listPerson,datosCenso* listdatos
 }
 
 
-int printZonaLocalidad(datoZona* datoZona, localidad * listlocalidad,int lenLocalidad)
+int printPersonByLocalidad(datoZona* listDatoZona,Person* listPerson,datosCenso* listdatosCenso,localidad* localidades,int lenPerson,int lenLocalidad,int lenDatoCenso)
 {
 	int retorno=RETORNONEGATIVO;
-	for(int i=0;i<lenLocalidad;i++)
-	{
-		if(datoZona->localidadZona==listlocalidad[i].id)
+	int auxLocalidad;
+	int auxPosLocalidad;
+	localidad * punteroLocalidad;
+	if(listDatoZona != NULL && listPerson != NULL && listdatosCenso != NULL)
 		{
-			printf("|%s\t         | %s   \n", datoZona->zonaCenso,listlocalidad[i].localidades);
+			printLocalidad(localidades, lenLocalidad);
+			if(utnGetNumero(&auxLocalidad, "Seleccione el numero que de localidad que corresponda o 0 para cancelar\n",
+						"Error al seleccionar Localidad", "Opcion incorrecta. Desea reintentar?\n",0, lenLocalidad, REINTENTOS)==RETORNOPOSITIVO)
+			{
+				if(findLocalidadById(localidades, auxLocalidad, &auxPosLocalidad, lenLocalidad)==RETORNOPOSITIVO)
+				{
+					punteroLocalidad=&localidades[auxPosLocalidad];
+					puts("----------------------------------------------------------------------------------------------------------------------\n");
+					puts("------------ Datos Censista ------------------------------------------------------------------------------------------\n");
+					puts("-----------------------------------------|---------------------------------|------------------------------------------\n");
+					puts("|Id Cesista |   Apellido   |   Nombre    |                 |    Zona de Censo    |  Localidad                         \n");
+					puts("----------------------------------------------------------------------------------------------------------------------\n");
+					for(int i=0;i<lenPerson;i++)
+					{
+						if(listPerson[i].isEmpty==FULL)
+						{
+							for(int j=0;j<lenDatoCenso;j++)
+							{
+								if(listDatoZona[j].isEmpty==FULL)
+								{
+									if(listPerson[i].idCensista==listDatoZona[j].idCensista && listDatoZona[j].localidadZona==auxLocalidad)
+									{
+										printf("%d    %s\t  %s\t    %s\t  ",listPerson[i].idCensista,listPerson[i].dataPerson.lastName,listPerson[i].dataPerson.name,listDatoZona[j].zonaCenso);
+										printOneLocalidad(punteroLocalidad);
+										retorno=RETORNOPOSITIVO;
+									}
+								}
+							}
+						}
+					}
 
-			retorno=RETORNOPOSITIVO;
-			break;
+
+				}
+			}
+
+
 		}
-	}
 	return retorno;
 }
 
@@ -256,6 +322,7 @@ int printPersonByCantidadCensados(datosCenso* listDatosCenso,Person* listPerson,
 				}
 			}
 		}
+		break;// Si se saca trae a todos los sencistas con sus totales
 	}
 
 	return retorno;

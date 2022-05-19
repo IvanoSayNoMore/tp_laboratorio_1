@@ -8,6 +8,7 @@
 
 #include "ArrayZona.h"
 #include "ArrayCencista.h"
+#include "Calculos.h"
 #include "SortHead.h"
 #include "utnInPuts.h"
 #include "printList.h"
@@ -253,21 +254,6 @@ int menuItemAssignZona(datoZona* listZona,Person* listPerson, int lenZona,int le
 									puts("Se asigno correctamente");
 								}
 							}
-
-							/*if(findPersonById(listPerson, auxIdPerson, &posicionPerson, lenPerson)==RETORNOPOSITIVO)
-							{
-								punteroPersona=&listPerson[posicionPerson];
-								if(punteroPersona->estadoActual==LIBERADO)
-								{
-									assignZone(punteroZona, auxIdPerson);
-									retorno=RETORNOPOSITIVO;
-								}
-								else
-								{
-									puts("Actualmente , el id seleccionado esta inactivo o tiene una zona asignada.  ");
-								}
-
-							}//busca censista por id*/
 						}
 					}//verifica pendiente
 					else
@@ -568,7 +554,61 @@ int menuItemOrdenamientos(datoZona* listZona,datosCenso* listCenso,Person* listP
 	return retorno;
 }
 
+int menuItemInformes(datoZona* listZona,datosCenso* listCenso,Person* listPerson,localidad* localidad, int lenZona,int lenPerson)
+{
+	int opcion;
+	float promedioCensosPorCensista;
+	/*	b. Mostrar el listado de censistas de Avellaneda, Lanús, Lomas de Zamora o Banfield
+	ordenados alfabéticamente por apellido y nombre.
+	c. Informar nombre de localidad con más casas ausentes.
+	*/
+	if(listZona != NULL && listCenso != NULL && listPerson != NULL)
+	{
+		if(utnGetNumero(&opcion, "\nOpcion 1:Informar cantidad de censistas en estado Activo con zona Pendiente. \nOpcion 2: Mostrar el listado de censistas de Avellaneda, Lanús, Lomas de Zamora o Banfield ordenados alfabéticamente por apellido y nombre.\n4. Informar el censista cuya zona fue la más censada (total censados presencial y virtual)\n5.e. Informar el promedio de censos por censista/zona"
+		    			,"", "Error al ingresar Opcion. Desea reintentar?Ingrese SI si desea continuar.\n", 0,
+						5, REINTENTOS)==RETORNOPOSITIVO)
+		{
+			switch(opcion)
+			{
+				case 1:
+					if(printListCensistaByStatus(listPerson, "ACTIVOS",ACTIVO, lenPerson)==RETORNONEGATIVO)
+					{
+						puts("No se encontraron Censistas activos");
+						break;
+					}
+					break;
+				case 2:
+					sortPersonByLastName(listPerson, lenPerson);
+					printListCensistas(listPerson, lenPerson);
+					break;
+				case 3:
+					printPersonByLocalidad(listZona, listPerson, listCenso, localidad, lenPerson, 5, lenZona);
 
+					break;
+				case 4:
+					if(printPersonByCantidadCensados(listCenso, listPerson, lenZona)==RETORNONEGATIVO)
+					{
+						puts("Aun no hay datos cargados para realizar los calculos");
+					}
+					break;
+				case 5:
+					promedioCensosPorCensista=dataCollection(listCenso, lenZona);
+					if(promedioCensosPorCensista!=RETORNONEGATIVO)
+					{
+						printf("%.2f es el prromedio de censos por censista/zona",promedioCensosPorCensista);
+					}
+
+					break;
+				break;
+
+
+
+
+			}
+		}
+	}
+	return 0;
+}
 
 
 

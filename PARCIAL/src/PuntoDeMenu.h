@@ -16,6 +16,6 @@ int menuItemAssignZona(datoZona* listZona,Person* listPerson, int lenZona,int le
 int menuItemAddDataZona(datoZona* listZona,datosCenso* listCenso,Person* listPerson, int lenZona,int lenPerson);
 int menuItemOrdenamientos(datoZona* listZona,datosCenso* listCenso,Person* listPerson, int lenZona,int lenPerson);
 int menuItemPrintCensistas(Person* listPerson,int lenPerson);
-
+int menuItemInformes(datoZona* listZona,datosCenso* listCenso,Person* listPerson, int lenZona,int lenPerson);
 int menuItemHardCode(datoZona* listZona,datosCenso* listCenso,Person* listPerson, int lenZona,int lenPerson);
 #endif /* PUNTODEMENU_H_ */

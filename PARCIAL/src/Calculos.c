@@ -17,36 +17,49 @@
 #define RETORNOPOSITIVO 0
 #define RETORNONEGATIVO -1
 
-int dataCollection(datosCenso* datos, int lenDatosCenso)
+float dataCollection(datosCenso* datos, int lenDatosCenso)
 {
-	int retorno=RETORNONEGATIVO;
-/*	int auxAusentes=0;
+	float retorno=RETORNONEGATIVO;
+	int auxAusentes=0;
+	int totalCensados=0;
 	int auxInSitu=0;
 	int auxVirtual=0;
-	int auxCensistas=0;;
-	float promedioAusentes;
-	float promedioVirtual;
-	float promedioInSitu;
-	int totalCensados;
-
-	for(int i=0;i<lenDatosCenso;i++)
+	int auxCensistas=0;
+	int flagOk=RETORNONEGATIVO;
+	//float promedioDeCensosPorCensista;
+	//float promedioAusentes;
+	//float promedioVirtual;
+	//float promedioInSitu;
+	//int totalCensados;
+	if(datos!=NULL)
 	{
-		if(datos[i].isEmpty==FULL)
+		for(int i=0;i<lenDatosCenso;i++)
+			{
+				if(datos[i].isEmpty==FULL)
+				{
+					auxAusentes+=datos[i].ausentes;
+					auxVirtual+=datos[i].censadosVirtual;
+					auxInSitu+=datos[i].censadosInSitu;
+					datos[i].totalCensados=datos[i].censadosInSitu+datos[i].censadosVirtual;
+					totalCensados+=datos[i].totalCensados;
+					auxCensistas++;
+					flagOk=RETORNOPOSITIVO;
+				}
+			}
+		if(flagOk==RETORNOPOSITIVO)
 		{
-			auxAusentes+=datos[i].ausentes;
-			auxVirtual+=datos[i].censadosVirtual;
-			auxInSitu+=datos[i].censadosInSitu;
-			datos[i].totalCensados=datos[i].censadosInSitu+datos[i].censadosVirtual+datos[i].ausentes;
-			auxCensistas++;
+			retorno=promediar(auxCensistas, totalCensados);
 		}
+
+			//promedioAusentes=promediar(auxCensistas, auxAusentes);
+			//promedioVirtual=promediar(auxCensistas,auxVirtual);
+			//promedioInSitu=promediar(auxCensistas,auxInSitu);
+
+			//totalCensados=auxAusentes+auxVirtual+auxInSitu;
+
+
 	}
 
-	promedioAusentes=promediar(auxCensistas, auxAusentes);
-	promedioVirtual=promediar(auxCensistas,auxVirtual);
-	promedioInSitu=promediar(auxCensistas,auxInSitu);
-
-	totalCensados=auxAusentes+auxVirtual+auxInSitu;
-*/
 	return retorno;
 }
 
@@ -59,6 +72,7 @@ float promediar(int valorPivot, int valorPromediar)
 	return retorno;
 
 }
+
 
 
 

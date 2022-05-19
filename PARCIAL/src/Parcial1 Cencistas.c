@@ -16,7 +16,7 @@
 #include "PuntoDeMenu.h"
 #include "printList.h"
 #define MINIMOOPCION 1
-#define MAXIMOOPCION 10
+#define MAXIMOOPCION 11
 #define MAXIMOCENSISTAS 10
 #define MAXIMOZONAS 30
 #define MAXIMOLOCALIDADES 5
@@ -46,7 +46,7 @@ int main(void) {
 	addLocalidad(localidades, "Sarandi", MAXIMOLOCALIDADES, 5, 51);
 
     do{
-    	if(utnGetNumero(&opcion, "\nOpcion 1: Cargar censista\nOpcion 2: Modificar datos de censista \nOpcion 3: Baja censista\nOpcion 4: Cargar Zona\nOpcion 5: Asignar Zona\nOpcion 6: Cargar datos \nOpcion 7: Mostrar censista\nOpcion 8: Mostrar Zonas\nOpcion 9: HARDCODE\n"
+    	if(utnGetNumero(&opcion, "\nOpcion 1: Cargar censista\nOpcion 2: Modificar datos de censista \nOpcion 3: Baja censista\nOpcion 4: Cargar Zona\nOpcion 5: Asignar Zona\nOpcion 6: Cargar datos \nOpcion 7: Mostrar censista\nOpcion 8: Mostrar Zonas\nOpcion 9: INFORMES \n10-HARDCODE\n"
     			,"", "Error al ingresar Opcion. Desea reintentar?Ingrese SI si desea continuar.\n", MINIMOOPCION,
 				MAXIMOOPCION, REINTENTOS)==RETORNOPOSITIVO)
     	{
@@ -84,10 +84,13 @@ int main(void) {
 				printAllZone(datosZona, datosPersona, datosCenso, localidades, MAXIMOCENSISTAS, MAXIMOLOCALIDADES, MAXIMOZONAS);
 				//menuItemOrdenamientos(datosZona, datosCenso, datosPersona, MAXIMOZONAS, MAXIMOCENSISTAS);
 				break;
-			case 9://LA PRUEBA DE FUEGO
+			case 9:
+
+				break;
+			case 10://LA PRUEBA DE FUEGO
 				menuItemHardCode(datosZona, datosCenso, datosPersona, MAXIMOZONAS, MAXIMOCENSISTAS);
 				break;
-			case 10:
+			case 11:
 				menuItemOrdenamientos(datosZona, datosCenso, datosPersona, MAXIMOZONAS, MAXIMOCENSISTAS);
 				break;
 			default:

@@ -32,7 +32,7 @@ typedef struct {
 	int isEmpty;
 }datosCenso;
 
-
+int findLocalidadById(localidad* listlocalidad,int id,int* posicion, int lenLocalidad);
 /**
  * @brief Inicializa array del tipo localidad
  * @param listlocalidad lista a inicializar

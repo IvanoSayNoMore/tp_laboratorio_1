@@ -22,9 +22,13 @@ int printZonaLocalidad(datoZona * datoZona, localidad * listlocalidad,int lenLoc
 
 int printDatosCensados(Person * person, datosCenso *listDatosCenso, int lenDatosCenso);
 
+int printPersonByLocalidad(datoZona* listDatoZona,Person* listPerson,datosCenso* listdatosCenso,localidad* localidad,int lenPerson,int lenLocalidad,int lenDatoCenso);
+
 int printPersonByCantidadCensados(datosCenso* listDatosCenso,Person* listPerson, int lenDatosCenso);
 
 int printZonaById(datoZona* datoZona, int lenZona);
+
+int printOneLocalidad(localidad* localidad);
 
 void printPersonByLastname(Person* listperson,int lenPerson);
 
