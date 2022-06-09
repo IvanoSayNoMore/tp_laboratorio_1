@@ -147,9 +147,6 @@ int findPassengerById(Passenger* list, int id,int* posicion,int lenPassenger)
 	return retorno;
 }
 
-
-
-
 int changePassager(Passenger* listPassager,int lenCadena)
 {
 	int retorno=-1;

@@ -12,7 +12,7 @@ int printListCensistaByStatus(Person* listPerson,char mensaje[],int order,int le
 
 void printOneCensista(Person* person);
 
-int printLocalidad(localidad* localidad,int lenLocalidad);
+void printPersonByLastname(Person* listperson,int lenPerson);
 
 int printListCensistas(Person* listPerson,int lenPerson);
 
@@ -30,6 +30,8 @@ int printZonaById(datoZona* datoZona, int lenZona);
 
 int printOneLocalidad(localidad* localidad);
 
-void printPersonByLastname(Person* listperson,int lenPerson);
+int printLocalidad(localidad* localidad,int lenLocalidad);
+
+
 
 #endif /* PRINTLIST_H_ */

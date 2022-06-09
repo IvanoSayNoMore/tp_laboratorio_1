@@ -48,7 +48,14 @@ int main(void){
     loadFlight(vuelo, "NUEVA ZELANDA","EA012P",ESTADOVUELOCANCELADO, MAXIMOVUELOS,51,51);
 
     do{
-    	if(utnGetNumero(&opcion, "Opcion 1: Altas\nOpcion 2: Modificar datos de vuelo o pasajero \nOpcion 3: Baja\nOpcion 4: Informar\nOpcion 5: Carga Forzada\nOpcion 6: Cambiar estado de vuelo\nOpcion 7: Salir\n"
+    	if(utnGetNumero(&opcion,
+    			"\nOpcion 1: Altas\n"
+    			"Opcion 2: Modificar datos de vuelo o pasajero \n"
+    			"Opcion 3: Baja\n"
+    			"Opcion 4: Informar\n"
+    			"Opcion 5: Carga Forzada\n"
+    			"Opcion 6: Cambiar estado de vuelo\n"
+    			"Opcion 7: Salir\n"
     			,"", "Error al ingresar Opcion. Desea reintentar?Ingrese SI si desea continuar.\n", MINIMOOPCION,
 				MAXIMOOPCION, REINTENTOS)==RETORNOPOSITIVO)
     	{

@@ -558,13 +558,10 @@ int menuItemInformes(datoZona* listZona,datosCenso* listCenso,Person* listPerson
 {
 	int opcion;
 	float promedioCensosPorCensista;
-	/*	b. Mostrar el listado de censistas de Avellaneda, Lanús, Lomas de Zamora o Banfield
-	ordenados alfabéticamente por apellido y nombre.
-	c. Informar nombre de localidad con más casas ausentes.
-	*/
+
 	if(listZona != NULL && listCenso != NULL && listPerson != NULL)
 	{
-		if(utnGetNumero(&opcion, "\nOpcion 1:Informar cantidad de censistas en estado Activo con zona Pendiente. \nOpcion 2: Mostrar el listado de censistas de Avellaneda, Lanús, Lomas de Zamora o Banfield ordenados alfabéticamente por apellido y nombre.\n4. Informar el censista cuya zona fue la más censada (total censados presencial y virtual)\n5.e. Informar el promedio de censos por censista/zona"
+		if(utnGetNumero(&opcion, "\nOpcion 1:Informar cantidad de censistas en estado Activo con zona Pendiente. \nOpcion 2: Mostrar el listado de censistas de Avellaneda, Lanús, Lomas de Zamora o Banfield ordenados alfabéticamente por apellido y nombre.\nOpcion 4. Informar el censista cuya zona fue la más censada (total censados presencial y virtual)\nnOpcion5: Informar el promedio de censos por censista/zona\n"
 		    			,"", "Error al ingresar Opcion. Desea reintentar?Ingrese SI si desea continuar.\n", 0,
 						5, REINTENTOS)==RETORNOPOSITIVO)
 		{
@@ -586,7 +583,7 @@ int menuItemInformes(datoZona* listZona,datosCenso* listCenso,Person* listPerson
 
 					break;
 				case 4:
-					if(printPersonByCantidadCensados(listCenso, listPerson, lenZona)==RETORNONEGATIVO)
+	 				if(printPersonByCantidadCensados(listCenso, listPerson, lenZona)==RETORNONEGATIVO)
 					{
 						puts("Aun no hay datos cargados para realizar los calculos");
 					}
