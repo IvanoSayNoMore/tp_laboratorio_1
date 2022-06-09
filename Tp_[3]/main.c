@@ -70,6 +70,14 @@ int main()
 				break;
 
 			case 2:
+				if(menu_cargaDatosPasajerosDesdeCsv("data.csv",listaPasajeros)==RETORNOPOSITIVO)
+				{
+					puts("\nEl archivo se ha cargado con exito");
+				}
+				else
+				{
+					puts("\nOcurrio un error al leer el archivo  \n");
+				}
 
 				break;
 
@@ -78,18 +86,20 @@ int main()
 				{
 					puts("Alta realizada con exito");
 				}
-				else
-				{
-					puts("Error en el alta ");
-				}
 
 				break;
 
 			case 4://
-				controller_ListPassenger(listaPasajeros);				break;
+				if(menu_modificarPasajero(listaPasajeros)==RETORNOPOSITIVO)
+				{
+					puts("Modificacion realizada con exito");
+				}
+
+
+				break;
 
 			case 5://
-				menu_modificarPasajero(listaPasajeros);
+				controller_ListPassenger(listaPasajeros);
 		        break;
 
 			case 6://

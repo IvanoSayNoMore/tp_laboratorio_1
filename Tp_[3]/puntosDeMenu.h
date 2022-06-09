@@ -11,7 +11,10 @@
 
 int menu_cargaDatosPasajerosDesdeCsv(char* path , LinkedList* pArrayListPassenger);
 
-
 int menu_altaPasajero(LinkedList* pArrayListPassenger);
+
+int menu_modificarPasajero(LinkedList* pArrayListPassenger);
+
+int menu_eliminarPasajero(LinkedList* pArrayListPassenger);
 
 #endif /* PUNTOSDEMENU_H_ */

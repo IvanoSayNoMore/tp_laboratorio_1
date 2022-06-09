@@ -12,11 +12,11 @@ typedef struct
 {
 	int id;
 	float precio;
-	char nombre[50];
-	char apellido[50];
-	char tipoPasajero[50];
-	char codigoVuelo[50];
-	char statusFlight[50];
+	char nombre[51];
+	char apellido[51];
+	char tipoPasajero[51];
+	char codigoVuelo[51];
+	char statusFlight[51];
 
 }Passenger;
 
@@ -45,4 +45,5 @@ int Passenger_getPrecio(Passenger* this,float* precio);
 int Passenger_setEstadoVuelo(Passenger* this,char* statusFlight);
 int Passenger_getEstadoVuelo(Passenger* this,char* statusFlight);
 
+void Passenger_freeDePasajero(Passenger* this);
 #endif /* PASSENGER_H_ */

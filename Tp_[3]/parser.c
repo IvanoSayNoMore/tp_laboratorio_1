@@ -53,9 +53,9 @@ int parser_PassengerFromText(FILE* pFile , LinkedList* pArrayListPassenger)
 			}
 			else
 			{
+
 				break;
 			}
-			//printf("\nCodigo en Parser %s: ",pPassenger->codigoVuelo);
 		}while(!feof(pFile));
 
 	}
@@ -106,5 +106,24 @@ int parser_PassengerFromText(FILE* pFile , LinkedList* pArrayListPassenger)
 int parser_PassengerFromBinary(FILE* pFile , LinkedList* pArrayListPassenger)
 {
 
-    return 1;
+	int retorno = RETORNONEGATIVO;
+	Passenger * pPassenger;
+
+	if (pFile != NULL && pArrayListPassenger != NULL)
+	{
+		do
+		{
+			pPassenger = Passenger_new();
+			if (pPassenger != NULL && fread(pPassenger,sizeof(pPassenger),1,pFile)==1)
+			{
+				retorno = ll_add(pArrayListPassenger, pPassenger);
+			}
+			else
+			{
+				Passenger_delete(pPassenger);
+				break;
+			}
+		} while (!feof(pFile));
+	}
+	return retorno;
 }

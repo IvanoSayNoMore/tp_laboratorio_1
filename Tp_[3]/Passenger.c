@@ -23,14 +23,12 @@ Passenger* Passenger_newParametros(int id,char* nombreStr,char* apellidoStr,floa
 {
 	Passenger* punteroPassenger = NULL;
 	punteroPassenger = Passenger_new();
-	printf("Limpio %s \n",flyCode);
 	if(punteroPassenger != NULL && nombreStr != NULL && apellidoStr != NULL && flyCode != NULL && tipoPasajeroStr != NULL && estadoVuelo && id>0 && price>0)
 	{
 		Passenger_setId(punteroPassenger,id);
 		Passenger_setNombre(punteroPassenger,nombreStr);
 		Passenger_setApellido(punteroPassenger,apellidoStr);
 		Passenger_setPrecio(punteroPassenger,price);
-		//strncpy(punteroPassenger->codigoVuelo,flyCode,MAXIMOCHAR);
 		Passenger_setCodigoVuelo(punteroPassenger,flyCode);
 		Passenger_setTipoPasajero(punteroPassenger,tipoPasajeroStr);
 		Passenger_setEstadoVuelo(punteroPassenger, estadoVuelo);
@@ -39,13 +37,12 @@ Passenger* Passenger_newParametros(int id,char* nombreStr,char* apellidoStr,floa
 	{
 		puts("PunteroPerson == null");
 	}
-	//printf("Copiado> %s <acaa ",punteroPassenger->codigoVuelo);
 
 	return punteroPassenger;
 }
-void Passenger_delete()
+void Passenger_delete(Passenger* this)
 {
-
+	free(this);
 }
 
 int Passenger_setId(Passenger* this,int id)
@@ -121,7 +118,6 @@ int Passenger_setCodigoVuelo(Passenger* this,char* codigoVuelo)
 	if(this != NULL && codigoVuelo!=NULL)
 	{
 		strncpy(this->codigoVuelo,codigoVuelo,MAXIMOCHAR);
-		printf("Codigo en set: %s ",this->codigoVuelo);
 		retorno=RETORNOPOSITIVO;
 	}
 	return retorno;
@@ -130,10 +126,13 @@ int Passenger_setCodigoVuelo(Passenger* this,char* codigoVuelo)
 int Passenger_getCodigoVuelo(Passenger* this,char* codigoVuelo)
 {
 	int retorno=RETORNONEGATIVO;
+	if(this != NULL && codigoVuelo != NULL)
+	{
+		strncpy(codigoVuelo,this->codigoVuelo,MAXIMOCHAR);
+		retorno=RETORNOPOSITIVO;
+	}
 
-	printf("Codigo en GET %s",this->codigoVuelo);
-	strncpy(codigoVuelo,this->codigoVuelo,MAXIMOCHAR);
-	retorno=RETORNOPOSITIVO;
+
 
 	return retorno;
 }
@@ -204,4 +203,5 @@ int Passenger_getEstadoVuelo(Passenger* this,char* statusFlight)
 	}
 	return retorno;
 }
+
 

@@ -38,13 +38,28 @@ int menu_cargaDatosPasajerosDesdeCsv(char* path , LinkedList* pArrayListPassenge
 	}
 	if(retorno==RETORNONEGATIVO)
 	{
-		printf("\nNo se pudo abrir el archivo.\n");
+		printf("\nNo se pudo abrir el archivo csv.\n");
 	}
 
 	return retorno;
 }
 
+int menu_cargaDatosPasajerosDesdeBinario(char* path , LinkedList* pArrayListPassenger)
+{
 
+	int retorno=RETORNONEGATIVO;
+
+	if (path != NULL && pArrayListPassenger != NULL)
+	{
+		retorno = controller_loadFromBinary(path, pArrayListPassenger);
+	}
+	if(retorno==RETORNONEGATIVO)
+	{
+		printf("\nNo se pudo abrir el archivo Binario.\n");
+	}
+
+	return retorno;
+}
 
 int menu_altaPasajero(LinkedList* pArrayListPassenger)
 {
@@ -60,7 +75,7 @@ int menu_altaPasajero(LinkedList* pArrayListPassenger)
 		}
 		else
 		{
-			puts("No hay espacios disponibles en LinkedList");
+			puts("Primero se debe cargar los datos");
 			retorno=-2;
 		}
 	}
@@ -70,11 +85,51 @@ int menu_altaPasajero(LinkedList* pArrayListPassenger)
 int menu_modificarPasajero(LinkedList* pArrayListPassenger)
 {
 	int retorno=RETORNONEGATIVO;
+	int opcion;
 	if(pArrayListPassenger != NULL)
 	{
 		if(ll_isEmpty(pArrayListPassenger)==RETORNOPOSITIVO)
 		{
-			controller_editPassenger(pArrayListPassenger);
+			if(utnGetNumero(&opcion, "\nIngrese 1 si conoce al pasajero a modificar o 0 si decea imprimir la lista de pasajeros ",
+					"\nERROR DE OPCION ", "Las opciones son 0 y 1 \n", 0, 1,REINTENTOS)==RETORNOPOSITIVO)
+			{
+				if(opcion==0)
+				{
+					controller_ListPassenger(pArrayListPassenger);
+				}
+				controller_editPassenger(pArrayListPassenger);
+			}
+
+		}
+		else
+		{
+			puts("Primero se debe cargar los datos");
+			retorno = -2;
+		}
+
+	}
+
+		return retorno;
+}
+
+int menu_eliminarPasajero(LinkedList* pArrayListPassenger)
+{
+	int retorno=RETORNONEGATIVO;
+	int opcion;
+	if(pArrayListPassenger != NULL)
+	{
+		if(ll_isEmpty(pArrayListPassenger)==RETORNOPOSITIVO)
+		{
+			if(utnGetNumero(&opcion, "\nIngrese 1 si conoce al pasajero a eliminar o 0 si decea imprimir la lista de pasajeros ",
+					"\nERROR DE OPCION ", "Las opciones son 0 y 1 \n", 0, 1,REINTENTOS)==RETORNOPOSITIVO)
+			{
+				if(opcion==0)
+				{
+					controller_ListPassenger(pArrayListPassenger);
+				}
+				controller_removePassenger(pArrayListPassenger);
+			}
+
 		}
 
 	}
