@@ -16,6 +16,42 @@
 #define RETORNOPOSITIVO 0
 #define RETORNONEGATIVO -1
 #define MAXIMOCHAR 51
+
+int parser_guardaPasajerosCsv(FILE* pFile , LinkedList* pArrayListPassenger)
+{
+	int retorno=RETORNONEGATIVO;
+	Passenger* pPassenger;
+	Passenger pasajero;
+	int lenpArrayList;
+	if(pFile != NULL && pArrayListPassenger != NULL)
+	{
+		lenpArrayList=ll_len(pArrayListPassenger);
+		fprintf(pFile,"Id,Nombre,Apellido,Codigo De Vuelo, Tipo Pasajero, Estado Vuelo\n");
+		for(int i=0;i<lenpArrayList+1;i++)
+		{
+			pPassenger = (Passenger*)ll_get(pArrayListPassenger, i);
+			if(Passenger_getApellido(pPassenger, pasajero.apellido)==RETORNOPOSITIVO
+					&& Passenger_getNombre(pPassenger, pasajero.nombre)==RETORNOPOSITIVO
+					&& Passenger_getId(pPassenger, &pasajero.id)==RETORNOPOSITIVO
+					&& Passenger_getCodigoVuelo(pPassenger, pasajero.codigoVuelo)==RETORNOPOSITIVO
+					&& Passenger_getTipoPasajero(pPassenger, pasajero.tipoPasajero)==RETORNOPOSITIVO
+					&& Passenger_getEstadoVuelo(pPassenger, pasajero.statusFlight)==RETORNOPOSITIVO
+					&& Passenger_getPrecio(pPassenger, &pasajero.precio)==RETORNOPOSITIVO)
+			{
+				fprintf(pFile,"%d,%s,%s,%s,%.2f,%s,%s\n",pasajero.id
+						, pasajero.nombre,pasajero.apellido,pasajero.codigoVuelo,pasajero.precio
+						,pasajero.tipoPasajero, pasajero.statusFlight);
+
+				retorno=RETORNOPOSITIVO;
+			}
+		}
+	}
+
+
+	return retorno;
+}
+
+
 /** \brief Parsea los datos los datos de los pasajeros desde el archivo data.csv (modo texto).
  *
  * \param path char*
@@ -107,23 +143,53 @@ int parser_PassengerFromBinary(FILE* pFile , LinkedList* pArrayListPassenger)
 {
 
 	int retorno = RETORNONEGATIVO;
+<<<<<<< HEAD
+	int cantidad;
 	Passenger * pPassenger;
+	Passenger pasajero;
+=======
+	Passenger * pPassenger;
+>>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 
 	if (pFile != NULL && pArrayListPassenger != NULL)
 	{
 		do
 		{
 			pPassenger = Passenger_new();
+<<<<<<< HEAD
+			cantidad=fread(pPassenger,sizeof(Passenger),1,pFile);
+			if (pPassenger != NULL && cantidad==1)
+			{//id,name,lastname,price,flycode,typePassenger,statusFlight
+				if(Passenger_getId(pPassenger, &pasajero.id)==RETORNOPOSITIVO
+						&& Passenger_getNombre(pPassenger, pasajero.nombre)==RETORNOPOSITIVO
+						&& Passenger_getApellido(pPassenger, pasajero.apellido)==RETORNOPOSITIVO
+						&& Passenger_getPrecio(pPassenger, &pasajero.precio)==RETORNOPOSITIVO
+						&& Passenger_getCodigoVuelo(pPassenger, pasajero.codigoVuelo)==RETORNOPOSITIVO
+						&& Passenger_getTipoPasajero(pPassenger, pasajero.tipoPasajero)==RETORNOPOSITIVO
+						&& Passenger_getEstadoVuelo(pPassenger, pasajero.statusFlight)==RETORNOPOSITIVO)
+				{
+
+					retorno = ll_add(pArrayListPassenger, pPassenger);
+				}
+
+=======
 			if (pPassenger != NULL && fread(pPassenger,sizeof(pPassenger),1,pFile)==1)
 			{
 				retorno = ll_add(pArrayListPassenger, pPassenger);
+>>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 			}
 			else
 			{
 				Passenger_delete(pPassenger);
 				break;
 			}
+<<<<<<< HEAD
+		} while(!feof(pFile));
+	}
+	fclose(pFile);
+=======
 		} while (!feof(pFile));
 	}
+>>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 	return retorno;
 }

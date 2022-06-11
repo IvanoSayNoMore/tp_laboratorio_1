@@ -84,9 +84,8 @@ int controller_saveAsText(char* path , LinkedList* pArrayListPassenger);
  *
  */
 int controller_saveAsBinary(char* path , LinkedList* pArrayListPassenger);
-
-void controller_convierte(int opcion, char* tipoChar,char* opcionAsgnarA, char*opcionAsignarB);
+int controller_conversorABinario(FILE* pFile , LinkedList* pArrayListEmployee);
+void controller_convierteOpcionAcadena(int opcion, char* tipoChar,char* opcionAsgnarA, char*opcionAsignarB,char*opcionAsignarC,char*opcionAsignarD);
 int controller_ingresPassenger(char name[],char lastName[],char typePassenger[],float* price, char flyCode[],char estadoVuelo[],int lenCadena);
-//void controller_imprimirUnPasajero(Passenger pasajero);
 int controller_scanPasajeroParaImprimir(LinkedList* pArrayListPassenger, int posicion);
 int controller_findPassengerById(LinkedList* pArrayListPassenger, int id,int* posicion);

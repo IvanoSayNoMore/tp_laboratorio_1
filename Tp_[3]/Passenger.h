@@ -46,4 +46,8 @@ int Passenger_setEstadoVuelo(Passenger* this,char* statusFlight);
 int Passenger_getEstadoVuelo(Passenger* this,char* statusFlight);
 
 void Passenger_freeDePasajero(Passenger* this);
+<<<<<<< HEAD
+
+=======
+>>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 #endif /* PASSENGER_H_ */

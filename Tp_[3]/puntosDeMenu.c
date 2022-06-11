@@ -29,7 +29,6 @@
 
 int menu_cargaDatosPasajerosDesdeCsv(char* path , LinkedList* pArrayListPassenger)
 {
-
 	int retorno=RETORNONEGATIVO;
 
 	if (path != NULL && pArrayListPassenger != NULL)
@@ -48,6 +47,7 @@ int menu_cargaDatosPasajerosDesdeBinario(char* path , LinkedList* pArrayListPass
 {
 
 	int retorno=RETORNONEGATIVO;
+<<<<<<< HEAD
 
 	if (path != NULL && pArrayListPassenger != NULL)
 	{
@@ -58,6 +58,18 @@ int menu_cargaDatosPasajerosDesdeBinario(char* path , LinkedList* pArrayListPass
 		printf("\nNo se pudo abrir el archivo Binario.\n");
 	}
 
+=======
+
+	if (path != NULL && pArrayListPassenger != NULL)
+	{
+		retorno = controller_loadFromBinary(path, pArrayListPassenger);
+	}
+	if(retorno==RETORNONEGATIVO)
+	{
+		printf("\nNo se pudo abrir el archivo Binario.\n");
+	}
+
+>>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 	return retorno;
 }
 
@@ -97,9 +109,14 @@ int menu_modificarPasajero(LinkedList* pArrayListPassenger)
 				{
 					controller_ListPassenger(pArrayListPassenger);
 				}
+<<<<<<< HEAD
+				retorno=controller_editPassenger(pArrayListPassenger);
+			}
+=======
 				controller_editPassenger(pArrayListPassenger);
 			}
 
+>>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 		}
 		else
 		{
@@ -127,11 +144,33 @@ int menu_eliminarPasajero(LinkedList* pArrayListPassenger)
 				{
 					controller_ListPassenger(pArrayListPassenger);
 				}
+<<<<<<< HEAD
+				retorno = controller_removePassenger(pArrayListPassenger);
+=======
 				controller_removePassenger(pArrayListPassenger);
+>>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 			}
 
 		}
 
 	}
 		return retorno;
+}
+
+int menu_ordenarPasajero(LinkedList* pArrayListPassenger)
+{
+	int retorno=-2;
+	int valida;
+	valida = ll_isEmpty(pArrayListPassenger);
+
+	if(pArrayListPassenger != NULL && valida == RETORNOPOSITIVO)
+	{
+		retorno = controller_sortPassenger(pArrayListPassenger);
+		if(retorno == RETORNOPOSITIVO)
+		{
+			puts("El archivo ha sido Ordenado correctamente");
+		}
+	}
+
+	return retorno;
 }
