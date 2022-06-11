@@ -214,7 +214,7 @@ int controller_editPassenger(LinkedList* pArrayListPassenger)
 	Passenger auxPasajero;
 	if(pArrayListPassenger != NULL )
 	{
-<<<<<<< HEAD
+
 		if(utnGetNumero(&auxPasajero.id, "\nIngrese el ID del pasajero a modificar o 0 para cancelar \n",
 				"\nError al ingresar ID", "\nDesea reintentar?",0, 5000, REINTENTOS)==RETORNOPOSITIVO)
 		{
@@ -233,20 +233,6 @@ int controller_editPassenger(LinkedList* pArrayListPassenger)
 			{
 				puts("Se cancela la operacion");
 			}
-
-=======
-		if(utnGetNumero(&auxPasajero.id, "\nIngrese el ID del pasajero a modificar",
-				"\nError al ingresar ID", "\nDesea reintentar?",1, 5000, REINTENTOS)==RETORNOPOSITIVO)
-		{
-			if(controller_findPassengerById(pArrayListPassenger,auxPasajero.id,&posicionPasajeroId)==RETORNOPOSITIVO)
-			{
-				controller_cambioDeDatos(pArrayListPassenger,posicionPasajeroId);
-			}
-			else
-			{
-				puts("no se encontro el ID");
-			}
->>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 		}
 	}
     return retorno;
@@ -268,13 +254,9 @@ int controller_cambioDeDatos(LinkedList* pArrayListPassenger,int posicion)
 			puts("El pasajero a modificar  es : ");
 			controller_scanPasajeroParaImprimir(pArrayListPassenger, posicion);
 			puts("-------------------------------------------------------------------------------------------------\n");
-<<<<<<< HEAD
+
 			if(utnGetNumero(&opcion, "Ingrese la op que desea modificar.\n1-Nombre\n2-Apellido\n3-Tipo de pasajero\n4-Estado de Vuelo\n0-Para cancelar\n "
 					,"\nPor favor, ingrese solo numeros\n", "Error al ingresar Opcion. Desea reintentar?\n", 0, 4, REINTENTOS)==RETORNOPOSITIVO)
-=======
-			if(utnGetNumero(&opcion, "Ingrese la op que desea modificar.\n1-Nombre\n2-Apellido\n3-Tipo de pasajero\n4-Para cancelar la modificacion\n "
-					,"\nPor favor, ingrese solo numeros\n", "Error al ingresar Opcion. Desea reintentar?\n", 1, 4, REINTENTOS)==RETORNOPOSITIVO)
->>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 			{
 				switch(opcion)
 				{
@@ -411,7 +393,7 @@ int controller_removePassenger(LinkedList* pArrayListPassenger)
 	Passenger* pPasajero;
 	if(pArrayListPassenger != NULL )
 	{
-<<<<<<< HEAD
+
 		if(utnGetNumero(&auxId, "\nIngrese el ID del pasajero a eliminar o 0 para Cancelar",
 				"\nError al ingresar ID", "\nDesea reintentar?",0, 5000, REINTENTOS)==RETORNOPOSITIVO)
 		{
@@ -443,34 +425,10 @@ int controller_removePassenger(LinkedList* pArrayListPassenger)
 				puts("Se cancela la operacion eliminar");
 			}
 
-=======
-		if(utnGetNumero(&auxId, "\nIngrese el ID del pasajero a eliminar",
-				"\nError al ingresar ID", "\nDesea reintentar?",1, 5000, REINTENTOS)==RETORNOPOSITIVO)
-		{
-			if(controller_findPassengerById(pArrayListPassenger,auxId,&posicionPasajeroId)==RETORNOPOSITIVO)
-			{
-				pPasajero = (Passenger*)ll_get(pArrayListPassenger, posicionPasajeroId);
-				if(pPasajero!=NULL)
-				{
-					puts("\nEl pasajero a eliminar es : ");
-					controller_scanPasajeroParaImprimir(pArrayListPassenger, posicionPasajeroId);
-					if(utnVerificacionConChar("Realmente desa Eliminarlo?", "Pasajero Eliminado", "Se procede a la eliminacion", 0)==RETORNOPOSITIVO)
-					{
-						Passenger_delete(pPasajero);
-						retorno = ll_remove(pArrayListPassenger, posicionPasajeroId);
-					}
-
-				}
-
-			}
-			else
-			{
-				puts("no se encontro el ID");
-
-			}
->>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 		}
+
 	}
+
 
     return retorno;
 }
@@ -484,11 +442,11 @@ int controller_ListPassenger(LinkedList* pArrayListPassenger)
     {
     	len = ll_len(pArrayListPassenger);
 
-<<<<<<< HEAD
+
     	printf("|   ID    |   NOMBRE   |  APELLIDO  |   PRECIO  |     C.VUELO     | T.PASAJERO | ESTADO VUELO | \n");
-=======
+
     	puts("|   ID    | NOMBRE |  APELLIDO  |   PRECIO  |     C.VUELO     | T.PASAJERO | ESTADO VUELO | ");
->>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
+
 
     	for(int i=0;i<len;i++)
     	{
@@ -515,11 +473,7 @@ int controller_scanPasajeroParaImprimir(LinkedList* pArrayListPassenger, int pos
 				&& Passenger_getTipoPasajero(pPasajero, pasajeroAux.tipoPasajero) 	 == RETORNOPOSITIVO
 				&& Passenger_getEstadoVuelo(pPasajero, pasajeroAux.statusFlight) 	 == RETORNOPOSITIVO)
 		{
-<<<<<<< HEAD
-			printf("\n|%5d    | %10s | %10s |   %.2f   |  %15s   | %10s | %10s \n "
-=======
 			printf("\n|%5d    | %10s | %10s |  %.2f | %15s | %10s | %10s \n "
->>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 					,pasajeroAux.id,pasajeroAux.nombre,pasajeroAux.apellido,
 					pasajeroAux.precio,pasajeroAux.codigoVuelo,pasajeroAux.tipoPasajero,pasajeroAux.statusFlight);
 			retorno=RETORNOPOSITIVO;
@@ -633,7 +587,6 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListPassenger)
 	}
 	return retorno;
 
-    return 1;
 }
 
 int controller_conversorABinario(FILE* pFile , LinkedList* pArrayListEmployee)
@@ -641,7 +594,6 @@ int controller_conversorABinario(FILE* pFile , LinkedList* pArrayListEmployee)
 	int retorno=RETORNOPOSITIVO;
 	Passenger * pPasajero;
 	int lenLinkedList;
-
 	if(pFile != NULL && pArrayListEmployee != NULL)
 	{
 		lenLinkedList = ll_len(pArrayListEmployee);

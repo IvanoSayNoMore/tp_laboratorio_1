@@ -204,10 +204,3 @@ int Passenger_getEstadoVuelo(Passenger* this,char* statusFlight)
 	return retorno;
 }
 
-
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c

@@ -98,39 +98,6 @@ int parser_PassengerFromText(FILE* pFile , LinkedList* pArrayListPassenger)
 
     return retorno;
 }
-/*
- * 	Passenger * pPassenger;
-	Passenger passenger;
-	char auxCabecera[200];
-	int retScan;
-
-	if(pFile != NULL && pArrayListPassenger != NULL)
-	{
-		fscanf(pFile,"%[^\n]\n",auxCabecera);//Titulo Datos
-		do
-		{
-			retScan = fscanf(pFile,"%d,%[^,],%[^,],%f,%[^,],%[^,],%[^\n]\n",&passenger.id
-					,passenger.nombre,passenger.apellido,&passenger.precio,passenger.codigoVuelo,passenger.tipoPasajero,passenger.statusFlight);
-			if(retScan==7)
-			{
-
-				pPassenger = Passenger_newParametros(passenger.id, passenger.nombre, passenger.apellido, passenger.precio
-						,passenger.codigoVuelo, passenger.tipoPasajero,passenger.statusFlight);
-
-				if(pPassenger != NULL)
-				{
-					retorno = ll_add(pArrayListPassenger, pPassenger);
-					printf("\nCodigo en parser : %s",passenger.codigoVuelo);
-				}
-			}
-			else
-			{
-				break;
-			}
-
-		}while(!feof(pFile));
- */
-
 
 /** \brief Parsea los datos los datos de los pasajeros desde el archivo data.csv (modo binario).
  *
@@ -143,23 +110,18 @@ int parser_PassengerFromBinary(FILE* pFile , LinkedList* pArrayListPassenger)
 {
 
 	int retorno = RETORNONEGATIVO;
-<<<<<<< HEAD
 	int cantidad;
 	Passenger * pPassenger;
 	Passenger pasajero;
-=======
-	Passenger * pPassenger;
->>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
-
 	if (pFile != NULL && pArrayListPassenger != NULL)
 	{
 		do
 		{
 			pPassenger = Passenger_new();
-<<<<<<< HEAD
+
 			cantidad=fread(pPassenger,sizeof(Passenger),1,pFile);
 			if (pPassenger != NULL && cantidad==1)
-			{//id,name,lastname,price,flycode,typePassenger,statusFlight
+			{
 				if(Passenger_getId(pPassenger, &pasajero.id)==RETORNOPOSITIVO
 						&& Passenger_getNombre(pPassenger, pasajero.nombre)==RETORNOPOSITIVO
 						&& Passenger_getApellido(pPassenger, pasajero.apellido)==RETORNOPOSITIVO
@@ -171,25 +133,21 @@ int parser_PassengerFromBinary(FILE* pFile , LinkedList* pArrayListPassenger)
 
 					retorno = ll_add(pArrayListPassenger, pPassenger);
 				}
-
-=======
 			if (pPassenger != NULL && fread(pPassenger,sizeof(pPassenger),1,pFile)==1)
 			{
 				retorno = ll_add(pArrayListPassenger, pPassenger);
->>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 			}
 			else
 			{
 				Passenger_delete(pPassenger);
 				break;
 			}
-<<<<<<< HEAD
-		} while(!feof(pFile));
+
+		}
+
+		}while(!feof(pFile));
 	}
 	fclose(pFile);
-=======
-		} while (!feof(pFile));
-	}
->>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
+
 	return retorno;
 }

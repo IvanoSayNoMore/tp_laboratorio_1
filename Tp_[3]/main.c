@@ -67,7 +67,6 @@ int main()
 				break;
 
 			case 2:
-<<<<<<< HEAD
 				if(menu_cargaDatosPasajerosDesdeBinario("data.bin",listaPasajeros)==RETORNOPOSITIVO)
 				{
 					puts("El archivo se ha cargado con exito binario");
@@ -75,15 +74,6 @@ int main()
 				else
 				{
 					puts("Ocurrio un error al leer el archivo ");
-=======
-				if(menu_cargaDatosPasajerosDesdeCsv("data.csv",listaPasajeros)==RETORNOPOSITIVO)
-				{
-					puts("\nEl archivo se ha cargado con exito");
-				}
-				else
-				{
-					puts("\nOcurrio un error al leer el archivo  \n");
->>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 				}
 
 				break;
@@ -93,35 +83,27 @@ int main()
 				{
 					puts("Operacion realizada con exito");
 				}
-<<<<<<< HEAD
 				else
 				{
 					puts("Ocurrio un error en la carga de datos del pasajero");
 				}
-=======
->>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 
 				break;
 
 			case 4://
 				if(menu_modificarPasajero(listaPasajeros)==RETORNOPOSITIVO)
 				{
-<<<<<<< HEAD
 					puts("Operacion realizada con exito");
 				}
 				else
 				{
 					puts("Ocurrio un error en la modificacion de datos del pasajero");
-=======
-					puts("Modificacion realizada con exito");
->>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 				}
 
 
 				break;
 
 			case 5://
-<<<<<<< HEAD
 				 if(menu_eliminarPasajero(listaPasajeros)==RETORNOPOSITIVO)
 				 {
 					 puts("Se ha eliminado con exito");
@@ -130,9 +112,6 @@ int main()
 				 {
 					 puts("Ocurrio un error al eliminar pasajero");
 				 }
-=======
-				controller_ListPassenger(listaPasajeros);
->>>>>>> 6ac921560a5d814f71475b007036fc0c702d9e3c
 		        break;
 
 			case 6://
@@ -178,8 +157,12 @@ int main()
 					puts("Cargado");
 				}
 				break;
-
-
+			case 10:
+				if(utnVerificacionConChar("Realmente desea salir ? Ingrese Si para salir", "Se cierra el programa\n", "Sigue el programa", 0)==RETORNOPOSITIVO)
+				{
+					salir=-2;
+				}
+				break;
 			default:
 				puts("Error en la seleccion\n");
 				break;
