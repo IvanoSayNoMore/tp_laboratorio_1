@@ -442,11 +442,7 @@ int controller_ListPassenger(LinkedList* pArrayListPassenger)
     {
     	len = ll_len(pArrayListPassenger);
 
-
-    	printf("|   ID    |   NOMBRE   |  APELLIDO  |   PRECIO  |     C.VUELO     | T.PASAJERO | ESTADO VUELO | \n");
-
-    	puts("|   ID    | NOMBRE |  APELLIDO  |   PRECIO  |     C.VUELO     | T.PASAJERO | ESTADO VUELO | ");
-
+    	puts("|   ID    |   NOMBRE   |  APELLIDO  |   PRECIO  |     C.VUELO     | T.PASAJERO | ESTADO VUELO | \n");
 
     	for(int i=0;i<len;i++)
     	{
