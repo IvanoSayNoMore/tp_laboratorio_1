@@ -8,7 +8,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-
 #include "LinkedList.h"
 #include "parser.h"
 #include "Passenger.h"
@@ -89,7 +88,6 @@ int parser_PassengerFromText(FILE* pFile , LinkedList* pArrayListPassenger)
 			}
 			else
 			{
-
 				break;
 			}
 		}while(!feof(pFile));
@@ -133,17 +131,8 @@ int parser_PassengerFromBinary(FILE* pFile , LinkedList* pArrayListPassenger)
 
 					retorno = ll_add(pArrayListPassenger, pPassenger);
 				}
-			if (pPassenger != NULL && fread(pPassenger,sizeof(pPassenger),1,pFile)==1)
-			{
-				retorno = ll_add(pArrayListPassenger, pPassenger);
-			}
-			else
-			{
-				Passenger_delete(pPassenger);
-				break;
-			}
 
-		}
+			}//aca tenia errr tmb
 
 		}while(!feof(pFile));
 	}

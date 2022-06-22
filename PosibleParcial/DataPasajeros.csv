@@ -1,0 +1,1002 @@
+Id,Nombre,Apellido,Codigo De Vuelo, Tipo Pasajero, Estado Vuelo
+1,Lou,González,BA2491A,10000.00,FirstClass,Aterrizado
+2,Ulrike,Muñoz,IB0800A,25000.00,FirstClass,Aterrizado
+3,Brade,Rojas,MM0987B,20000.00,FirstClass,En Horario
+4,Kimbell,Díaz,BA2491A,50000.00,FirstClass,Aterrizado
+5,Sheelagh,Pérez,IB0800A,18000.00,FirstClass,Aterrizado
+6,Gayle,Soto,MM0987B,30000.00,FirstClass,En Horario
+7,Kimberlee,Contreras,BA2491A,33000.00,FirstClass,Aterrizado
+8,Henrieta,Silva,IB0800A,30000.00,FirstClass,Aterrizado
+9,Jeanine,Martínez,MM0987B,18000.00,FirstClass,En Horario
+10,Aggie,Sepúlveda,BA2491A,15000.00,FirstClass,Aterrizado
+11,Brandea,Morales,IB0800A,15000.00,FirstClass,Aterrizado
+12,Cordelie,Rodríguez,IB0800A,50000.00,FirstClass,Aterrizado
+13,Shel,López,MM0987B,50000.00,FirstClass,En Horario
+14,Bronnie,Fuentes,MM0987B,20000.00,FirstClass,En Horario
+15,Megen,Hernández,BA2491A,10000.00,FirstClass,Aterrizado
+16,Iver,Torres,BA2491A,12000.00,FirstClass,Aterrizado
+17,Ernesta,Araya,BA2491A,37000.00,FirstClass,Aterrizado
+18,Cirillo,Flores,MM0987B,50000.00,FirstClass,En Horario
+19,Park,Espinoza,MM0987B,30000.00,FirstClass,En Horario
+20,Bellanca,Valenzuela,BA2491A,15000.00,FirstClass,Aterrizado
+21,Bobbye,Castillo,BA2491A,15000.00,FirstClass,Aterrizado
+22,Eugene,Tapia,BA2491A,50000.00,FirstClass,Aterrizado
+23,Johnny,Reyes,MM0987B,33000.00,FirstClass,En Horario
+24,Reagen,Gutiérrez,MM0987B,42000.00,FirstClass,En Horario
+25,Braden,Castro,MM0987B,25000.00,FirstClass,En Horario
+26,Karim,Pizarro,MM0987B,25000.00,FirstClass,En Horario
+27,Anthea,Álvarez,MM0987B,42000.00,FirstClass,En Horario
+28,Doro,Vásquez,IB0800A,33000.00,FirstClass,Aterrizado
+29,Gaye,Sánchez,IB0800A,37000.00,FirstClass,Aterrizado
+30,Toby,Fernández,IB0800A,15000.00,FirstClass,Aterrizado
+31,Franny,Ramírez,IB0800A,15000.00,FirstClass,Aterrizado
+32,Katey,Carrasco,MM0987B,42000.00,FirstClass,En Horario
+33,Earle,Gómez,BA2491A,10000.00,FirstClass,Aterrizado
+34,Redd,Cortés,BA2491A,42000.00,FirstClass,Aterrizado
+35,Jehanna,Herrera,BA2491A,50000.00,FirstClass,Aterrizado
+36,Cristie,Núñez,BA2491A,10000.00,FirstClass,Aterrizado
+37,Stefa,Jara,BA2491A,42000.00,FirstClass,Aterrizado
+38,Roda,Vergara,MM0987B,25000.00,FirstClass,En Horario
+39,Alfredo,Rivera,MM0987B,10000.00,FirstClass,En Horario
+40,Sydney,Figueroa,MM0987B,10000.00,FirstClass,En Horario
+41,Brnaba,Riquelme,MM0987B,30000.00,FirstClass,En Horario
+42,Ame,García,BA2491A,50000.00,ExecutiveClass,Aterrizado
+43,Bradney,Miranda,BA2491A,25000.00,ExecutiveClass,Aterrizado
+44,Margarete,Bravo,BA2491A,50000.00,ExecutiveClass,Aterrizado
+45,Nikoletta,Vera,MM0987B,50000.00,FirstClass,En Horario
+46,Lonnard,Molina,IB0800A,50000.00,FirstClass,Aterrizado
+47,Raine,Vega,IB0800A,30000.00,FirstClass,Aterrizado
+48,Noella,Campos,IB0800A,15000.00,FirstClass,Aterrizado
+49,Dagmar,Sandoval,IB0800A,25000.00,FirstClass,Aterrizado
+50,Carroll,Orellana,IB0800A,42000.00,FirstClass,Aterrizado
+51,Marion,Cárdenas,IB0800A,50000.00,FirstClass,Aterrizado
+52,Carline,Olivares,IB0800A,12000.00,FirstClass,Aterrizado
+53,Hyacinthie,Alarcón,MM0987B,15000.00,FirstClass,En Horario
+54,Julina,Gallardo,MM0987B,33000.00,FirstClass,En Horario
+55,Corina,Ortiz,MM0987B,37000.00,FirstClass,En Horario
+56,Bernardine,Garrido,MM0987B,33000.00,FirstClass,En Horario
+57,Homer,Salazar,MM0987B,18000.00,FirstClass,En Horario
+58,Lianna,Guzmán,MM0987B,12000.00,FirstClass,En Horario
+59,Celene,Henríquez,MM0987B,50000.00,FirstClass,En Horario
+60,Kori,Saavedra,MM0987B,50000.00,FirstClass,En Horario
+61,Deeyn,Navarro,MM0987B,20000.00,FirstClass,En Horario
+62,Marysa,Aguilera,MM0987B,20000.00,FirstClass,En Horario
+63,Loy,Parra,MM0987B,15000.00,FirstClass,En Horario
+64,Gabbey,Romero,MM0987B,37000.00,FirstClass,En Horario
+65,Star,Aravena,MM0987B,33000.00,FirstClass,En Horario
+66,Dominica,Vargas,IB0800A,33000.00,FirstClass,Aterrizado
+67,Blanch,Vázquez,IB0800A,15000.00,FirstClass,Aterrizado
+68,Cristobal,Cáceres,IB0800A,15000.00,FirstClass,Aterrizado
+69,Paulita,Yáñez,IB0800A,50000.00,FirstClass,Aterrizado
+70,Sayre,Leiva,IB0800A,33000.00,FirstClass,Aterrizado
+71,Shaughn,Escobar,IB0800A,15000.00,FirstClass,Aterrizado
+72,Katrine,Ruiz,IB0800A,25000.00,FirstClass,Aterrizado
+73,Cristi,Valdés,IB0800A,42000.00,FirstClass,Aterrizado
+74,Cristie,Vidal,IB0800A,25000.00,ExecutiveClass,Aterrizado
+75,Solomon,Salinas,IB0800A,10000.00,ExecutiveClass,Aterrizado
+76,Nananne,Zúñiga,IB0800A,33000.00,ExecutiveClass,Aterrizado
+77,Sacha,Peña,IB0800A,25000.00,ExecutiveClass,Aterrizado
+78,Morse,Godoy,IB0800A,25000.00,ExecutiveClass,Aterrizado
+79,Roland,Lagos,IB0800A,25000.00,ExecutiveClass,Aterrizado
+80,Jesselyn,Maldonado,IB0800A,30000.00,ExecutiveClass,Aterrizado
+81,Kylila,Bustos,IB0800A,12000.00,ExecutiveClass,Aterrizado
+82,Kendre,Medina,IB0800A,25000.00,ExecutiveClass,Aterrizado
+83,Lesya,Pino,IB0800A,15000.00,ExecutiveClass,Aterrizado
+84,Tatiania,Palma,IB0800A,20000.00,ExecutiveClass,Aterrizado
+85,Trenton,Moreno,IB0800A,12000.00,ExecutiveClass,Aterrizado
+86,Angie,Sanhueza,MM0987B,20000.00,FirstClass,En Horario
+87,Joelle,Carvajal,MM0987B,37000.00,FirstClass,En Horario
+88,George,Navarrete,MM0987B,30000.00,ExecutiveClass,En Horario
+89,Guenevere,Sáez,MM0987B,30000.00,ExecutiveClass,En Horario
+90,Margaretha,Alvarado,MM0987B,10000.00,ExecutiveClass,En Horario
+91,Sully,Donoso,MM0987B,15000.00,ExecutiveClass,En Horario
+92,Lonni,Poblete,MM0987B,50000.00,ExecutiveClass,En Horario
+93,Nicky,Bustamante,MM0987B,42000.00,ExecutiveClass,En Horario
+94,My,Toro,MM0987B,18000.00,ExecutiveClass,En Horario
+95,Kyrstin,Ortega,IB0800A,37000.00,ExecutiveClass,Aterrizado
+96,Martino,Venegas,IB0800A,15000.00,ExecutiveClass,Aterrizado
+97,Marcellus,Guerrero,IB0800A,50000.00,ExecutiveClass,Aterrizado
+98,Jacquelin,Mendoza,IB0800A,30000.00,ExecutiveClass,Aterrizado
+99,Aleda,Farías,IB0800A,50000.00,ExecutiveClass,Aterrizado
+100,Georgeta,San Martín,IB0800A,10000.00,ExecutiveClass,Aterrizado
+101,Marcille,González,IB0800A,10000.00,ExecutiveClass,Aterrizado
+102,Ertha,Fernández,IB0800A,10000.00,ExecutiveClass,Aterrizado
+103,Desiri,Rodríguez,MM0987B,25000.00,ExecutiveClass,En Horario
+104,Geneva,López,MM0987B,33000.00,ExecutiveClass,En Horario
+105,Kilian,Martínez,MM0987B,42000.00,ExecutiveClass,En Horario
+106,Nance,Sánchez,MM0987B,10000.00,ExecutiveClass,En Horario
+107,Gaven,Pérez,MM0987B,10000.00,ExecutiveClass,En Horario
+108,Carlie,Gómez,MM0987B,10000.00,ExecutiveClass,En Horario
+109,Trixie,Martín,IB0800A,42000.00,ExecutiveClass,Aterrizado
+110,Dominick,Jiménez,IB0800A,30000.00,ExecutiveClass,Aterrizado
+111,Petey,Ruiz,IB0800A,15000.00,ExecutiveClass,Aterrizado
+112,Tersina,Hernández,IB0800A,30000.00,ExecutiveClass,Aterrizado
+113,Johnathon,Díaz,IB0800A,15000.00,ExecutiveClass,Aterrizado
+114,Freddie,Moreno,IB0800A,12000.00,ExecutiveClass,Aterrizado
+115,Harmon,Álvarez,IB0800A,50000.00,ExecutiveClass,Aterrizado
+116,Tracey,Muñoz,IB0800A,20000.00,ExecutiveClass,Aterrizado
+117,Cherrita,Romero,MM0987B,33000.00,ExecutiveClass,En Horario
+118,Stu,Alonso,MM0987B,12000.00,ExecutiveClass,En Horario
+119,Glenda,Gutiérrez,MM0987B,37000.00,ExecutiveClass,En Horario
+120,Lorettalorna,Navarro,MM0987B,25000.00,ExecutiveClass,En Horario
+121,Patrizio,Torres,IB0800A,15000.00,ExecutiveClass,Aterrizado
+122,Linda,Domínguez,IB0800A,30000.00,ExecutiveClass,Aterrizado
+123,Pippa,Vázquez,IB0800A,20000.00,ExecutiveClass,Aterrizado
+124,Pen,Ramos,IB0800A,18000.00,EconomyClass,Aterrizado
+125,Esteban,González,IB0800A,15000.00,EconomyClass,Aterrizado
+126,Fonzie,Muñoz,IB0800A,15000.00,EconomyClass,Aterrizado
+127,Cindelyn,Rojas,IB0800A,12000.00,EconomyClass,Aterrizado
+128,Zacharie,Díaz,BA2491A,30000.00,ExecutiveClass,Aterrizado
+129,Vina,Pérez,BA2491A,42000.00,ExecutiveClass,Aterrizado
+130,Omero,Soto,BA2491A,10000.00,ExecutiveClass,Aterrizado
+131,Tom,Contreras,BA2491A,33000.00,ExecutiveClass,Aterrizado
+132,Dante,Silva,BA2491A,30000.00,ExecutiveClass,Aterrizado
+133,Cordy,Martínez,BA2491A,18000.00,ExecutiveClass,Aterrizado
+134,Stephenie,Sepúlveda,BA2491A,50000.00,ExecutiveClass,Aterrizado
+135,Dunstan,Morales,BA2491A,20000.00,ExecutiveClass,Aterrizado
+136,Gideon,Rodríguez,BA2491A,15000.00,ExecutiveClass,Aterrizado
+137,Johnette,López,BA2491A,10000.00,ExecutiveClass,Aterrizado
+138,Brynn,Fuentes,BA2491A,50000.00,ExecutiveClass,Aterrizado
+139,Yankee,Hernández,BA2491A,42000.00,ExecutiveClass,Aterrizado
+140,Corbin,Torres,BA2491A,42000.00,ExecutiveClass,Aterrizado
+141,Coreen,Araya,IB0800A,18000.00,EconomyClass,Aterrizado
+142,Tanya,Flores,IB0800A,30000.00,EconomyClass,Aterrizado
+143,Jenna,Espinoza,IB0800A,25000.00,EconomyClass,Aterrizado
+144,Flora,Valenzuela,IB0800A,33000.00,EconomyClass,Aterrizado
+145,Dianna,Castillo,IB0800A,20000.00,EconomyClass,Aterrizado
+146,Armand,Tapia,IB0800A,15000.00,EconomyClass,Aterrizado
+147,Gustie,Reyes,IB0800A,42000.00,EconomyClass,Aterrizado
+148,Benton,Gutiérrez,IB0800A,12000.00,EconomyClass,Aterrizado
+149,Lena,Castro,IB0800A,25000.00,EconomyClass,Aterrizado
+150,Dot,Pizarro,IB0800A,18000.00,EconomyClass,Aterrizado
+151,Meryl,Álvarez,IB0800A,12000.00,EconomyClass,Aterrizado
+152,Babbie,Vásquez,IB0800A,15000.00,EconomyClass,Aterrizado
+153,Byram,Sánchez,IB0800A,42000.00,EconomyClass,Aterrizado
+154,Bertine,Fernández,IB0800A,25000.00,EconomyClass,Aterrizado
+155,Osbert,Ramírez,IB0800A,42000.00,EconomyClass,Aterrizado
+156,Tanny,Carrasco,IB0800A,42000.00,EconomyClass,Aterrizado
+157,Maryjo,Gómez,IB0800A,12000.00,EconomyClass,Aterrizado
+158,Clarie,Cortés,IB0800A,42000.00,EconomyClass,Aterrizado
+159,Kipp,Herrera,IB0800A,15000.00,EconomyClass,Aterrizado
+160,Leonie,Núñez,IB0800A,50000.00,EconomyClass,Aterrizado
+161,Ferdie,Jara,IB0800A,15000.00,EconomyClass,Aterrizado
+162,Ofella,Vergara,IB0800A,50000.00,EconomyClass,Aterrizado
+163,Pascale,Rivera,IB0800A,15000.00,EconomyClass,Aterrizado
+164,Cathrin,Figueroa,IB0800A,30000.00,EconomyClass,Aterrizado
+165,Sib,Riquelme,IB0800A,33000.00,EconomyClass,Aterrizado
+166,Darleen,García,IB0800A,42000.00,EconomyClass,Aterrizado
+167,Didi,Miranda,IB0800A,15000.00,EconomyClass,Aterrizado
+168,Lodovico,Bravo,IB0800A,18000.00,EconomyClass,Aterrizado
+169,Farley,Vera,IB0800A,12000.00,EconomyClass,Aterrizado
+170,Devi,Molina,IB0800A,25000.00,EconomyClass,Aterrizado
+171,Clair,Vega,IB0800A,37000.00,EconomyClass,Aterrizado
+172,Addy,Campos,IB0800A,33000.00,EconomyClass,Aterrizado
+173,Brandon,Sandoval,IB0800A,18000.00,EconomyClass,Aterrizado
+174,Prentiss,Orellana,IB0800A,30000.00,EconomyClass,Aterrizado
+175,Lorant,Cárdenas,MM0987B,50000.00,ExecutiveClass,En Horario
+176,Wanids,Olivares,MM0987B,30000.00,ExecutiveClass,En Horario
+177,Robbi,Alarcón,MM0987B,10000.00,ExecutiveClass,En Horario
+178,Mellicent,Gallardo,MM0987B,50000.00,ExecutiveClass,En Horario
+179,Lynea,Ortiz,MM0987B,20000.00,ExecutiveClass,En Horario
+180,Nial,Garrido,MM0987B,15000.00,ExecutiveClass,En Horario
+181,Guillaume,Salazar,MM0987B,37000.00,ExecutiveClass,En Horario
+182,Loutitia,Guzmán,MM0987B,25000.00,ExecutiveClass,En Horario
+183,Ruthe,Henríquez,MM0987B,30000.00,ExecutiveClass,En Horario
+184,Eric,Saavedra,MM0987B,50000.00,ExecutiveClass,En Horario
+185,Marcellus,Navarro,MM0987B,30000.00,ExecutiveClass,En Horario
+186,Ian,Aguilera,MM0987B,42000.00,ExecutiveClass,En Horario
+187,Sebastien,Parra,MM0987B,37000.00,ExecutiveClass,En Horario
+188,Scarface,Romero,MM0987B,50000.00,ExecutiveClass,En Horario
+189,Maible,Aravena,MM0987B,18000.00,ExecutiveClass,En Horario
+190,Waldon,Vargas,MM0987B,30000.00,ExecutiveClass,En Horario
+191,Bethina,Vázquez,MM0987B,15000.00,ExecutiveClass,En Horario
+192,Farand,Cáceres,MM0987B,42000.00,ExecutiveClass,En Horario
+193,Zolly,Yáñez,MM0987B,25000.00,ExecutiveClass,En Horario
+194,Philipa,Leiva,TU6789B,42000.00,FirstClass,Aterrizado
+195,Roderigo,Escobar,BA2491A,20000.00,ExecutiveClass,Aterrizado
+196,Otho,Ruiz,BA2491A,20000.00,ExecutiveClass,Aterrizado
+197,Alasteir,Valdés,BA2491A,20000.00,ExecutiveClass,Aterrizado
+198,Eleonora,Vidal,BA2491A,42000.00,EconomyClass,Aterrizado
+199,Eliot,Salinas,BA2491A,12000.00,EconomyClass,Aterrizado
+200,Alana,Zúñiga,BA2491A,30000.00,EconomyClass,Aterrizado
+201,Odey,Peña,BA2491A,20000.00,EconomyClass,Aterrizado
+202,Yorke,Godoy,BA2491A,15000.00,EconomyClass,Aterrizado
+203,Cissiee,Lagos,BA2491A,18000.00,EconomyClass,Aterrizado
+204,Jillana,Maldonado,BA2491A,18000.00,EconomyClass,Aterrizado
+205,Mallorie,Bustos,TU6789B,30000.00,FirstClass,Aterrizado
+206,Borden,Medina,TU6789B,12000.00,FirstClass,Aterrizado
+207,Maddie,Pino,TU6789B,33000.00,FirstClass,Aterrizado
+208,Weider,Palma,TU6789B,50000.00,FirstClass,Aterrizado
+209,Asia,Moreno,TU6789B,37000.00,FirstClass,Aterrizado
+210,Sayres,Sanhueza,TU6789B,10000.00,FirstClass,Aterrizado
+211,Marcile,Carvajal,TU6789B,30000.00,FirstClass,Aterrizado
+212,Thomasina,Navarrete,TU6789B,42000.00,FirstClass,Aterrizado
+213,Darwin,Sáez,TU6789B,18000.00,FirstClass,Aterrizado
+214,Nicolina,Alvarado,TU6789B,30000.00,FirstClass,Aterrizado
+215,Nita,Donoso,TU6789B,12000.00,FirstClass,Aterrizado
+216,Nikoletta,Poblete,TU6789B,12000.00,FirstClass,Aterrizado
+217,Dwight,Bustamante,TU6789B,42000.00,FirstClass,Aterrizado
+218,Romola,Toro,TU6789B,50000.00,FirstClass,Aterrizado
+219,Kaile,Ortega,TU6789B,33000.00,FirstClass,Aterrizado
+220,Mozes,Venegas,TU6789B,25000.00,FirstClass,Aterrizado
+221,Aylmer,Guerrero,TU6789B,33000.00,FirstClass,Aterrizado
+222,Marina,Mendoza,TU6789B,12000.00,FirstClass,Aterrizado
+223,Enrico,Farías,TU6789B,50000.00,FirstClass,Aterrizado
+224,Zonda,San Martín,TU6789B,33000.00,FirstClass,Aterrizado
+225,Adriano,González,TU6789B,33000.00,FirstClass,Aterrizado
+226,Trula,Fernández,TU6789B,30000.00,FirstClass,Aterrizado
+227,Adel,Rodríguez,TU6789B,30000.00,FirstClass,Aterrizado
+228,Jeniece,López,TU6789B,15000.00,FirstClass,Aterrizado
+229,Tabina,Martínez,TU6789B,10000.00,FirstClass,Aterrizado
+230,Liana,Sánchez,TU6789B,33000.00,FirstClass,Aterrizado
+231,Marmaduke,Pérez,BA2491A,10000.00,EconomyClass,Aterrizado
+232,Alla,Gómez,BA2491A,30000.00,EconomyClass,Aterrizado
+233,Peter,Martín,BA2491A,12000.00,EconomyClass,Aterrizado
+234,Pietro,Jiménez,BA2491A,18000.00,EconomyClass,Aterrizado
+235,Hiram,Ruiz,BA2491A,20000.00,EconomyClass,Aterrizado
+236,Anastasia,Hernández,BA2491A,18000.00,EconomyClass,Aterrizado
+237,Cathleen,Díaz,TU6789B,10000.00,FirstClass,Aterrizado
+238,Leeanne,Moreno,TU6789B,15000.00,FirstClass,Aterrizado
+239,Chet,Álvarez,TU6789B,42000.00,FirstClass,Aterrizado
+240,Billie,Muñoz,TU6789B,37000.00,FirstClass,Aterrizado
+241,Alexandra,Romero,TU6789B,42000.00,FirstClass,Aterrizado
+242,Broddie,Alonso,TU6789B,42000.00,ExecutiveClass,Aterrizado
+243,Brigham,Gutiérrez,TU6789B,25000.00,ExecutiveClass,Aterrizado
+244,Cal,Navarro,TU6789B,42000.00,ExecutiveClass,Aterrizado
+245,Donal,Torres,TU6789B,18000.00,ExecutiveClass,Aterrizado
+246,Adam,Domínguez,TU6789B,20000.00,ExecutiveClass,Aterrizado
+247,Dotty,Vázquez,TU6789B,42000.00,ExecutiveClass,Aterrizado
+248,Maynard,Ramos,TU6789B,18000.00,ExecutiveClass,Aterrizado
+249,Jessee,González,TU6789B,30000.00,ExecutiveClass,Aterrizado
+250,Tiphani,Muñoz,TU6789B,42000.00,ExecutiveClass,Aterrizado
+251,Jenna,Rojas,TU6789B,30000.00,ExecutiveClass,Aterrizado
+252,Karlotte,Díaz,BA2491A,20000.00,EconomyClass,Aterrizado
+253,Norene,Pérez,BA2491A,25000.00,EconomyClass,Aterrizado
+254,Morris,Soto,BA2491A,10000.00,EconomyClass,Aterrizado
+255,Yuri,Contreras,BA2491A,25000.00,EconomyClass,Aterrizado
+256,Gusty,Silva,BA2491A,10000.00,EconomyClass,Aterrizado
+257,Jori,Martínez,BA2491A,12000.00,EconomyClass,Aterrizado
+258,Sydelle,Sepúlveda,BA2491A,30000.00,EconomyClass,Aterrizado
+259,Merrile,Morales,BA2491A,50000.00,EconomyClass,Aterrizado
+260,Tadd,Rodríguez,TU6789B,50000.00,ExecutiveClass,Aterrizado
+261,Josiah,López,TU6789B,10000.00,ExecutiveClass,Aterrizado
+262,Melisa,Fuentes,TU6789B,12000.00,ExecutiveClass,Aterrizado
+263,Orelee,Hernández,TU6789B,20000.00,ExecutiveClass,Aterrizado
+264,Stephen,Torres,TU6789B,37000.00,ExecutiveClass,Aterrizado
+265,Blair,Araya,TU6789B,50000.00,ExecutiveClass,Aterrizado
+266,Arel,Flores,TU6789B,30000.00,ExecutiveClass,Aterrizado
+267,Abbie,Espinoza,TU6789B,25000.00,ExecutiveClass,Aterrizado
+268,Channa,Valenzuela,TU6789B,50000.00,ExecutiveClass,Aterrizado
+269,Shirl,Castillo,TU6789B,20000.00,ExecutiveClass,Aterrizado
+270,Edlin,Tapia,TU6789B,20000.00,ExecutiveClass,Aterrizado
+271,Larina,Reyes,TU6789B,18000.00,ExecutiveClass,Aterrizado
+272,Duncan,Gutiérrez,TU6789B,37000.00,ExecutiveClass,Aterrizado
+273,Bond,Castro,TU6789B,10000.00,ExecutiveClass,Aterrizado
+274,Dyann,Pizarro,TU6789B,50000.00,ExecutiveClass,Aterrizado
+275,Charmian,Álvarez,TU6789B,15000.00,ExecutiveClass,Aterrizado
+276,Dru,Vásquez,TU6789B,50000.00,ExecutiveClass,Aterrizado
+277,Kiel,Sánchez,TU6789B,50000.00,ExecutiveClass,Aterrizado
+278,Emory,Fernández,TU6789B,15000.00,ExecutiveClass,Aterrizado
+279,Alberik,Ramírez,TU6789B,50000.00,ExecutiveClass,Aterrizado
+280,Koenraad,Carrasco,TU6789B,20000.00,ExecutiveClass,Aterrizado
+281,Rafaellle,Gómez,TU6789B,50000.00,ExecutiveClass,Aterrizado
+282,Edie,Cortés,TU6789B,25000.00,ExecutiveClass,Aterrizado
+283,Osbert,Herrera,TU6789B,15000.00,ExecutiveClass,Aterrizado
+284,Sidonia,Núñez,TU6789B,10000.00,ExecutiveClass,Aterrizado
+285,Bartel,Jara,TU6789B,37000.00,ExecutiveClass,Aterrizado
+286,Jodi,Vergara,BA2491A,30000.00,EconomyClass,Aterrizado
+287,Ofelia,Rivera,BA2491A,30000.00,EconomyClass,Aterrizado
+288,Dudley,Figueroa,BA2491A,42000.00,EconomyClass,Aterrizado
+289,Dulcea,Riquelme,BA2491A,25000.00,EconomyClass,Aterrizado
+290,Gordon,García,BA2491A,25000.00,EconomyClass,Aterrizado
+291,Chalmers,Miranda,BA2491A,10000.00,EconomyClass,Aterrizado
+292,Christiano,Bravo,BA2491A,50000.00,EconomyClass,Aterrizado
+293,Russell,Vera,BA2491A,50000.00,EconomyClass,Aterrizado
+294,Cleo,Molina,BA2491A,50000.00,EconomyClass,Aterrizado
+295,Catriona,Vega,TU6789B,42000.00,ExecutiveClass,Aterrizado
+296,Leigh,Campos,TU6789B,37000.00,ExecutiveClass,Aterrizado
+297,Ddene,Sandoval,TU6789B,12000.00,ExecutiveClass,Aterrizado
+298,Sayre,Orellana,TU6789B,18000.00,EconomyClass,Aterrizado
+299,Jody,Cárdenas,TU6789B,33000.00,EconomyClass,Aterrizado
+300,Zabrina,Olivares,TU6789B,12000.00,EconomyClass,Aterrizado
+301,Cos,Alarcón,TU6789B,30000.00,EconomyClass,Aterrizado
+302,Ron,Gallardo,TU6789B,20000.00,EconomyClass,Aterrizado
+303,Charin,Ortiz,TU6789B,12000.00,EconomyClass,Aterrizado
+304,Coleman,Garrido,TU6789B,33000.00,EconomyClass,Aterrizado
+305,Jacinda,Salazar,TU6789B,50000.00,EconomyClass,Aterrizado
+306,Silvan,Guzmán,TU6789B,12000.00,EconomyClass,Aterrizado
+307,Renie,Henríquez,TU6789B,33000.00,EconomyClass,Aterrizado
+308,Davide,Saavedra,TU6789B,42000.00,EconomyClass,Aterrizado
+309,Ernestus,Navarro,TU6789B,12000.00,EconomyClass,Aterrizado
+310,Brnaba,Aguilera,TU6789B,37000.00,EconomyClass,Aterrizado
+311,Tabor,Parra,TU6789B,37000.00,EconomyClass,Aterrizado
+312,Lenci,Romero,TU6789B,42000.00,EconomyClass,Aterrizado
+313,Franchot,Aravena,TU6789B,12000.00,EconomyClass,Aterrizado
+314,Charisse,Vargas,TU6789B,50000.00,EconomyClass,Aterrizado
+315,Timothea,Vázquez,TU6789B,20000.00,EconomyClass,Aterrizado
+316,Angelika,Cáceres,BA2491A,50000.00,EconomyClass,Aterrizado
+317,Web,Yáñez,BA2491A,37000.00,EconomyClass,Aterrizado
+318,Urban,Leiva,BA2491A,10000.00,EconomyClass,Aterrizado
+319,Fan,Escobar,BA2491A,18000.00,EconomyClass,Aterrizado
+320,Donaugh,Ruiz,BA2491A,12000.00,EconomyClass,Aterrizado
+321,Wilona,Valdés,BA2491A,25000.00,EconomyClass,Aterrizado
+322,Richard,Vidal,BA2491A,42000.00,EconomyClass,Aterrizado
+323,Hilary,Salinas,BA2491A,37000.00,EconomyClass,Aterrizado
+324,Ad,Zúñiga,BA2491A,33000.00,EconomyClass,Aterrizado
+325,Maynord,Peña,BA2491A,42000.00,EconomyClass,Aterrizado
+326,Lina,Godoy,TU6789B,12000.00,EconomyClass,Aterrizado
+327,Nerty,Lagos,TU6789B,20000.00,EconomyClass,Aterrizado
+328,Matias,Maldonado,TU6789B,33000.00,EconomyClass,Aterrizado
+329,Urbano,Bustos,TU6789B,50000.00,EconomyClass,Aterrizado
+330,Rosemarie,Medina,TU6789B,33000.00,EconomyClass,Aterrizado
+331,Booth,Pino,TU6789B,15000.00,EconomyClass,Aterrizado
+332,Eden,Palma,TU6789B,18000.00,EconomyClass,Aterrizado
+333,Cornie,Moreno,TU6789B,15000.00,EconomyClass,Aterrizado
+334,Isak,Sanhueza,TU6789B,20000.00,EconomyClass,Aterrizado
+335,Rand,Carvajal,TU6789B,20000.00,EconomyClass,Aterrizado
+336,Dominique,Navarrete,TU6789B,37000.00,EconomyClass,Aterrizado
+337,Lira,Sáez,TU6789B,30000.00,EconomyClass,Aterrizado
+338,Filbert,Alvarado,TU6789B,20000.00,EconomyClass,Aterrizado
+339,Nona,Donoso,TU6789B,30000.00,EconomyClass,Aterrizado
+340,Melloney,Poblete,TU6789B,33000.00,EconomyClass,Aterrizado
+341,Rafaello,Bustamante,TU6789B,37000.00,EconomyClass,Aterrizado
+342,Floria,Toro,TU6789B,12000.00,EconomyClass,Aterrizado
+343,Johannes,Ortega,TU6789B,18000.00,EconomyClass,Aterrizado
+344,Genevra,Venegas,TU6789B,10000.00,EconomyClass,Aterrizado
+345,Aldric,Guerrero,TU6789B,50000.00,EconomyClass,Aterrizado
+346,Janeta,Mendoza,TU6789B,10000.00,EconomyClass,Aterrizado
+347,Tarra,Farías,TU6789B,12000.00,EconomyClass,Aterrizado
+348,Jefferey,San Martín,TU6789B,33000.00,EconomyClass,Aterrizado
+349,Cassie,González,TU6789B,50000.00,EconomyClass,Aterrizado
+350,Maiga,Fernández,TU6789B,20000.00,EconomyClass,Aterrizado
+351,Heddi,Rodríguez,TU6789B,20000.00,EconomyClass,Aterrizado
+352,Marieann,López,TU6789B,50000.00,EconomyClass,Aterrizado
+353,Carita,Martínez,TU6789B,42000.00,EconomyClass,Aterrizado
+354,Kurtis,Sánchez,TU6789B,50000.00,EconomyClass,Aterrizado
+355,Wilfred,Pérez,TU6789B,20000.00,EconomyClass,Aterrizado
+356,Isabelle,Gómez,TU6789B,20000.00,EconomyClass,Aterrizado
+357,Nisse,Martín,TU6789B,37000.00,EconomyClass,Aterrizado
+358,Ula,Jiménez,TU6789B,50000.00,EconomyClass,Aterrizado
+359,Tully,Ruiz,TU6789B,18000.00,EconomyClass,Aterrizado
+360,Honor,Hernández,TU6789B,30000.00,EconomyClass,Aterrizado
+361,Sinclair,Díaz,TU6789B,50000.00,EconomyClass,Aterrizado
+362,Buddy,Moreno,TU6789B,50000.00,EconomyClass,Aterrizado
+363,Neilla,Álvarez,TU6789B,50000.00,EconomyClass,Aterrizado
+364,Junie,Muñoz,TU6789B,20000.00,EconomyClass,Aterrizado
+365,Neely,Romero,TU6789B,20000.00,EconomyClass,Aterrizado
+366,Klarrisa,Alonso,TU6789B,18000.00,EconomyClass,Aterrizado
+367,Maryellen,Gutiérrez,TU6789B,37000.00,EconomyClass,Aterrizado
+368,Clywd,Navarro,TU6789B,33000.00,EconomyClass,Aterrizado
+369,Deni,Torres,TU6789B,42000.00,EconomyClass,Aterrizado
+370,Ingrim,Domínguez,TU6789B,30000.00,EconomyClass,Aterrizado
+371,Franni,Vázquez,TU6789B,42000.00,EconomyClass,Aterrizado
+372,Andy,Ramos,TU6789B,37000.00,EconomyClass,Aterrizado
+373,Veronica,González,TU6789B,42000.00,EconomyClass,Aterrizado
+374,Dalis,Muñoz,TU6789B,42000.00,EconomyClass,Aterrizado
+375,Nanni,Rojas,BA2491A,25000.00,EconomyClass,Aterrizado
+376,Vikky,Díaz,BA2491A,15000.00,EconomyClass,Aterrizado
+377,Hussein,Pérez,BA2491A,25000.00,EconomyClass,Aterrizado
+378,Brigg,Soto,BA2491A,10000.00,EconomyClass,Aterrizado
+379,Crawford,Contreras,BA2491A,12000.00,EconomyClass,Aterrizado
+380,Fran,Silva,BA2491A,30000.00,EconomyClass,Aterrizado
+381,Silas,Martínez,BA2491A,15000.00,EconomyClass,Aterrizado
+382,Alister,Sepúlveda,BA2491A,33000.00,EconomyClass,Aterrizado
+383,George,Morales,TU6789B,15000.00,EconomyClass,Aterrizado
+384,Nonnah,Rodríguez,TU6789B,25000.00,EconomyClass,Aterrizado
+385,Gayel,López,TU6789B,20000.00,EconomyClass,Aterrizado
+386,Demeter,Fuentes,TU6789B,10000.00,EconomyClass,Aterrizado
+387,Juliann,Hernández,TU6789B,50000.00,EconomyClass,Aterrizado
+388,Shauna,Torres,TU6789B,25000.00,EconomyClass,Aterrizado
+389,Anna-maria,Araya,TU6789B,42000.00,EconomyClass,Aterrizado
+390,Ag,Flores,TU6789B,50000.00,EconomyClass,Aterrizado
+391,Sherwin,Espinoza,MM0987B,50000.00,ExecutiveClass,En Horario
+392,Vikki,Valenzuela,MM0987B,33000.00,ExecutiveClass,En Horario
+393,Barret,Castillo,MM0987B,10000.00,ExecutiveClass,En Horario
+394,Gaelan,Tapia,MM0987B,25000.00,ExecutiveClass,En Horario
+395,Livy,Reyes,MM0987B,20000.00,ExecutiveClass,En Horario
+396,Iorgos,Gutiérrez,MM0987B,18000.00,ExecutiveClass,En Horario
+397,Charil,Castro,MM0987B,33000.00,ExecutiveClass,En Horario
+398,Easter,Pizarro,MM0987B,30000.00,ExecutiveClass,En Horario
+399,Esdras,Álvarez,MM0987B,37000.00,ExecutiveClass,En Horario
+400,Prince,Vásquez,MM0987B,25000.00,EconomyClass,En Horario
+401,Vail,Sánchez,MM0987B,33000.00,EconomyClass,En Horario
+402,Rachel,Fernández,MM0987B,12000.00,EconomyClass,En Horario
+403,Bar,Ramírez,TU6789B,20000.00,EconomyClass,Aterrizado
+404,Willa,Carrasco,TU6789B,30000.00,EconomyClass,Aterrizado
+405,Amerigo,Gómez,TU6789B,33000.00,EconomyClass,Aterrizado
+406,Fredric,Cortés,TU6789B,50000.00,EconomyClass,Aterrizado
+407,Mikael,Herrera,TU6789B,50000.00,EconomyClass,Aterrizado
+408,Benson,Núñez,TU6789B,20000.00,EconomyClass,Aterrizado
+409,Sileas,Jara,TU6789B,20000.00,EconomyClass,Aterrizado
+410,Fidelia,Vergara,TU6789B,12000.00,EconomyClass,Aterrizado
+411,Frayda,Rivera,TU6789B,30000.00,EconomyClass,Aterrizado
+412,Babita,Figueroa,TU6789B,30000.00,EconomyClass,Aterrizado
+413,Clair,Riquelme,TU6789B,42000.00,EconomyClass,Aterrizado
+414,Morie,García,TU6789B,12000.00,EconomyClass,Aterrizado
+415,Skylar,Miranda,TU6789B,20000.00,EconomyClass,Aterrizado
+416,Dennie,Bravo,TU6789B,42000.00,EconomyClass,Aterrizado
+417,Sibley,Vera,TU6789B,20000.00,EconomyClass,Aterrizado
+418,Addia,Molina,TU6789B,20000.00,EconomyClass,Aterrizado
+419,Ed,Vega,TU6789B,18000.00,EconomyClass,Aterrizado
+420,Lothaire,Campos,TU6789B,12000.00,EconomyClass,Aterrizado
+421,Neila,Sandoval,TU6789B,15000.00,EconomyClass,Aterrizado
+422,Jennifer,Orellana,GU2345F,15000.00,FirstClass,En Vuelo
+423,Keelby,Cárdenas,GU2345F,15000.00,FirstClass,En Vuelo
+424,Chuck,Olivares,GU2345F,33000.00,FirstClass,En Vuelo
+425,Jordan,Alarcón,GU2345F,33000.00,FirstClass,En Vuelo
+426,Minnnie,Gallardo,GU2345F,20000.00,FirstClass,En Vuelo
+427,Carine,Ortiz,GU2345F,33000.00,FirstClass,En Vuelo
+428,Kelly,Garrido,GU2345F,37000.00,FirstClass,En Vuelo
+429,Coleman,Salazar,GU2345F,25000.00,FirstClass,En Vuelo
+430,Pincus,Guzmán,GU2345F,42000.00,FirstClass,En Vuelo
+431,Smitty,Henríquez,GU2345F,15000.00,FirstClass,En Vuelo
+432,Wade,Saavedra,GU2345F,12000.00,FirstClass,En Vuelo
+433,Emmit,Navarro,GU2345F,12000.00,FirstClass,En Vuelo
+434,Brietta,Aguilera,GU2345F,42000.00,FirstClass,En Vuelo
+435,Wesley,Parra,GU2345F,10000.00,FirstClass,En Vuelo
+436,Felicdad,Romero,GU2345F,18000.00,FirstClass,En Vuelo
+437,Any,Aravena,GU2345F,18000.00,FirstClass,En Vuelo
+438,Gardie,Vargas,GU2345F,12000.00,FirstClass,En Vuelo
+439,Leelah,Vázquez,GU2345F,25000.00,FirstClass,En Vuelo
+440,Garold,Cáceres,GU2345F,20000.00,FirstClass,En Vuelo
+441,Regine,Yáñez,GU2345F,10000.00,FirstClass,En Vuelo
+442,Tam,Leiva,GU2345F,20000.00,ExecutiveClass,En Vuelo
+443,Davon,Escobar,GU2345F,20000.00,ExecutiveClass,En Vuelo
+444,Chrissy,Ruiz,GU2345F,18000.00,ExecutiveClass,En Vuelo
+445,Ozzie,Valdés,GU2345F,20000.00,ExecutiveClass,En Vuelo
+446,Rina,Vidal,GU2345F,20000.00,ExecutiveClass,En Vuelo
+447,Guy,Salinas,GU2345F,42000.00,ExecutiveClass,En Vuelo
+448,Lenora,Zúñiga,GU2345F,18000.00,ExecutiveClass,En Vuelo
+449,Julietta,Peña,GU2345F,42000.00,ExecutiveClass,En Vuelo
+450,Alexandr,Godoy,GU2345F,18000.00,ExecutiveClass,En Vuelo
+451,Margalit,Lagos,GU2345F,15000.00,ExecutiveClass,En Vuelo
+452,Samara,Maldonado,GU2345F,50000.00,ExecutiveClass,En Vuelo
+453,Portie,Bustos,GU2345F,15000.00,ExecutiveClass,En Vuelo
+454,Korella,Medina,GU2345F,33000.00,ExecutiveClass,En Vuelo
+455,Hilly,Pino,GU2345F,30000.00,ExecutiveClass,En Vuelo
+456,Leeanne,Palma,GU2345F,10000.00,ExecutiveClass,En Vuelo
+457,Arnaldo,Moreno,GU2345F,10000.00,ExecutiveClass,En Vuelo
+458,Kassi,Sanhueza,GU2345F,37000.00,ExecutiveClass,En Vuelo
+459,Karen,Carvajal,GU2345F,20000.00,ExecutiveClass,En Vuelo
+460,Mac,Navarrete,GU2345F,20000.00,ExecutiveClass,En Vuelo
+461,Anthia,Sáez,GU2345F,37000.00,ExecutiveClass,En Vuelo
+462,Marsiella,Alvarado,GU2345F,20000.00,ExecutiveClass,En Vuelo
+463,Shea,Donoso,GU2345F,12000.00,ExecutiveClass,En Vuelo
+464,Liana,Poblete,GU2345F,15000.00,ExecutiveClass,En Vuelo
+465,Carley,Bustamante,GU2345F,12000.00,ExecutiveClass,En Vuelo
+466,Carlye,Toro,GU2345F,37000.00,ExecutiveClass,En Vuelo
+467,Svend,Ortega,GU2345F,25000.00,ExecutiveClass,En Vuelo
+468,Kendell,Venegas,GU2345F,25000.00,ExecutiveClass,En Vuelo
+469,Chrisy,Guerrero,GU2345F,15000.00,ExecutiveClass,En Vuelo
+470,Rod,Mendoza,GU2345F,50000.00,ExecutiveClass,En Vuelo
+471,Ramsay,Farías,GU2345F,20000.00,ExecutiveClass,En Vuelo
+472,Saidee,San Martín,GU2345F,50000.00,ExecutiveClass,En Vuelo
+473,Erek,González,GU2345F,10000.00,ExecutiveClass,En Vuelo
+474,Salomi,Fernández,GU2345F,10000.00,ExecutiveClass,En Vuelo
+475,Coletta,Rodríguez,GU2345F,50000.00,ExecutiveClass,En Vuelo
+476,Abigael,López,GU2345F,12000.00,ExecutiveClass,En Vuelo
+477,Mariele,Martínez,GU2345F,33000.00,EconomyClass,En Vuelo
+478,Brooke,Sánchez,GU2345F,20000.00,EconomyClass,En Vuelo
+479,Benita,Pérez,GU2345F,25000.00,EconomyClass,En Vuelo
+480,Marissa,Gómez,GU2345F,37000.00,EconomyClass,En Vuelo
+481,Lionello,Martín,GU2345F,37000.00,EconomyClass,En Vuelo
+482,Tori,Jiménez,GU2345F,42000.00,EconomyClass,En Vuelo
+483,Micheil,Ruiz,GU2345F,37000.00,EconomyClass,En Vuelo
+484,Kym,Hernández,GU2345F,20000.00,EconomyClass,En Vuelo
+485,Melisse,Díaz,GU2345F,10000.00,EconomyClass,En Vuelo
+486,Bartholomew,Moreno,GU2345F,33000.00,EconomyClass,En Vuelo
+487,Rorie,Álvarez,GU2345F,25000.00,EconomyClass,En Vuelo
+488,Hedvige,Muñoz,GU2345F,37000.00,EconomyClass,En Vuelo
+489,Dorothea,Romero,GU2345F,15000.00,EconomyClass,En Vuelo
+490,Tamarah,Alonso,GU2345F,50000.00,EconomyClass,En Vuelo
+491,Skipton,Gutiérrez,GU2345F,10000.00,EconomyClass,En Vuelo
+492,Minny,Navarro,GU2345F,33000.00,EconomyClass,En Vuelo
+493,Joshia,Torres,GU2345F,33000.00,EconomyClass,En Vuelo
+494,Mirilla,Domínguez,GU2345F,30000.00,EconomyClass,En Vuelo
+495,Willey,Vázquez,GU2345F,15000.00,EconomyClass,En Vuelo
+496,Conrado,Ramos,GU2345F,50000.00,EconomyClass,En Vuelo
+497,Fredia,González,GU2345F,30000.00,EconomyClass,En Vuelo
+498,Gretchen,Muñoz,GU2345F,12000.00,EconomyClass,En Vuelo
+499,Bibbie,Rojas,GU2345F,37000.00,EconomyClass,En Vuelo
+500,Warren,Díaz,GU2345F,25000.00,EconomyClass,En Vuelo
+501,Gabi,Pérez,GU2345F,30000.00,EconomyClass,En Vuelo
+502,Callie,Soto,GU2345F,50000.00,EconomyClass,En Vuelo
+503,Patton,Contreras,GU2345F,15000.00,EconomyClass,En Vuelo
+504,Karie,Silva,GU2345F,25000.00,EconomyClass,En Vuelo
+505,Martguerita,Martínez,GU2345F,50000.00,EconomyClass,En Vuelo
+506,Lothaire,Sepúlveda,GU2345F,20000.00,EconomyClass,En Vuelo
+507,Patrice,Morales,GU2345F,37000.00,EconomyClass,En Vuelo
+508,Lin,Rodríguez,MM0987B,12000.00,EconomyClass,En Horario
+509,Cornie,López,MM0987B,42000.00,EconomyClass,En Horario
+510,Irena,Fuentes,MM0987B,20000.00,EconomyClass,En Horario
+511,Markos,Hernández,MM0987B,20000.00,EconomyClass,En Horario
+512,Bird,Torres,MM0987B,18000.00,EconomyClass,En Horario
+513,Lorna,Araya,MM0987B,42000.00,EconomyClass,En Horario
+514,Vincents,Flores,MM0987B,25000.00,EconomyClass,En Horario
+515,Torrey,Espinoza,GU2345F,42000.00,EconomyClass,En Vuelo
+516,Pernell,Valenzuela,GU2345F,50000.00,EconomyClass,En Vuelo
+517,Danya,Castillo,GU2345F,25000.00,EconomyClass,En Vuelo
+518,Erda,Tapia,GU2345F,37000.00,EconomyClass,En Vuelo
+519,Ethe,Reyes,GU2345F,20000.00,EconomyClass,En Vuelo
+520,Coop,Gutiérrez,GU2345F,37000.00,EconomyClass,En Vuelo
+521,Sheridan,Castro,GU2345F,50000.00,EconomyClass,En Vuelo
+522,Charles,Pizarro,GU2345F,42000.00,EconomyClass,En Vuelo
+523,Eddy,Álvarez,GU2345F,12000.00,EconomyClass,En Vuelo
+524,Janey,Vásquez,GU2345F,42000.00,EconomyClass,En Vuelo
+525,Edan,Sánchez,GU2345F,20000.00,EconomyClass,En Vuelo
+526,Homer,Fernández,GU2345F,10000.00,EconomyClass,En Vuelo
+527,Eveline,Ramírez,GU2345F,37000.00,EconomyClass,En Vuelo
+528,Helen-elizabeth,Carrasco,GU2345F,20000.00,EconomyClass,En Vuelo
+529,Daveta,Gómez,GU2345F,20000.00,EconomyClass,En Vuelo
+530,Mort,Cortés,GU2345F,42000.00,EconomyClass,En Vuelo
+531,Maxi,Herrera,GU2345F,37000.00,EconomyClass,En Vuelo
+532,Nathalie,Núñez,GU2345F,37000.00,EconomyClass,En Vuelo
+533,Dennison,Jara,GU2345F,25000.00,EconomyClass,En Vuelo
+534,Bunnie,Vergara,GU2345F,33000.00,EconomyClass,En Vuelo
+535,Frans,Rivera,BA2491A,33000.00,EconomyClass,Aterrizado
+536,Delmar,Figueroa,BA2491A,42000.00,EconomyClass,Aterrizado
+537,Ced,Riquelme,BA2491A,20000.00,EconomyClass,Aterrizado
+538,Caren,García,BA2491A,12000.00,EconomyClass,Aterrizado
+539,Christie,Miranda,BA2491A,18000.00,EconomyClass,Aterrizado
+540,Saunders,Bravo,BA2491A,25000.00,EconomyClass,Aterrizado
+541,Deny,Vera,GU2345F,18000.00,EconomyClass,En Vuelo
+542,Gene,Molina,GU2345F,15000.00,EconomyClass,En Vuelo
+543,Margeaux,Vega,GU2345F,18000.00,EconomyClass,En Vuelo
+544,Prisca,Campos,GU2345F,18000.00,EconomyClass,En Vuelo
+545,Domini,Sandoval,GU2345F,18000.00,EconomyClass,En Vuelo
+546,Henrie,Orellana,GU2345F,50000.00,EconomyClass,En Vuelo
+547,Marj,Cárdenas,GU2345F,18000.00,EconomyClass,En Vuelo
+548,Mab,Olivares,GU2345F,25000.00,EconomyClass,En Vuelo
+549,Josiah,Alarcón,GU2345F,12000.00,EconomyClass,En Vuelo
+550,Mathe,Gallardo,GU2345F,12000.00,EconomyClass,En Vuelo
+551,Gauthier,Ortiz,GU2345F,12000.00,EconomyClass,En Vuelo
+552,Delmore,Garrido,GU2345F,33000.00,EconomyClass,En Vuelo
+553,Lynett,Salazar,GU2345F,37000.00,EconomyClass,En Vuelo
+554,Lucais,Guzmán,GU2345F,42000.00,EconomyClass,En Vuelo
+555,Clarice,Henríquez,GU2345F,33000.00,EconomyClass,En Vuelo
+556,Aeriela,Saavedra,GU2345F,37000.00,EconomyClass,En Vuelo
+557,Babbie,Navarro,GU2345F,15000.00,EconomyClass,En Vuelo
+558,Caren,Aguilera,GU2345F,15000.00,EconomyClass,En Vuelo
+559,Jessamine,Parra,GU2345F,18000.00,EconomyClass,En Vuelo
+560,Hesther,Romero,GU2345F,15000.00,EconomyClass,En Vuelo
+561,Sasha,Aravena,GU2345F,15000.00,EconomyClass,En Vuelo
+562,Erica,Vargas,GU2345F,10000.00,EconomyClass,En Vuelo
+563,Keith,Vázquez,GU2345F,10000.00,EconomyClass,En Vuelo
+564,Briney,Cáceres,GU2345F,12000.00,EconomyClass,En Vuelo
+565,Rutherford,Yáñez,GU2345F,15000.00,EconomyClass,En Vuelo
+566,Lemmie,Leiva,GU2345F,18000.00,EconomyClass,En Vuelo
+567,Dur,Escobar,GU2345F,25000.00,EconomyClass,En Vuelo
+568,Modesta,Ruiz,GU2345F,33000.00,EconomyClass,En Vuelo
+569,Carter,Valdés,GU2345F,33000.00,EconomyClass,En Vuelo
+570,Retha,Vidal,GU2345F,15000.00,EconomyClass,En Vuelo
+571,Carma,Salinas,GU2345F,33000.00,EconomyClass,En Vuelo
+572,Antonella,Zúñiga,GU2345F,15000.00,EconomyClass,En Vuelo
+573,Sutherlan,Peña,GU2345F,10000.00,EconomyClass,En Vuelo
+574,Phillipe,Godoy,GU2345F,37000.00,EconomyClass,En Vuelo
+575,Florida,Lagos,HY4567D,37000.00,FirstClass,Demorado
+576,Corrina,Maldonado,HY4567D,15000.00,FirstClass,Demorado
+577,Adrianne,Bustos,HY4567D,10000.00,FirstClass,Demorado
+578,Scarlett,Medina,HY4567D,20000.00,FirstClass,Demorado
+579,Shel,Pino,HY4567D,25000.00,FirstClass,Demorado
+580,Delaney,Palma,HY4567D,50000.00,FirstClass,Demorado
+581,Tiphani,Moreno,HY4567D,33000.00,FirstClass,Demorado
+582,Grier,Sanhueza,HY4567D,42000.00,FirstClass,Demorado
+583,Annabell,Carvajal,HY4567D,15000.00,FirstClass,Demorado
+584,Basil,Navarrete,HY4567D,12000.00,FirstClass,Demorado
+585,Horatius,Sáez,HY4567D,18000.00,FirstClass,Demorado
+586,Umeko,Alvarado,HY4567D,30000.00,FirstClass,Demorado
+587,Hayes,Donoso,HY4567D,10000.00,FirstClass,Demorado
+588,Lynnette,Poblete,HY4567D,37000.00,FirstClass,Demorado
+589,Hesther,Bustamante,HY4567D,33000.00,FirstClass,Demorado
+590,Trumaine,Toro,HY4567D,15000.00,FirstClass,Demorado
+591,Emlyn,Ortega,HY4567D,50000.00,FirstClass,Demorado
+592,Corabelle,Venegas,HY4567D,37000.00,FirstClass,Demorado
+593,Vic,Guerrero,HY4567D,25000.00,FirstClass,Demorado
+594,Cyndia,Mendoza,HY4567D,33000.00,FirstClass,Demorado
+595,Gray,Farías,HY4567D,42000.00,FirstClass,Demorado
+596,Dylan,San Martín,HY4567D,30000.00,FirstClass,Demorado
+597,Isabelle,González,HY4567D,20000.00,FirstClass,Demorado
+598,Eachelle,Fernández,HY4567D,37000.00,FirstClass,Demorado
+599,Howard,Rodríguez,HY4567D,18000.00,FirstClass,Demorado
+600,Cornall,López,HY4567D,18000.00,FirstClass,Demorado
+601,Emmalee,Martínez,HY4567D,18000.00,FirstClass,Demorado
+602,Brian,Sánchez,HY4567D,20000.00,FirstClass,Demorado
+603,Cahra,Pérez,HY4567D,50000.00,ExecutiveClass,Demorado
+604,Arvin,Gómez,HY4567D,50000.00,ExecutiveClass,Demorado
+605,Minda,Martín,HY4567D,15000.00,ExecutiveClass,Demorado
+606,Dedie,Jiménez,HY4567D,33000.00,ExecutiveClass,Demorado
+607,Lydia,Ruiz,HY4567D,15000.00,ExecutiveClass,Demorado
+608,Joshia,Hernández,HY4567D,25000.00,ExecutiveClass,Demorado
+609,Bernita,Díaz,HY4567D,15000.00,ExecutiveClass,Demorado
+610,Sayre,Moreno,HY4567D,33000.00,ExecutiveClass,Demorado
+611,Pearla,Álvarez,HY4567D,20000.00,ExecutiveClass,Demorado
+612,Fidole,Muñoz,HY4567D,30000.00,ExecutiveClass,Demorado
+613,Evin,Romero,HY4567D,12000.00,ExecutiveClass,Demorado
+614,Fredia,Alonso,HY4567D,20000.00,ExecutiveClass,Demorado
+615,Idalina,Gutiérrez,HY4567D,50000.00,ExecutiveClass,Demorado
+616,Hetti,Navarro,HY4567D,30000.00,ExecutiveClass,Demorado
+617,Kirk,Torres,HY4567D,30000.00,ExecutiveClass,Demorado
+618,Orson,Domínguez,HY4567D,25000.00,ExecutiveClass,Demorado
+619,Lyndsay,Vázquez,HY4567D,42000.00,ExecutiveClass,Demorado
+620,Lissy,Ramos,HY4567D,37000.00,ExecutiveClass,Demorado
+621,Odessa,González,HY4567D,50000.00,ExecutiveClass,Demorado
+622,Hestia,Muñoz,HY4567D,18000.00,ExecutiveClass,Demorado
+623,Dorotea,Rojas,HY4567D,10000.00,ExecutiveClass,Demorado
+624,Giraud,Díaz,HY4567D,15000.00,ExecutiveClass,Demorado
+625,Tonya,Pérez,HY4567D,37000.00,ExecutiveClass,Demorado
+626,Menard,Soto,HY4567D,37000.00,ExecutiveClass,Demorado
+627,Nicola,Contreras,HY4567D,12000.00,ExecutiveClass,Demorado
+628,Maddy,Silva,HY4567D,25000.00,ExecutiveClass,Demorado
+629,Mace,Martínez,HY4567D,18000.00,ExecutiveClass,Demorado
+630,Lyndy,Sepúlveda,HY4567D,37000.00,ExecutiveClass,Demorado
+631,Ivonne,Morales,HY4567D,20000.00,ExecutiveClass,Demorado
+632,Josepha,Rodríguez,HY4567D,20000.00,EconomyClass,Demorado
+633,Shandra,López,HY4567D,50000.00,EconomyClass,Demorado
+634,Viva,Fuentes,HY4567D,25000.00,EconomyClass,Demorado
+635,Sherwin,Hernández,HY4567D,10000.00,EconomyClass,Demorado
+636,Abigail,Torres,HY4567D,18000.00,EconomyClass,Demorado
+637,Rosalia,Araya,HY4567D,18000.00,EconomyClass,Demorado
+638,Merissa,Flores,HY4567D,25000.00,EconomyClass,Demorado
+639,Marylee,Espinoza,HY4567D,50000.00,EconomyClass,Demorado
+640,Wolfy,Valenzuela,HY4567D,33000.00,EconomyClass,Demorado
+641,Maia,Castillo,HY4567D,10000.00,EconomyClass,Demorado
+642,Elinor,Tapia,HY4567D,33000.00,EconomyClass,Demorado
+643,Neron,Reyes,HY4567D,42000.00,EconomyClass,Demorado
+644,Malachi,Gutiérrez,HY4567D,25000.00,EconomyClass,Demorado
+645,Sarajane,Castro,HY4567D,10000.00,EconomyClass,Demorado
+646,Arlie,Pizarro,HY4567D,42000.00,EconomyClass,Demorado
+647,Felike,Álvarez,HY4567D,12000.00,EconomyClass,Demorado
+648,Ethan,Vásquez,HY4567D,12000.00,EconomyClass,Demorado
+649,Ruthy,Sánchez,HY4567D,20000.00,EconomyClass,Demorado
+650,Hugo,Fernández,HY4567D,30000.00,EconomyClass,Demorado
+651,Thorndike,Ramírez,HY4567D,10000.00,EconomyClass,Demorado
+652,Cesaro,Carrasco,HY4567D,30000.00,EconomyClass,Demorado
+653,Harmonia,Gómez,HY4567D,12000.00,EconomyClass,Demorado
+654,Damara,Cortés,HY4567D,12000.00,EconomyClass,Demorado
+655,Maddy,Herrera,HY4567D,25000.00,EconomyClass,Demorado
+656,Filmer,Núñez,HY4567D,50000.00,EconomyClass,Demorado
+657,Boothe,Jara,HY4567D,12000.00,EconomyClass,Demorado
+658,Dorrie,Vergara,HY4567D,42000.00,EconomyClass,Demorado
+659,Willdon,Rivera,HY4567D,10000.00,EconomyClass,Demorado
+660,Cindi,Figueroa,HY4567D,12000.00,EconomyClass,Demorado
+661,Shermie,Riquelme,HY4567D,12000.00,EconomyClass,Demorado
+662,Byrom,García,HY4567D,42000.00,EconomyClass,Demorado
+663,Millie,Miranda,HY4567D,15000.00,EconomyClass,Demorado
+664,Natassia,Bravo,HY4567D,42000.00,EconomyClass,Demorado
+665,Wheeler,Vera,HY4567D,25000.00,EconomyClass,Demorado
+666,Caritta,Molina,HY4567D,12000.00,EconomyClass,Demorado
+667,Kennan,Vega,HY4567D,12000.00,EconomyClass,Demorado
+668,Katina,Campos,HY4567D,20000.00,EconomyClass,Demorado
+669,Beverlee,Sandoval,HY4567D,25000.00,EconomyClass,Demorado
+670,Arlette,Orellana,HY4567D,30000.00,EconomyClass,Demorado
+671,Jacqueline,Cárdenas,HY4567D,50000.00,EconomyClass,Demorado
+672,Sheila-kathryn,Olivares,HY4567D,10000.00,EconomyClass,Demorado
+673,Lambert,Alarcón,HY4567D,42000.00,EconomyClass,Demorado
+674,Lamont,Gallardo,HY4567D,33000.00,EconomyClass,Demorado
+675,Immanuel,Ortiz,HY4567D,33000.00,EconomyClass,Demorado
+676,Nani,Garrido,HY4567D,50000.00,EconomyClass,Demorado
+677,Galen,Salazar,HY4567D,50000.00,EconomyClass,Demorado
+678,Nilson,Guzmán,HY4567D,10000.00,EconomyClass,Demorado
+679,Tomi,Henríquez,HY4567D,50000.00,EconomyClass,Demorado
+680,Flore,Saavedra,HY4567D,30000.00,EconomyClass,Demorado
+681,Burgess,Navarro,HY4567D,12000.00,EconomyClass,Demorado
+682,Tally,Aguilera,HY4567D,42000.00,EconomyClass,Demorado
+683,Jaquenette,Parra,HY4567D,25000.00,EconomyClass,Demorado
+684,Sly,Romero,HY4567D,42000.00,EconomyClass,Demorado
+685,Yul,Aravena,HY4567D,30000.00,EconomyClass,Demorado
+686,Rosalyn,Vargas,HY4567D,37000.00,EconomyClass,Demorado
+687,Devondra,Vázquez,HY4567D,10000.00,EconomyClass,Demorado
+688,Xenos,Cáceres,HY4567D,37000.00,EconomyClass,Demorado
+689,Terrence,Yáñez,HY4567D,42000.00,EconomyClass,Demorado
+690,Krystyna,Leiva,HY4567D,50000.00,EconomyClass,Demorado
+691,Krishna,Escobar,HY4567D,50000.00,EconomyClass,Demorado
+692,Zorina,Ruiz,HY4567D,18000.00,EconomyClass,Demorado
+693,Baxy,Valdés,HY4567D,20000.00,EconomyClass,Demorado
+694,Terrie,Vidal,HY4567D,42000.00,EconomyClass,Demorado
+695,Justino,Salinas,HY4567D,18000.00,EconomyClass,Demorado
+696,Erhard,Zúñiga,HY4567D,33000.00,EconomyClass,Demorado
+697,Robbie,Peña,HY4567D,30000.00,EconomyClass,Demorado
+698,Paddie,Godoy,HY4567D,33000.00,EconomyClass,Demorado
+699,Evelyn,Lagos,HY4567D,10000.00,EconomyClass,Demorado
+700,Abbot,Maldonado,HY4567D,33000.00,EconomyClass,Demorado
+701,Tedra,Bustos,HY4567D,33000.00,EconomyClass,Demorado
+702,Rikki,Medina,HY4567D,12000.00,EconomyClass,Demorado
+703,Alverta,Pino,HY4567D,25000.00,EconomyClass,Demorado
+704,Pauly,Palma,HY4567D,30000.00,EconomyClass,Demorado
+705,Ariella,Moreno,HY4567D,12000.00,EconomyClass,Demorado
+706,Lia,Sanhueza,HY4567D,20000.00,EconomyClass,Demorado
+707,Petronille,Carvajal,HY4567D,42000.00,EconomyClass,Demorado
+708,Merle,Navarrete,HY4567D,10000.00,EconomyClass,Demorado
+709,Hagan,Sáez,HY4567D,50000.00,EconomyClass,Demorado
+710,Nikolaus,Alvarado,HY4567D,30000.00,EconomyClass,Demorado
+711,Cinda,Donoso,HY4567D,42000.00,EconomyClass,Demorado
+712,Matelda,Poblete,HY4567D,18000.00,EconomyClass,Demorado
+713,Roslyn,Bustamante,HY4567D,25000.00,EconomyClass,Demorado
+714,Jerrylee,Toro,HY4567D,10000.00,EconomyClass,Demorado
+715,Lucky,Ortega,IB0800A,42000.00,EconomyClass,Aterrizado
+716,Elita,Venegas,IB0800A,18000.00,EconomyClass,Aterrizado
+717,Hyacinthia,Guerrero,IB0800A,25000.00,EconomyClass,Aterrizado
+718,Fina,Mendoza,IB0800A,42000.00,EconomyClass,Aterrizado
+719,Kamila,Farías,IB0800A,42000.00,EconomyClass,Aterrizado
+720,Jennie,San Martín,IB0800A,42000.00,EconomyClass,Aterrizado
+721,Riobard,González,IB0800A,42000.00,EconomyClass,Aterrizado
+722,Joannes,Fernández,IB0800A,10000.00,EconomyClass,Aterrizado
+723,Darlene,Rodríguez,IB0800A,42000.00,EconomyClass,Aterrizado
+724,Zia,López,IB0800A,42000.00,EconomyClass,Aterrizado
+725,Cristina,Martínez,IB0800A,15000.00,EconomyClass,Aterrizado
+726,Jonathon,Sánchez,IB0800A,50000.00,EconomyClass,Aterrizado
+727,Rickie,Pérez,IB0800A,42000.00,EconomyClass,Aterrizado
+728,Klara,Gómez,IB0800A,50000.00,EconomyClass,Aterrizado
+729,Osbert,Martín,IB0800A,33000.00,EconomyClass,Aterrizado
+730,Emmet,Jiménez,IB0800A,37000.00,EconomyClass,Aterrizado
+731,Cassandry,Ruiz,IB0800A,33000.00,EconomyClass,Aterrizado
+732,Enrica,Hernández,IB0800A,18000.00,EconomyClass,Aterrizado
+733,Evvy,Díaz,IB0800A,42000.00,EconomyClass,Aterrizado
+734,Silas,Moreno,IB0800A,20000.00,EconomyClass,Aterrizado
+735,Kaia,Álvarez,IB0800A,25000.00,EconomyClass,Aterrizado
+736,Arvie,Muñoz,IB0800A,15000.00,EconomyClass,Aterrizado
+737,Keith,Romero,FR5678G,20000.00,FirstClass,En Horario
+738,Silvie,Alonso,FR5678G,12000.00,FirstClass,En Horario
+739,Winnifred,Gutiérrez,FR5678G,10000.00,FirstClass,En Horario
+740,Chen,Navarro,FR5678G,37000.00,FirstClass,En Horario
+741,Carleton,Torres,FR5678G,15000.00,FirstClass,En Horario
+742,Silvano,Domínguez,FR5678G,12000.00,FirstClass,En Horario
+743,Pancho,Vázquez,FR5678G,18000.00,FirstClass,En Horario
+744,Melonie,Ramos,FR5678G,33000.00,FirstClass,En Horario
+745,Gordon,González,FR5678G,12000.00,FirstClass,En Horario
+746,Rosemarie,Muñoz,FR5678G,10000.00,FirstClass,En Horario
+747,Graehme,Rojas,FR5678G,18000.00,FirstClass,En Horario
+748,Mitchael,Díaz,FR5678G,33000.00,FirstClass,En Horario
+749,Carola,Pérez,FR5678G,10000.00,FirstClass,En Horario
+750,Zsa zsa,Soto,FR5678G,20000.00,FirstClass,En Horario
+751,Jude,Contreras,FR5678G,12000.00,FirstClass,En Horario
+752,Arch,Silva,FR5678G,33000.00,FirstClass,En Horario
+753,Andrej,Martínez,FR5678G,50000.00,FirstClass,En Horario
+754,Amber,Sepúlveda,FR5678G,42000.00,FirstClass,En Horario
+755,Dorian,Morales,FR5678G,15000.00,FirstClass,En Horario
+756,Kaitlynn,Rodríguez,FR5678G,15000.00,FirstClass,En Horario
+757,Kerianne,López,FR5678G,37000.00,FirstClass,En Horario
+758,Boycie,Fuentes,FR5678G,18000.00,FirstClass,En Horario
+759,Nanete,Hernández,FR5678G,37000.00,FirstClass,En Horario
+760,Sidonia,Torres,FR5678G,10000.00,FirstClass,En Horario
+761,Galvan,Araya,FR5678G,33000.00,FirstClass,En Horario
+762,Lucienne,Flores,FR5678G,25000.00,FirstClass,En Horario
+763,Davidson,Espinoza,FR5678G,37000.00,FirstClass,En Horario
+764,Roslyn,Valenzuela,FR5678G,10000.00,FirstClass,En Horario
+765,Jenny,Castillo,FR5678G,33000.00,ExecutiveClass,En Horario
+766,Toby,Tapia,FR5678G,20000.00,ExecutiveClass,En Horario
+767,Brynne,Reyes,FR5678G,18000.00,ExecutiveClass,En Horario
+768,Blakeley,Gutiérrez,FR5678G,18000.00,ExecutiveClass,En Horario
+769,Egan,Castro,FR5678G,10000.00,ExecutiveClass,En Horario
+770,Barbey,Pizarro,FR5678G,20000.00,ExecutiveClass,En Horario
+771,Portia,Álvarez,FR5678G,33000.00,ExecutiveClass,En Horario
+772,Alica,Vásquez,FR5678G,37000.00,ExecutiveClass,En Horario
+773,Juliana,Sánchez,FR5678G,50000.00,ExecutiveClass,En Horario
+774,Barde,Fernández,FR5678G,18000.00,ExecutiveClass,En Horario
+775,Wilie,Ramírez,FR5678G,30000.00,ExecutiveClass,En Horario
+776,Letta,Carrasco,FR5678G,10000.00,ExecutiveClass,En Horario
+777,Ree,Gómez,FR5678G,42000.00,ExecutiveClass,En Horario
+778,Ingmar,Cortés,FR5678G,18000.00,ExecutiveClass,En Horario
+779,Melva,Herrera,FR5678G,42000.00,ExecutiveClass,En Horario
+780,Tootsie,Núñez,FR5678G,25000.00,ExecutiveClass,En Horario
+781,Felike,Jara,FR5678G,33000.00,ExecutiveClass,En Horario
+782,Laughton,Vergara,FR5678G,15000.00,ExecutiveClass,En Horario
+783,Crosby,Rivera,FR5678G,12000.00,ExecutiveClass,En Horario
+784,Marianne,Figueroa,FR5678G,33000.00,ExecutiveClass,En Horario
+785,Francine,Riquelme,FR5678G,42000.00,ExecutiveClass,En Horario
+786,Edan,García,FR5678G,50000.00,ExecutiveClass,En Horario
+787,Fayre,Miranda,FR5678G,18000.00,ExecutiveClass,En Horario
+788,Adelaida,Bravo,FR5678G,37000.00,ExecutiveClass,En Horario
+789,Florella,Vera,FR5678G,25000.00,ExecutiveClass,En Horario
+790,Noll,Molina,FR5678G,30000.00,ExecutiveClass,En Horario
+791,Ki,Vega,FR5678G,42000.00,ExecutiveClass,En Horario
+792,Jermayne,Campos,FR5678G,33000.00,ExecutiveClass,En Horario
+793,Grayce,Sandoval,FR5678G,33000.00,ExecutiveClass,En Horario
+794,Harv,Orellana,FR5678G,42000.00,ExecutiveClass,En Horario
+795,Lorianna,Cárdenas,FR5678G,15000.00,ExecutiveClass,En Horario
+796,Hersh,Olivares,FR5678G,33000.00,ExecutiveClass,En Horario
+797,Diahann,Alarcón,FR5678G,33000.00,ExecutiveClass,En Horario
+798,Yelena,Gallardo,FR5678G,50000.00,ExecutiveClass,En Horario
+799,Emmaline,Ortiz,FR5678G,37000.00,ExecutiveClass,En Horario
+800,Daffi,Garrido,FR5678G,12000.00,ExecutiveClass,En Horario
+801,Janine,Salazar,FR5678G,50000.00,ExecutiveClass,En Horario
+802,Sheilah,Guzmán,FR5678G,42000.00,ExecutiveClass,En Horario
+803,Lazaro,Henríquez,FR5678G,10000.00,ExecutiveClass,En Horario
+804,Earle,Saavedra,FR5678G,30000.00,ExecutiveClass,En Horario
+805,Fred,Navarro,FR5678G,25000.00,EconomyClass,En Horario
+806,Almira,Aguilera,FR5678G,42000.00,EconomyClass,En Horario
+807,Wini,Parra,FR5678G,37000.00,EconomyClass,En Horario
+808,Emanuel,Romero,FR5678G,30000.00,EconomyClass,En Horario
+809,Obadias,Aravena,FR5678G,10000.00,EconomyClass,En Horario
+810,Efrem,Vargas,FR5678G,20000.00,EconomyClass,En Horario
+811,Susi,Vázquez,FR5678G,18000.00,EconomyClass,En Horario
+812,Maxy,Cáceres,FR5678G,15000.00,EconomyClass,En Horario
+813,Agnes,Yáñez,FR5678G,42000.00,EconomyClass,En Horario
+814,Obadiah,Leiva,FR5678G,12000.00,EconomyClass,En Horario
+815,Lefty,Escobar,FR5678G,50000.00,EconomyClass,En Horario
+816,Michele,Ruiz,FR5678G,42000.00,EconomyClass,En Horario
+817,Cynthia,Valdés,FR5678G,25000.00,EconomyClass,En Horario
+818,Hyatt,Vidal,FR5678G,20000.00,EconomyClass,En Horario
+819,Roch,Salinas,FR5678G,33000.00,EconomyClass,En Horario
+820,Mag,Zúñiga,FR5678G,12000.00,EconomyClass,En Horario
+821,Trevor,Peña,FR5678G,10000.00,EconomyClass,En Horario
+822,Jefferey,Godoy,FR5678G,10000.00,EconomyClass,En Horario
+823,Tania,Lagos,FR5678G,42000.00,EconomyClass,En Horario
+824,Mercie,Maldonado,FR5678G,42000.00,EconomyClass,En Horario
+825,Andrei,Bustos,FR5678G,10000.00,EconomyClass,En Horario
+826,Yetta,Medina,FR5678G,25000.00,EconomyClass,En Horario
+827,Angeli,Pino,FR5678G,20000.00,EconomyClass,En Horario
+828,Norbert,Palma,FR5678G,20000.00,EconomyClass,En Horario
+829,Conan,Moreno,FR5678G,20000.00,EconomyClass,En Horario
+830,Cale,Sanhueza,FR5678G,50000.00,EconomyClass,En Horario
+831,Christina,Carvajal,FR5678G,37000.00,EconomyClass,En Horario
+832,Olivier,Navarrete,FR5678G,20000.00,EconomyClass,En Horario
+833,Oby,Sáez,FR5678G,12000.00,EconomyClass,En Horario
+834,Chad,Alvarado,FR5678G,15000.00,EconomyClass,En Horario
+835,Adelle,Donoso,FR5678G,10000.00,EconomyClass,En Horario
+836,Keene,Poblete,FR5678G,25000.00,EconomyClass,En Horario
+837,Corrina,Bustamante,FR5678G,50000.00,EconomyClass,En Horario
+838,Hashim,Toro,FR5678G,50000.00,EconomyClass,En Horario
+839,Oralia,Ortega,FR5678G,10000.00,EconomyClass,En Horario
+840,Wadsworth,Venegas,FR5678G,30000.00,EconomyClass,En Horario
+841,Shelley,Guerrero,FR5678G,15000.00,EconomyClass,En Horario
+842,Irv,Mendoza,FR5678G,15000.00,EconomyClass,En Horario
+843,Grant,Farías,FR5678G,33000.00,EconomyClass,En Horario
+844,Bella,San Martín,FR5678G,18000.00,EconomyClass,En Horario
+845,Yardley,González,FR5678G,50000.00,EconomyClass,En Horario
+846,Brendin,Fernández,FR5678G,10000.00,EconomyClass,En Horario
+847,Estella,Rodríguez,FR5678G,42000.00,EconomyClass,En Horario
+848,Rasia,López,FR5678G,37000.00,EconomyClass,En Horario
+849,Gibb,Martínez,FR5678G,20000.00,EconomyClass,En Horario
+850,Amanda,Sánchez,FR5678G,37000.00,EconomyClass,En Horario
+851,Sidoney,Pérez,FR5678G,20000.00,EconomyClass,En Horario
+852,Giacopo,Gómez,FR5678G,18000.00,EconomyClass,En Horario
+853,Eve,Martín,FR5678G,12000.00,EconomyClass,En Horario
+854,Levon,Jiménez,FR5678G,25000.00,EconomyClass,En Horario
+855,Vassili,Ruiz,FR5678G,33000.00,EconomyClass,En Horario
+856,Henrieta,Hernández,FR5678G,30000.00,EconomyClass,En Horario
+857,Devlen,Díaz,FR5678G,37000.00,EconomyClass,En Horario
+858,Ophelie,Moreno,FR5678G,37000.00,EconomyClass,En Horario
+859,Abramo,Álvarez,FR5678G,37000.00,EconomyClass,En Horario
+860,Fair,Muñoz,FR5678G,37000.00,EconomyClass,En Horario
+861,Pietrek,Romero,FR5678G,25000.00,EconomyClass,En Horario
+862,Holden,Alonso,FR5678G,50000.00,EconomyClass,En Horario
+863,Cherish,Gutiérrez,FR5678G,42000.00,EconomyClass,En Horario
+864,Alonzo,Navarro,FR5678G,12000.00,EconomyClass,En Horario
+865,Devonna,Torres,FR5678G,18000.00,EconomyClass,En Horario
+866,Rubi,Domínguez,FR5678G,18000.00,EconomyClass,En Horario
+867,Emmanuel,Vázquez,FR5678G,30000.00,EconomyClass,En Horario
+868,Trumaine,Ramos,FR5678G,42000.00,EconomyClass,En Horario
+869,Malory,González,FR5678G,42000.00,EconomyClass,En Horario
+870,Pearla,Muñoz,FR5678G,33000.00,EconomyClass,En Horario
+871,Phelia,Rojas,FR5678G,33000.00,EconomyClass,En Horario
+872,Madonna,Díaz,FR5678G,10000.00,EconomyClass,En Horario
+873,Thomasa,Pérez,FR5678G,18000.00,EconomyClass,En Horario
+874,Estella,Soto,FR5678G,20000.00,EconomyClass,En Horario
+875,Saw,Contreras,FR5678G,15000.00,EconomyClass,En Horario
+876,Cecil,Silva,FR5678G,37000.00,EconomyClass,En Horario
+877,Mac,Martínez,FR5678G,25000.00,EconomyClass,En Horario
+878,Ralf,Sepúlveda,FR5678G,12000.00,EconomyClass,En Horario
+879,Barbey,Morales,FR5678G,12000.00,EconomyClass,En Horario
+880,Josi,Rodríguez,FR5678G,18000.00,EconomyClass,En Horario
+881,Kenna,López,FR5678G,25000.00,EconomyClass,En Horario
+882,Rina,Fuentes,FR5678G,25000.00,EconomyClass,En Horario
+883,Callida,Hernández,FR5678G,33000.00,EconomyClass,En Horario
+884,Lona,Torres,FR5678G,30000.00,EconomyClass,En Horario
+885,Jan,Araya,FR5678G,18000.00,EconomyClass,En Horario
+886,Bailey,Flores,FR5678G,30000.00,EconomyClass,En Horario
+887,Guillermo,Espinoza,FR5678G,42000.00,EconomyClass,En Horario
+888,Katlin,Valenzuela,FR5678G,25000.00,EconomyClass,En Horario
+889,Flo,Castillo,FR5678G,42000.00,EconomyClass,En Horario
+890,Madel,Tapia,FR5678G,12000.00,EconomyClass,En Horario
+891,Conant,Reyes,FR5678G,37000.00,EconomyClass,En Horario
+892,Devland,Gutiérrez,FR5678G,10000.00,EconomyClass,En Horario
+893,Annamarie,Castro,FR5678G,20000.00,EconomyClass,En Horario
+894,Gabbie,Pizarro,FR5678G,42000.00,EconomyClass,En Horario
+895,Frasquito,Álvarez,FR5678G,15000.00,EconomyClass,En Horario
+896,Oberon,Vásquez,FR5678G,15000.00,EconomyClass,En Horario
+897,Gabriell,Sánchez,FR5678G,10000.00,EconomyClass,En Horario
+898,Ki,Fernández,BR3456J,30000.00,FirstClass,Demorado
+899,Martelle,Ramírez,BR3456J,15000.00,FirstClass,Demorado
+900,Riccardo,Carrasco,BR3456J,42000.00,FirstClass,Demorado
+901,Shaughn,Gómez,BR3456J,50000.00,FirstClass,Demorado
+902,Coral,Cortés,BR3456J,18000.00,FirstClass,Demorado
+903,Judas,Herrera,BR3456J,10000.00,FirstClass,Demorado
+904,Josiah,Núñez,BR3456J,12000.00,FirstClass,Demorado
+905,Freda,Jara,BR3456J,42000.00,FirstClass,Demorado
+906,Lynn,Vergara,BR3456J,37000.00,ExecutiveClass,Demorado
+907,Tabb,Rivera,BR3456J,50000.00,ExecutiveClass,Demorado
+908,Brittany,Figueroa,MM0987B,18000.00,EconomyClass,En Horario
+909,Leo,Riquelme,MM0987B,42000.00,EconomyClass,En Horario
+910,Atlante,García,MM0987B,33000.00,EconomyClass,En Horario
+911,Maurie,Miranda,MM0987B,50000.00,EconomyClass,En Horario
+912,Oren,Bravo,MM0987B,20000.00,EconomyClass,En Horario
+913,Anetta,Vera,MM0987B,10000.00,EconomyClass,En Horario
+914,Curry,Molina,MM0987B,20000.00,EconomyClass,En Horario
+915,Tyrone,Vega,MM0987B,15000.00,EconomyClass,En Horario
+916,Saunder,Campos,MM0987B,37000.00,EconomyClass,En Horario
+917,Luis,Sandoval,MM0987B,12000.00,EconomyClass,En Horario
+918,Alysia,Orellana,MM0987B,37000.00,EconomyClass,En Horario
+919,Calypso,Cárdenas,BR3456J,12000.00,ExecutiveClass,Demorado
+920,Gretna,Olivares,BR3456J,42000.00,ExecutiveClass,Demorado
+921,Odie,Alarcón,BR3456J,20000.00,ExecutiveClass,Demorado
+922,Wenda,Gallardo,BR3456J,12000.00,ExecutiveClass,Demorado
+923,Ezekiel,Ortiz,BR3456J,20000.00,ExecutiveClass,Demorado
+924,Orlan,Garrido,BR3456J,25000.00,ExecutiveClass,Demorado
+925,Wittie,Salazar,BR3456J,37000.00,ExecutiveClass,Demorado
+926,Abbie,Guzmán,BR3456J,18000.00,EconomyClass,Demorado
+927,Robinia,Henríquez,BR3456J,10000.00,EconomyClass,Demorado
+928,Hayden,Saavedra,BR3456J,30000.00,EconomyClass,Demorado
+929,Melody,Navarro,BR3456J,20000.00,EconomyClass,Demorado
+930,Emory,Aguilera,BR3456J,37000.00,EconomyClass,Demorado
+931,Callie,Parra,BR3456J,10000.00,EconomyClass,Demorado
+932,Debby,Romero,IB0800A,18000.00,EconomyClass,Aterrizado
+933,Gui,Aravena,IB0800A,20000.00,EconomyClass,Aterrizado
+934,Dorette,Vargas,IB0800A,37000.00,EconomyClass,Aterrizado
+935,Jillane,Vázquez,IB0800A,37000.00,EconomyClass,Aterrizado
+936,Carolina,Cáceres,IB0800A,33000.00,EconomyClass,Aterrizado
+937,Randy,Yáñez,IB0800A,15000.00,EconomyClass,Aterrizado
+938,Arabel,Leiva,IB0800A,50000.00,EconomyClass,Aterrizado
+939,Verina,Escobar,IB0800A,37000.00,EconomyClass,Aterrizado
+940,Josefina,Ruiz,IB0800A,30000.00,EconomyClass,Aterrizado
+941,Nina,Valdés,IB0800A,25000.00,EconomyClass,Aterrizado
+942,Vernen,Vidal,IB0800A,18000.00,EconomyClass,Aterrizado
+943,Loria,Salinas,IB0800A,25000.00,EconomyClass,Aterrizado
+944,Isabeau,Zúñiga,BA2491A,37000.00,EconomyClass,Aterrizado
+945,Cherice,Peña,BR3456J,15000.00,EconomyClass,Demorado
+946,Kimberley,Godoy,BR3456J,18000.00,EconomyClass,Demorado
+947,Martyn,Lagos,BR3456J,25000.00,EconomyClass,Demorado
+948,Agustin,Maldonado,BR3456J,25000.00,EconomyClass,Demorado
+949,Clerissa,Bustos,BR3456J,15000.00,EconomyClass,Demorado
+950,Lonna,Medina,BR3456J,10000.00,EconomyClass,Demorado
+951,Wake,Pino,BR3456J,25000.00,EconomyClass,Demorado
+952,Edwina,Palma,MM0987B,42000.00,EconomyClass,En Horario
+953,Lacey,Moreno,MM0987B,50000.00,EconomyClass,En Horario
+954,Laetitia,Sanhueza,MM0987B,33000.00,EconomyClass,En Horario
+955,Delila,Carvajal,MM0987B,20000.00,EconomyClass,En Horario
+956,Sioux,Navarrete,MM0987B,12000.00,EconomyClass,En Horario
+957,Floyd,Sáez,MM0987B,15000.00,EconomyClass,En Horario
+958,Trista,Alvarado,BR3456J,50000.00,EconomyClass,Demorado
+959,Shaughn,Donoso,BR3456J,15000.00,EconomyClass,Demorado
+960,Zitella,Poblete,BR3456J,42000.00,EconomyClass,Demorado
+961,Ginnie,Bustamante,BR3456J,15000.00,EconomyClass,Demorado
+962,Burty,Toro,BR3456J,12000.00,EconomyClass,Demorado
+963,Arley,Ortega,BR3456J,33000.00,EconomyClass,Demorado
+964,Ansley,Venegas,BR3456J,37000.00,EconomyClass,Demorado
+965,Kirstin,Guerrero,BR3456J,12000.00,EconomyClass,Demorado
+966,Karon,Mendoza,BR3456J,10000.00,EconomyClass,Demorado
+967,Esme,Farías,BR3456J,37000.00,EconomyClass,Demorado
+968,Berenice,San Martín,IB0800A,10000.00,EconomyClass,Aterrizado
+969,Charlie,González,IB0800A,50000.00,EconomyClass,Aterrizado
+970,Noach,Fernández,IB0800A,12000.00,EconomyClass,Aterrizado
+971,Mercedes,Rodríguez,IB0800A,12000.00,EconomyClass,Aterrizado
+972,Sloan,López,IB0800A,42000.00,EconomyClass,Aterrizado
+973,Guglielma,Martínez,IB0800A,15000.00,EconomyClass,Aterrizado
+974,Herrick,Sánchez,IB0800A,30000.00,EconomyClass,Aterrizado
+975,Aleksandr,Pérez,IB0800A,42000.00,EconomyClass,Aterrizado
+976,Arlina,Gómez,IB0800A,33000.00,EconomyClass,Aterrizado
+977,Wenonah,Martín,IB0800A,12000.00,EconomyClass,Aterrizado
+978,Warner,Jiménez,IB0800A,30000.00,EconomyClass,Aterrizado
+979,Libbey,Ruiz,BA2491A,42000.00,EconomyClass,Aterrizado
+980,Brana,Hernández,BA2491A,10000.00,EconomyClass,Aterrizado
+981,Genevieve,Díaz,BA2491A,20000.00,EconomyClass,Aterrizado
+982,Sharai,Moreno,BA2491A,10000.00,EconomyClass,Aterrizado
+983,Josi,Álvarez,BA2491A,12000.00,EconomyClass,Aterrizado
+984,Pebrook,Muñoz,BA2491A,33000.00,EconomyClass,Aterrizado
+985,Erna,Romero,BA2491A,33000.00,EconomyClass,Aterrizado
+986,Ferd,Alonso,BA2491A,25000.00,EconomyClass,Aterrizado
+987,Mohammed,Gutiérrez,BA2491A,42000.00,EconomyClass,Aterrizado
+988,Dawn,Navarro,BA2491A,37000.00,EconomyClass,Aterrizado
+989,Wandie,Torres,BA2491A,25000.00,EconomyClass,Aterrizado
+990,Chiarra,Domínguez,MM0987B,18000.00,EconomyClass,En Horario
+991,Zaccaria,Vázquez,MM0987B,33000.00,EconomyClass,En Horario
+992,Trenna,Ramos,MM0987B,10000.00,EconomyClass,En Horario
+993,Angelia,Moreno,MM0987B,50000.00,EconomyClass,En Horario
+994,Raquela,Álvarez,MM0987B,12000.00,EconomyClass,En Horario
+995,Maxi,Muñoz,MM0987B,18000.00,EconomyClass,En Horario
+996,Atalanta,Romero,MM0987B,37000.00,EconomyClass,En Horario
+997,De witt,Alonso,MM0987B,12000.00,EconomyClass,En Horario
+998,Jaye,Gutiérrez,MM0987B,25000.00,EconomyClass,En Horario
+999,Tamarra,Navarro,MM0987B,15000.00,EconomyClass,En Horario
+1000,Saleem,Torres,MM0987B,20000.00,EconomyClass,En Horario
+1001,Ivano,Fabelon,asdasd,15000.00,FirstClass,En Horario

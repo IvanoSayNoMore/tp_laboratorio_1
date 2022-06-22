@@ -23,7 +23,7 @@ Passenger* Passenger_newParametros(int id,char* nombreStr,char* apellidoStr,floa
 {
 	Passenger* punteroPassenger = NULL;
 	punteroPassenger = Passenger_new();
-	if(punteroPassenger != NULL && nombreStr != NULL && apellidoStr != NULL && flyCode != NULL && tipoPasajeroStr != NULL && estadoVuelo != NULL && id>-1 && price>0)
+	if(punteroPassenger != NULL && nombreStr != NULL && apellidoStr != NULL && flyCode != NULL && tipoPasajeroStr != NULL && estadoVuelo != NULL && id>0 && price>0)
 	{
 		Passenger_setId(punteroPassenger,id);
 		Passenger_setNombre(punteroPassenger,nombreStr);
