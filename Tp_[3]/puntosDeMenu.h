@@ -23,4 +23,6 @@ int menu_guardarBinario_Texto(LinkedList* pArrayListPassenger);
 
 int menu_ordenarPasajero(LinkedList* pArrayListPassenger);
 
+int menu_guardarArchivoCsv(LinkedList* pArrayListPassenger);
+
 #endif /* PUNTOSDEMENU_H_ */

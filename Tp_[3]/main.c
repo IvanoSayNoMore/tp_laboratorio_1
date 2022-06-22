@@ -35,9 +35,11 @@ int main()
 {
 	setbuf(stdout, NULL);
 	int salir;
-	char auxCadena[51];
+	int opcionGuardar = -1 ;
+
     int opcion;
     LinkedList* listaPasajeros = ll_newLinkedList();
+
     do{
     	if(utnGetNumero(&opcion,
     			"\nOpcion 1: Cargar los datos de los pasajeros desde el archivo data.csv (modo texto).\n"
@@ -130,37 +132,28 @@ int main()
 				break;
 
 			case 8:
-				if(utnGetNumero(&opcion, "Ingrese 1 si desea crear un nuevo archivo o 0 si desea guardar sobre el mismo\n"
-						, "Error al ingresar Opcion", "Desea reintentar? ", 0, 1, REINTENTOS)==RETORNOPOSITIVO)
+				if(menu_guardarArchivoCsv(listaPasajeros)==RETORNOPOSITIVO)
 				{
-					if(opcion==1)
-					{
-						utnIngresarAlfanumerico(auxCadena, "Ingrese el nombre del archivo\n", REINTENTOS, 51);
-						strcat(auxCadena,".csv");
-						if(controller_saveAsText(auxCadena,listaPasajeros)==RETORNOPOSITIVO)
-						{
-							puts("Cargado. Se debe compilar el programa para obtener datos ");
-						}
-		 			}
-					else
-					{
-						if(controller_saveAsText("data.csv",listaPasajeros)==RETORNOPOSITIVO)
-						{
-							puts("Cargado");
-						}
-					}
+					opcionGuardar = 0;
 				}
+
 				break;
 			case 9:
 				if(controller_saveAsBinary("Data.bin",listaPasajeros)==RETORNOPOSITIVO)
 				{
-					puts("Cargado");
+					opcionGuardar = 0;
 				}
 				break;
 			case 10:
 				if(utnVerificacionConChar("Realmente desea salir ? Ingrese Si para salir", "Se cierra el programa\n", "Sigue el programa", 0)==RETORNOPOSITIVO)
 				{
 					salir=-2;
+					if(opcionGuardar == 0 )
+					{
+						ll_clear(listaPasajeros);
+						ll_deleteLinkedList(listaPasajeros);
+					}
+
 				}
 				break;
 			default:

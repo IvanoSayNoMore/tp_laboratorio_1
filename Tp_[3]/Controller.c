@@ -80,11 +80,11 @@ int controller_loadFromText(char* path , LinkedList* pArrayListPassenger)
 		{
 			retorno = parser_PassengerFromText(pFile, pArrayListPassenger);
 			fclose(pFile);//mmmm
-
 		}
 		else
 		{
 			retorno=RETORNONEGATIVO;
+			puts("error");
 		}
 	}
 	else
@@ -567,19 +567,26 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListPassenger)
 {
 	int retorno = RETORNONEGATIVO;
 	FILE *pFile;
+	int valida;
+	valida = ll_isEmpty(pArrayListPassenger);
 
-	if (path != NULL && pArrayListPassenger != NULL)
+	if (path != NULL && pArrayListPassenger != NULL && valida == RETORNOPOSITIVO )
 	{
 		pFile = fopen(path, "wb");
 		if (pFile != NULL)
 		{
 			retorno = controller_conversorABinario(pFile, pArrayListPassenger);
+			puts("Salvado en modo binaro");
 			fclose(pFile);
 		}
 		else
 		{
 			retorno = -2;
 		}
+	}
+	else
+	{
+		puts("Debe cargar datos antes de poder imprimir algo");
 	}
 	return retorno;
 
