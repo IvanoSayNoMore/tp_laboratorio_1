@@ -139,13 +139,14 @@ int main()
 
 				break;
 			case 9:
-				if(controller_saveAsBinary("Data.bin",listaPasajeros)==RETORNOPOSITIVO)
+				if(menu_guardarArchivoBinario(listaPasajeros)==RETORNOPOSITIVO)
 				{
 					opcionGuardar = 0;
 				}
+
 				break;
 			case 10:
-				if(utnVerificacionConChar("Realmente desea salir ? Ingrese Si para salir", "Se cierra el programa\n", "Sigue el programa", 0)==RETORNOPOSITIVO)
+				if(utnVerificacionConChar("Realmente desea salir ? Ingrese Si para salir\nATENCION, SI NO GUARDO EL ARCHIVO, EL MISMO SE PERDERA\n", "Se cierra el programa\n", "Sigue el programa", 0)==RETORNOPOSITIVO)
 				{
 					salir=-2;
 					if(opcionGuardar == 0 )

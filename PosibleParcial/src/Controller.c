@@ -158,8 +158,8 @@ int controller_ingresPassenger(char name[],char lastName[],char typePassenger[],
 	do{
 		if(utnIngressNameLastname(auxPasajero.nombre, "\nIngrese el nombre del pasajero: \n", lenCadena)==RETORNOPOSITIVO
 				&& utnIngressNameLastname(auxPasajero.apellido, "\nIngrese el apellido del pasajero: \n", lenCadena)==RETORNOPOSITIVO
-				&& utnGetNumero(&auxTipo, "\nIngrese el tipo.\n1- FirstClass\n2-ExecutiveClass\n3-EconomyClass\n  hay 2 .\n","Reintente TIPO\n", "Error. Hay 2 tipos maximos. Desea reintentar?\n", 1,3, REINTENTOS)==RETORNOPOSITIVO
-				&& utnGetNumero(&auxEstado, "\nIngrese el estado del vuelo ,\n1- En Horario\n2-Aterrizado\n3-Demorado\n4-En vuelo","Reintente TIPO\n", "Error. Hay 2 tipos maximos. Desea reintentar?\n", 1, 2, REINTENTOS)==RETORNOPOSITIVO
+				&& utnGetNumero(&auxTipo, "\nIngrese el tipo.\n1- FirstClass\n2-ExecutiveClass\n3-EconomyClass\n .\n","Reintente TIPO\n", "Error. Hay 2 tipos maximos. Desea reintentar?\n", 1,3, REINTENTOS)==RETORNOPOSITIVO
+				&& utnGetNumero(&auxEstado, "\nIngrese el estado del vuelo ,\n1- En Horario\n2-Aterrizado\n3-Demorado\n4-En vuelo","Reintente TIPO\n", "Error. Hay 4 tipos maximos. Desea reintentar?\n", 1, 4, REINTENTOS)==RETORNOPOSITIVO
 				&& utnIngresarFlotante("\nIngrese el precio del vuelo\n",&auxPasajero.precio,REINTENTOS)!=RETORNONEGATIVO
 				&& utnIngresarAlfanumerico(auxPasajero.codigoVuelo, "Ingrese codigo del Vuelo a asignar\n",REINTENTOS,lenCadena)==RETORNOPOSITIVO)
 		{
@@ -184,14 +184,14 @@ int controller_ingresPassenger(char name[],char lastName[],char typePassenger[],
 
 }
 
-void controller_convierteOpcionAcadena(int opcion, char* tipoChar,char* opcionAsgnarA, char*opcionAsignarB,char*opcionAsignarC,char*opcionAsignarD)
+void controller_convierteOpcionAcadena(int opcion, char* tipoChar,char* opcionAsignarA, char*opcionAsignarB,char*opcionAsignarC,char*opcionAsignarD)
 {
-	if(opcion>0 && tipoChar != NULL && opcionAsgnarA != NULL && opcionAsignarB != NULL && opcionAsignarC != NULL)
+	if(opcion>0 && tipoChar != NULL && opcionAsignarA != NULL && opcionAsignarB != NULL && opcionAsignarC != NULL)
 	{
 		switch (opcion)
 		{
 		case 1:
-			strncpy(tipoChar,opcionAsgnarA,51);
+			strncpy(tipoChar,opcionAsignarA,51);
 			break;
 		case 2:
 			strncpy(tipoChar,opcionAsignarB,51);

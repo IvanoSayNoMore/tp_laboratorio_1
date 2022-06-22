@@ -203,3 +203,55 @@ int menu_guardarArchivoCsv(LinkedList* pArrayListPassenger)
 
 	return retorno;
 }
+
+int menu_guardarArchivoBinario(LinkedList* pArrayListPassenger)
+{
+	int retorno=-2;
+	int valida;
+	int opcion;
+	char auxCadena[MAXIMOCADENA];
+	valida = ll_isEmpty(pArrayListPassenger);
+
+	if(pArrayListPassenger != NULL && valida == RETORNOPOSITIVO)
+	{
+		if(utnGetNumero(&opcion, "Ingrese 1 si desea crear un nuevo archivo o 2 si desea guardar sobre el mismo o 0 para cancelar\n"
+				, "Error al ingresar Opcion", "Desea reintentar? ", 0,2, REINTENTOS)==RETORNOPOSITIVO)
+		{
+			if(opcion==1)
+			{
+				if(utnIngresarAlfanumerico(auxCadena, "Ingrese el nombre del archivo sin la extencion \n", REINTENTOS, 51)==RETORNOPOSITIVO)
+				{
+					strcat(auxCadena,".bin");
+					if(controller_saveAsBinary(auxCadena,pArrayListPassenger)==RETORNOPOSITIVO)
+					{
+						retorno=RETORNOPOSITIVO;
+						puts("Guardado correctamente");
+					}
+				}
+				else
+				{
+					puts("Error al nombrar al archivo");
+				}
+			}
+			else if(opcion==2)
+			{
+				if(controller_saveAsBinary("data.bin",pArrayListPassenger)==RETORNOPOSITIVO)
+				{
+					puts("Guardado correctamente");
+					retorno=RETORNOPOSITIVO;
+				}
+			}
+			if(opcion==0)
+			{
+				retorno=RETORNONEGATIVO;
+				puts("Se cancela la operacion");
+			}
+		}
+	}
+	else
+	{
+		puts("Debe cargar datos antes de poder imprimir algo");
+	}
+
+	return retorno;
+}
