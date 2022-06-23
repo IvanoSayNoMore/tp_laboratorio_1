@@ -53,7 +53,6 @@ static int controller_buscaIdMaximo(LinkedList* pArrayListPassenger)
 	if(pArrayListPassenger != NULL)
 	{
 		len = ll_len(pArrayListPassenger);
-		//printf("LEN: %d \n",len);
 		for(int i=0;i<len;i++)
 		{
 			pPassenger = ll_get(pArrayListPassenger,i);
@@ -252,6 +251,7 @@ int controller_cambioDeDatos(LinkedList* pArrayListPassenger,int posicion)
 	{
 		do{
 			puts("El pasajero a modificar  es : ");
+			puts("|   ID    |   NOMBRE   |  APELLIDO  |   PRECIO   |     C.VUELO     |  T.PASAJERO | ESTADO VUELO |");
 			controller_scanPasajeroParaImprimir(pArrayListPassenger, posicion);
 			puts("-------------------------------------------------------------------------------------------------\n");
 
@@ -406,7 +406,7 @@ int controller_removePassenger(LinkedList* pArrayListPassenger)
 					{
 						puts("\nEl pasajero a eliminar es : ");
 						controller_scanPasajeroParaImprimir(pArrayListPassenger, posicionPasajeroId);
-						if(utnVerificacionConChar("Realmente desa Eliminarlo?", "Pasajero Eliminado", "Se procede a la eliminacion", 0)==RETORNOPOSITIVO)
+						if(utnVerificacionConChar("Realmente desa Eliminarlo?", "Pasajero Eliminado", "Se cancela a la eliminacion", 0)==RETORNOPOSITIVO)
 						{
 							Passenger_delete(pPasajero);
 							retorno = ll_remove(pArrayListPassenger, posicionPasajeroId);
@@ -442,7 +442,7 @@ int controller_ListPassenger(LinkedList* pArrayListPassenger)
     {
     	len = ll_len(pArrayListPassenger);
 
-    	puts("|   ID    |   NOMBRE   |  APELLIDO  |   PRECIO  |     C.VUELO     | T.PASAJERO | ESTADO VUELO | \n");
+    	puts("|   ID    |   NOMBRE   |  APELLIDO  |   PRECIO  |     C.VUELO     | T. PASAJERO | ESTADO VUELO | \n");
 
     	for(int i=0;i<len;i++)
     	{
@@ -469,7 +469,7 @@ int controller_scanPasajeroParaImprimir(LinkedList* pArrayListPassenger, int pos
 				&& Passenger_getTipoPasajero(pPasajero, pasajeroAux.tipoPasajero) 	 == RETORNOPOSITIVO
 				&& Passenger_getEstadoVuelo(pPasajero, pasajeroAux.statusFlight) 	 == RETORNOPOSITIVO)
 		{
-			printf("\n|%5d    | %10s | %10s |  %.2f | %15s | %10s | %10s \n "
+			printf("\n|  %5d  | %10s | %10s |  %.2f | %15s | %10s | %10s \n "
 					,pasajeroAux.id,pasajeroAux.nombre,pasajeroAux.apellido,
 					pasajeroAux.precio,pasajeroAux.codigoVuelo,pasajeroAux.tipoPasajero,pasajeroAux.statusFlight);
 			retorno=RETORNOPOSITIVO;

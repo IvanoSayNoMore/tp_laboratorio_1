@@ -321,8 +321,6 @@ int ll_indexOf(LinkedList* this, void* pElement)
     	len=ll_len(this);
     	for(int i=0;i<len;i++)
     	{
-    		//pAuxiliarElemento=ll_get(this, i);
-    	//	if(pElement == pAuxiliarElemento)
     		if(pElement == ll_get(this, i))
     		{
     			returnAux=i;
@@ -438,15 +436,15 @@ int ll_containsAll(LinkedList* this,LinkedList* this2)
 {
     int returnAux = -1;
     int len;
-    void* pelement;
+    void* pElement;
     if(this != NULL && this2 != NULL)
     {
     	len=ll_len(this2);
     	returnAux = 1;
     	for(int i = 0; i<len ; i++)
     	{
-    		pelement = ll_get(this2, i);
-    		if(ll_contains(this, pelement)==RETORNOPOSITIVO)
+    		pElement = ll_get(this2, i);
+    		if(ll_contains(this, pElement)==0)
     		{
     			returnAux = 0;
     			break;

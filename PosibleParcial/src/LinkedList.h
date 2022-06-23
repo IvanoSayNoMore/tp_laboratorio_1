@@ -35,21 +35,19 @@ struct LinkedList
 
 //Publicas
 LinkedList* ll_newLinkedList(void);
-int ll_len(LinkedList* this);
-Node* test_getNode(LinkedList* this, int nodeIndex);
-int test_addNode(LinkedList* this, int nodeIndex,void* pElement);
-int ll_add(LinkedList* this, void* pElement);
-void* ll_get(LinkedList* this, int index);
-int ll_set(LinkedList* this, int index,void* pElement);
-int ll_remove(LinkedList* this,int index);
-int ll_clear(LinkedList* this);
-int ll_deleteLinkedList(LinkedList* this);
-int ll_indexOf(LinkedList* this, void* pElement);
-int ll_isEmpty(LinkedList* this);
+int ll_len(LinkedList* this);//ok controller_buscaIdMaximo
+int ll_add(LinkedList* this, void* pElement);//ok parser_PassengerFromText
+void* ll_get(LinkedList* this, int index);//ok parser_guardaPasajerosCsv
+int ll_set(LinkedList* this, int index,void* pElement);// ok ll_sort
+int ll_remove(LinkedList* this,int index);//okcontroller_removePassenger
+int ll_clear(LinkedList* this);//ok ll_deleteLinkedList
+int ll_deleteLinkedList(LinkedList* this);//ok Main
+int ll_indexOf(LinkedList* this, void* pElement);//ok ll_contains
+int ll_isEmpty(LinkedList* this);//ok controller_saveAsBinary
 int ll_push(LinkedList* this, int index, void* pElement);
 void* ll_pop(LinkedList* this,int index);
-int ll_contains(LinkedList* this, void* pElement);
-int ll_containsAll(LinkedList* this,LinkedList* this2);
-LinkedList* ll_subList(LinkedList* this,int from,int to);
-LinkedList* ll_clone(LinkedList* this);
-int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order);
+int ll_contains(LinkedList* this, void* pElement);//ok ll_containsAll
+int ll_containsAll(LinkedList* this,LinkedList* this2);//main
+LinkedList* ll_subList(LinkedList* this,int from,int to);//ll_clone
+LinkedList* ll_clone(LinkedList* this);//main
+int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order);//okc ontroller_sortPassenger

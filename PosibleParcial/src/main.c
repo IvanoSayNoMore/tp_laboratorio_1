@@ -11,7 +11,7 @@
 #define MAXIMOPASAJEROS 16
 #define MAXIMOVUELOS 8
 #define MINIMOOPCION 1
-#define MAXIMOOPCION 10
+#define MAXIMOOPCION 11
 #define ESTADOVUELOACTIVO 0
 #define ESTADOVUELOCANCELADO 1
 
@@ -36,9 +36,11 @@ int main()
 	setbuf(stdout, NULL);
 	int salir;
 	int opcionGuardar = -1 ;
-
+	int flagCarga = -1;
     int opcion;
+    int valida;
     LinkedList* listaPasajeros = ll_newLinkedList();
+    LinkedList* listaParaClonar = NULL;
 
     do{
     	if(utnGetNumero(&opcion,
@@ -58,24 +60,26 @@ int main()
     	 	switch(opcion)
 			{
 			case 1://Carga .csv
-				if(menu_cargaDatosPasajerosDesdeCsv("data.csv",listaPasajeros)==RETORNOPOSITIVO)
+				if(menu_cargaDatosPasajerosDesdeCsv("data.csv",listaPasajeros)==RETORNOPOSITIVO && flagCarga == -1)
 				{
 					puts("\nEl archivo se ha cargado con exito");
+					flagCarga = 0;
 				}
 				else
 				{
-					puts("\nOcurrio un error al leer el archivo  \n");
+					puts("\nOcurrio un error al leer o cargar el archivo.\nRecuerde que solo puede cargar el archivo solo 1 vez\n");
 				}
 				break;
 
 			case 2:
-				if(menu_cargaDatosPasajerosDesdeBinario("data.bin",listaPasajeros)==RETORNOPOSITIVO)
+				if(menu_cargaDatosPasajerosDesdeBinario("data.bin",listaPasajeros)==RETORNOPOSITIVO && flagCarga == -1)
 				{
 					puts("El archivo se ha cargado con exito binario");
+					flagCarga = 0;
 				}
 				else
 				{
-					puts("Ocurrio un error al leer el archivo ");
+					puts("Ocurrio un error al leer o cargar el archivo.\nRecuerde que solo puede cargar el archivo solo 1 vez \n");
 				}
 
 				break;
@@ -83,11 +87,11 @@ int main()
 			case 3://Alta manual
 				if(menu_altaPasajero(listaPasajeros)==RETORNOPOSITIVO)
 				{
-					puts("Operacion realizada con exito");
+					puts("Operacion realizada con exito\n");
 				}
 				else
 				{
-					puts("Ocurrio un error en la carga de datos del pasajero");
+					puts("Ocurrio un error en la carga de datos del pasajero\n");
 				}
 
 				break;
@@ -95,31 +99,31 @@ int main()
 			case 4://
 				if(menu_modificarPasajero(listaPasajeros)==RETORNOPOSITIVO)
 				{
-					puts("Operacion realizada con exito");
+					puts("Operacion realizada con exito\n");
 				}
 				else
 				{
-					puts("Ocurrio un error en la modificacion de datos del pasajero");
+					puts("Ocurrio un error en la modificacion de datos del pasajero\n");
 				}
-
 
 				break;
 
 			case 5://
-				 if(menu_eliminarPasajero(listaPasajeros)==RETORNOPOSITIVO)
-				 {
-					 puts("Se ha eliminado con exito");
-				 }
-				 else
-				 {
-					 puts("Ocurrio un error al eliminar pasajero");
-				 }
-		        break;
+				if(menu_eliminarPasajero(listaPasajeros)==RETORNOPOSITIVO)
+				{
+					puts("Se ha eliminado con exito\n");
+				}
+				else
+				{
+					puts("Ocurrio un error al eliminar pasajero\n");
+				}
+
+			 break;
 
 			case 6://
 				if(controller_ListPassenger(listaPasajeros)==RETORNONEGATIVO)
 				{
-					puts("Debe cargar datos antes de poder imprimir algo");
+					puts("Debe cargar datos antes de poder imprimir algo\n");
 				}
 
 				break;
@@ -127,7 +131,7 @@ int main()
 			case 7://Ordenar
 				if(menu_ordenarPasajero(listaPasajeros)==-2)
 				{
-					puts("Debe cargar datos antes de poder imprimir algo");
+					puts("Debe cargar datos antes de poder imprimir algo\n");
 				}
 				break;
 
@@ -145,18 +149,33 @@ int main()
 				}
 
 				break;
+
 			case 10:
-				if(utnVerificacionConChar("Realmente desea salir ? Ingrese Si para salir\nATENCION, SI NO GUARDO EL ARCHIVO, EL MISMO SE PERDERA\n", "Se cierra el programa\n", "Sigue el programa", 0)==RETORNOPOSITIVO)
+				if(utnVerificacionConChar("Realmente desea salir ? Ingrese Si para salir\nATENCION, SI NO GUARDO EL ARCHIVO, EL MISMO SE PERDERA\n",
+						"Adios\n", "Sigue el programa", 0)==RETORNOPOSITIVO)
 				{
 					salir=-2;
+
 					if(opcionGuardar == 0 )
 					{
-						ll_clear(listaPasajeros);
-						ll_deleteLinkedList(listaPasajeros);
+						valida=ll_containsAll(listaPasajeros,listaParaClonar);
+
+						if(listaParaClonar != NULL && (valida!=1))
+						{
+							if(utnVerificacionConChar("\n WARNING \n Se han borrado datos del archivo origianl . Desea guardar una copia del antiguo ? ",
+									"Adios\n", "Se guarda una copia del antiguo archivo como dataBKP ", 0)==RETORNOPOSITIVO)
+							{
+								controller_saveAsText("dataBKP.csv",listaParaClonar);
+							}
+
+						}
 					}
 
+					ll_deleteLinkedList(listaPasajeros);
+					ll_deleteLinkedList(listaParaClonar);
 				}
 				break;
+
 			default:
 				puts("Error en la seleccion\n");
 				break;
@@ -168,6 +187,13 @@ int main()
     	{
     		puts("\n Adios \n");
     		salir=-2;
+    	}
+
+    	//Clonado lista inicial
+    	if(listaParaClonar == NULL && flagCarga == 0)
+    	{
+    		listaParaClonar=ll_clone(listaPasajeros);
+    		flagCarga = 1;
     	}
 
     }while(salir!=-2);

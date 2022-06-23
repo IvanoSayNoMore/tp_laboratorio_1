@@ -77,6 +77,7 @@ int parser_PassengerFromText(FILE* pFile , LinkedList* pArrayListPassenger)
 					,auxId,auxName,auxLastName,auxFlycode,auxPrice,auxTypePassenger,auxstatusFlight);
 			if(retScan==7)
 			{
+				//fprintf();
 
 				pPassenger = Passenger_newParametros(atoi(auxId), auxName, auxLastName, atof(auxPrice), auxFlycode, auxTypePassenger,auxstatusFlight);
 
