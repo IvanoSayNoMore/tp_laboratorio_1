@@ -94,7 +94,7 @@ int main(void){
 
 			case 7:
 
-				if(utnVerificacionConChar("\nRealmente desea salilr ?\n", "Continua\n","\nAdios\n",0)==RETORNOPOSITIVO)
+				if(utnVerificacionConChar("\nRealmente desea salilr ?\n", "\nAdios","\nContinua\n",0)==RETORNOPOSITIVO)
 				{
 					salir=-2;
 					break;
