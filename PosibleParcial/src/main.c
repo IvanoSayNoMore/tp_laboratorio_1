@@ -11,7 +11,7 @@
 #define MAXIMOPASAJEROS 16
 #define MAXIMOVUELOS 8
 #define MINIMOOPCION 1
-#define MAXIMOOPCION 11
+#define MAXIMOOPCION 13
 #define ESTADOVUELOACTIVO 0
 #define ESTADOVUELOCANCELADO 1
 
@@ -39,8 +39,10 @@ int main()
 	int flagCarga = -1;
     int opcion;
     int valida;
+    int cantidad;
     LinkedList* listaPasajeros = ll_newLinkedList();
     LinkedList* listaParaClonar = NULL;
+    LinkedList* listaPorCodigoVuelo = NULL;
 
     do{
     	if(utnGetNumero(&opcion,
@@ -51,9 +53,12 @@ int main()
     			"Opcion 5: Baja de pasajero\n"
     			"Opcion 6: Listar pasajeros\n"
     			"Opcion 7: Ordenar \n"
-    			"Opcion 8: Guardar los datos de los pasajeros en el archivo data.csv (modo texto).\n"
+    	 		"Opcion 8: Guardar los datos de los pasajeros en el archivo data.csv (modo texto).\n"
     			"Opcion 9: Guardar los datos de los pasajeros en el archivo data.csv (modo binario).\n"
     			"Opcion 10: Salir\n"
+    			"Opcion 11: Lista por estado de vuelo \n"
+    			"Opcion 12: Cantidades por tipo\n"
+    			"Opcion 13: Caulcular Millas\n"
     			,"", "Error al ingresar Opcion. Desea reintentar?Ingrese SI si desea continuar.\n", MINIMOOPCION,
 				MAXIMOOPCION, REINTENTOS)==RETORNOPOSITIVO)
     	{
@@ -81,7 +86,6 @@ int main()
 				{
 					puts("Ocurrio un error al leer o cargar el archivo.\nRecuerde que solo puede cargar el archivo solo 1 vez \n");
 				}
-
 				break;
 
 			case 3://Alta manual
@@ -93,7 +97,6 @@ int main()
 				{
 					puts("Ocurrio un error en la carga de datos del pasajero\n");
 				}
-
 				break;
 
 			case 4://
@@ -117,15 +120,13 @@ int main()
 				{
 					puts("Ocurrio un error al eliminar pasajero\n");
 				}
-
-			 break;
+				break;
 
 			case 6://
 				if(controller_ListPassenger(listaPasajeros)==RETORNONEGATIVO)
 				{
 					puts("Debe cargar datos antes de poder imprimir algo\n");
 				}
-
 				break;
 
 			case 7://Ordenar
@@ -140,14 +141,13 @@ int main()
 				{
 					opcionGuardar = 0;
 				}
-
 				break;
+
 			case 9:
 				if(menu_guardarArchivoBinario(listaPasajeros)==RETORNOPOSITIVO)
 				{
 					opcionGuardar = 0;
 				}
-
 				break;
 
 			case 10:
@@ -156,23 +156,58 @@ int main()
 				{
 					salir=-2;
 
-					if(opcionGuardar == 0 )
+			 		if(opcionGuardar == 0 )
 					{
 						valida=ll_containsAll(listaPasajeros,listaParaClonar);
 
 						if(listaParaClonar != NULL && (valida!=1))
-						{
+		 				{
 							if(utnVerificacionConChar("\n WARNING \n Se han borrado datos del archivo origianl . Desea guardar una copia del antiguo ? ",
 									"Adios\n", "Se guarda una copia del antiguo archivo como dataBKP ", 0)==RETORNOPOSITIVO)
 							{
 								controller_saveAsText("dataBKP.csv",listaParaClonar);
 							}
-
 						}
 					}
-
 					ll_deleteLinkedList(listaPasajeros);
 					ll_deleteLinkedList(listaParaClonar);
+				}
+				break;
+
+			case 11:
+				if(ll_isEmpty(listaPasajeros)==RETORNOPOSITIVO)
+				{
+					listaPorCodigoVuelo=ll_filter(listaPasajeros,controller_buscaPorEstadoVuelo);
+					if(controller_saveAsText("Estados de vuelo.csv",listaPorCodigoVuelo)==RETORNOPOSITIVO)
+					{
+						puts("Guardado correctamente los vuelos del codigo listaPasajerosXEstado\n");
+					}
+				}
+				else
+				{
+					puts("se deben cargar pasajeros primero\n");
+				}
+				break;
+
+			case 12:
+				if(ll_isEmpty(listaPasajeros)==RETORNOPOSITIVO)
+				{
+					cantidad= ll_count(listaPasajeros,controller_contadorPasajerosPorClase);
+					printf("Hay un total de %d de tipos de pasajeros seleccionado\n",cantidad);
+				}
+				else
+				{
+					puts("se deben cargar pasajeros primero");
+				}
+				break;
+			case 13:
+				if(ll_isEmpty(listaPasajeros)==RETORNOPOSITIVO)
+				{
+					listaPasajeros=ll_map(listaPasajeros,controller_calcularMillas);
+				}
+				else
+				{
+					puts("se deben cargar pasajeros primero");
 				}
 				break;
 

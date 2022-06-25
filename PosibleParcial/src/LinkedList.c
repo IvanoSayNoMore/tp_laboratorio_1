@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "LinkedList.h"
+#include "utnInPuts.h"
 
 #define RETORNOPOSITIVO 0
 #define RETORNONEGATIVO -1
@@ -545,3 +546,91 @@ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order)
 
 }
 
+LinkedList* ll_filter(LinkedList * this, int (*fn)(void* element))
+{
+
+	void* pAux;
+	int criterioOk;
+	int auxEstado;
+	LinkedList* listaPasajerosXEstado= ll_newLinkedList();
+	utnGetNumero(&auxEstado, "\nIngrese el estado del vuelo ,\n1- En Horario\n2-Aterrizado\n3-Demorado\n4-En vuelo",
+			"Reintente TIPO\n", "Error. Hay 4 tipos maximos. Desea reintentar?\n", 1, 4, 3);
+	if(this != NULL && fn != NULL )
+	{
+		for(int i=ll_len(this); i >= 0; i--)
+		{
+			pAux = ll_get(this,i);
+			if(pAux != NULL)
+			{
+				criterioOk = fn(pAux);
+				if(criterioOk == auxEstado)
+				{
+					ll_add(listaPasajerosXEstado, pAux);
+				}
+			}
+		}
+
+	}
+	return listaPasajerosXEstado;
+}
+
+int ll_count(LinkedList* this, int (*fn)(void* element))
+{
+	void* pAux;
+	int criterioOk;
+	int retorno=0;
+	int auxTipo;
+	utnGetNumero(&auxTipo, "\nIngrese el tipo a contar.\n1- FirstClass\n2-ExecutiveClass\n3-EconomyClass\n .\n",
+			"Reintente TIPO\n", "Error. Hay 3 tipos maximos. Desea reintentar?\n", 1,3, 3);
+	if(this != NULL && fn != NULL )
+	{
+		for(int i=ll_len(this); i >= 0; i--)
+		{
+			pAux = ll_get(this,i);
+			if(pAux != NULL)
+			{
+				criterioOk=fn(pAux);
+				if(criterioOk==auxTipo)
+				{
+					retorno++;
+				}
+				/*
+				switch(criterioOk)
+				{
+				case 1:
+					FirstClass++;
+				break;
+
+				case 2:
+					ExecutiveClass++;
+				break;
+
+				case 3:
+					EconomyClass++;
+				break;
+				}*/
+			}
+		}
+	}
+
+	return retorno;
+}
+
+LinkedList* ll_map(LinkedList* this, void (*fn)(void* element))
+{
+	void* pAuxElement;
+	LinkedList* listaPasajerosConMillas = ll_newLinkedList();
+
+	if(this != NULL && fn != NULL)
+	{
+		for(int i=ll_len(this); i >= 0; i--)
+		{
+			pAuxElement=ll_get(this, i);
+			if(pAuxElement!=NULL)
+			{
+				fn(pAuxElement);
+			}
+		}
+	}
+	return pAuxElement;
+}

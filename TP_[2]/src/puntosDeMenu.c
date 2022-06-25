@@ -66,14 +66,6 @@ int menuItemEnterPassenger(Flight* vuelo,Passenger* listPassager,DateFlight* lis
 
 	 }
 
-
-//	}//If espacioLibre
-	//else
-//	{
-//		puts("No hay espacios para mas pasajeros  \n");
-//		retorno=RETORNONEGATIVO;
-//	}
-
 	return retorno;
 
 }
@@ -276,43 +268,66 @@ int hardcodeMenuItem(Passenger* list,DateFlight* listFlight, int lenPasajeros, i
 {
 	int auxId;
 	int retorno=-1;
+	Passenger * punteroAPasajero;
+	DateFlight * punteroDateFligh;
+	int espacioPasenger;
+	int espacioFlight;
+
 	if(utnIsEmptyOrFullPassager(list, EMPTY, lenPasajeros)!=-1)
 	{
+	   contadorId(&auxId);
+
+	   espacioPasenger=utnIsEmptyOrFullPassager(list, EMPTY, lenPasajeros);
+	   punteroAPasajero=&list[espacioPasenger];
+
+	   espacioFlight=utnIsEmptyOrFullFlight(listFlight, EMPTY, lenVuelos);
+	   punteroDateFligh=&listFlight[espacioFlight];
+
+	   if(addPassenger(punteroAPasajero,punteroDateFligh, auxId, "Ivan", "CCedina ", 15020.20, 2, "EA012F")==RETORNOPOSITIVO)
+	   {
+		   printf("Se ha dado de alta correctamente con el ID N°: %d \n",auxId);
+		   retorno=0;
+	   }
 
 	   contadorId(&auxId);
-	    if(addPassenger(list,listFlight, auxId, "Ivan", "CCedina  ", 15020.20, 2, "EA012F")==RETORNOPOSITIVO)
-	    {
-	    	printf("Se ha dado de alta correctamente con el ID N°: %d \n",auxId);
-	    	retorno=0;
-	    }
+	   espacioPasenger=utnIsEmptyOrFullPassager(list, EMPTY, lenPasajeros);
+	   punteroAPasajero=&list[espacioPasenger];
+	   espacioFlight=utnIsEmptyOrFullFlight(listFlight, EMPTY, lenVuelos);
+	   punteroDateFligh=&listFlight[espacioFlight];
+	   if(addPassenger(punteroAPasajero,punteroDateFligh, auxId, "Aldana", "AAabella", 123500.20, 4, "EA012G")==RETORNOPOSITIVO)
+	   {
+		   printf("Se ha dado de alta correctamente con el ID N°: %d \n",auxId);
+		   retorno=0;
+	   }
 
-	    contadorId(&auxId);
-	    if(addPassenger(list,listFlight, auxId, "Aldana", "AAabella", 123500.20, 4, "EA012G")==RETORNOPOSITIVO)
-	    {
-	    	printf("Se ha dado de alta correctamente con el ID N°: %d \n",auxId);
-	    	retorno=0;
-	    }
+	   contadorId(&auxId);
+	   espacioPasenger=utnIsEmptyOrFullPassager(list, EMPTY, lenPasajeros);
+	   espacioFlight=utnIsEmptyOrFullFlight(listFlight, EMPTY, lenVuelos);
+	   punteroAPasajero=&list[espacioPasenger];
+	   punteroDateFligh=&listFlight[espacioFlight];
+	   if(addPassenger(punteroAPasajero,punteroDateFligh, auxId, "Enano", "AAabella", 23300.20, 3,"EA012I")==RETORNOPOSITIVO)
+	   {
+		   	printf("Se ha dado de alta correctamente con el ID N°: %d \n",auxId);
+		   	retorno=0;
+	   }
 
-	    contadorId(&auxId);
-	    if(addPassenger(list,listFlight, auxId, "Enano", "AAabella", 23300.20, 3,"EA012I")==RETORNOPOSITIVO)
-	    {
+	   contadorId(&auxId);
+	   espacioPasenger=utnIsEmptyOrFullPassager(list, EMPTY, lenPasajeros);
+	   espacioFlight=utnIsEmptyOrFullFlight(listFlight, EMPTY, lenVuelos);
+	   punteroAPasajero=&list[espacioPasenger];
+	   punteroDateFligh=&listFlight[espacioFlight];
+	   if(addPassenger(punteroAPasajero,punteroDateFligh, auxId, "Abu", "Gris", 244300.20, 3, "EA012G")==RETORNOPOSITIVO)
+	   {
 	    	printf("Se ha dado de alta correctamente con el ID N°: %d \n",auxId);
 	    	retorno=0;
-	    }
-
-	    contadorId(&auxId);
-	    if(addPassenger(list,listFlight, auxId, "Abu", "Gris", 244300.20, 3, "EA012G")==RETORNOPOSITIVO)
-	    {
-	    	printf("Se ha dado de alta correctamente con el ID N°: %d \n",auxId);
-	    	retorno=0;
-	    }
+	   }
 
 	}
     else
-	    {
-	    	puts("error");
-	    	retorno=-1;
-	    }
+	{
+		puts("error");
+		retorno=-1;
+	}
 	return retorno;
 
 }

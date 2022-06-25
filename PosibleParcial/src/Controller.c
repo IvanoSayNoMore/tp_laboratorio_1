@@ -442,7 +442,7 @@ int controller_ListPassenger(LinkedList* pArrayListPassenger)
     {
     	len = ll_len(pArrayListPassenger);
 
-    	puts("|   ID    |   NOMBRE   |  APELLIDO  |   PRECIO  |     C.VUELO     | T. PASAJERO | ESTADO VUELO | \n");
+    	puts("|   ID    |   NOMBRE   |  APELLIDO  |   PRECIO  |     C.VUELO     | T. PASAJERO | ESTADO VUELO | Millas Acumuladas |\n");
 
     	for(int i=0;i<len;i++)
     	{
@@ -469,9 +469,13 @@ int controller_scanPasajeroParaImprimir(LinkedList* pArrayListPassenger, int pos
 				&& Passenger_getTipoPasajero(pPasajero, pasajeroAux.tipoPasajero) 	 == RETORNOPOSITIVO
 				&& Passenger_getEstadoVuelo(pPasajero, pasajeroAux.statusFlight) 	 == RETORNOPOSITIVO)
 		{
-			printf("\n|  %5d  | %10s | %10s |  %.2f | %15s | %10s | %10s \n "
+			printf("\n|  %5d  | %10s | %10s |  %.2f | %15s | %10s | %10s  |"
 					,pasajeroAux.id,pasajeroAux.nombre,pasajeroAux.apellido,
 					pasajeroAux.precio,pasajeroAux.codigoVuelo,pasajeroAux.tipoPasajero,pasajeroAux.statusFlight);
+			if(Passenger_getMillas(pPasajero, &pasajeroAux.millas)==RETORNOPOSITIVO)
+			{
+				printf("%5d",pasajeroAux.millas);
+			}
 			retorno=RETORNOPOSITIVO;
 		}
 	}
@@ -615,3 +619,106 @@ int controller_conversorABinario(FILE* pFile , LinkedList* pArrayListEmployee)
 	}
 	return retorno;
 }
+
+
+int controller_buscaPorEstadoVuelo(void* pArrayListPassenger)
+{
+	int retorno=-1;
+	char auxEstado[51];
+	if(pArrayListPassenger!=NULL)
+	{
+		if(Passenger_getEstadoVuelo(pArrayListPassenger, auxEstado)==RETORNOPOSITIVO)
+		{
+			if(strcmp(auxEstado,"En Horario")==0)
+			{
+				retorno=1;
+			}
+			if(strcmp(auxEstado,"Aterrizado")==0)
+			{
+				retorno=2;
+			}
+			if(strcmp(auxEstado,"Demorado")==0)
+			{
+				retorno=3;
+			}
+			if(strcmp(auxEstado,"En vuelo")==0)
+			{
+				retorno=4;
+			}
+		}
+	}
+	return retorno;
+}
+
+int controller_contadorPasajerosPorClase(void* pArrayListPassenger)
+{
+	int retorno;
+	char auxClase[51];
+	if(pArrayListPassenger!=NULL)
+	{
+		if(Passenger_getTipoPasajero(pArrayListPassenger, auxClase)==RETORNOPOSITIVO)
+		{
+			//"FirstClass","ExecutiveClass","EconomyClass"
+			if(strcmp(auxClase,"FirstClass")==0)
+			{
+				retorno=1;
+			}
+			if(strcmp(auxClase,"ExecutiveClass")==0)
+			{
+				retorno=2;
+			}
+			if(strcmp(auxClase,"EconomyClass")==0)
+			{
+				retorno=3;
+			}
+
+		}
+	}
+	return retorno;
+}
+
+
+void controller_calcularMillas(void* pArrayListPassenger)
+{
+	float precio;
+	int millas;
+	char tipoPasajero[51];
+	if(pArrayListPassenger!=NULL)
+	{
+		Passenger_getPrecio(pArrayListPassenger, &precio);
+		Passenger_getTipoPasajero(pArrayListPassenger, tipoPasajero);
+		millas=calcularMillas(precio,tipoPasajero);
+		Passenger_setMillas(pArrayListPassenger, millas);
+	}
+
+}
+
+int calcularMillas(float precio, char* tipoPasajero)
+{
+	int totalMillas;
+
+	totalMillas=precio/10;
+	if(strcmp("FirstClass",tipoPasajero)==0)
+	{
+		totalMillas=totalMillas*2;
+	}
+	if(strcmp("ExecutiveClass",tipoPasajero)==0)
+	{
+		totalMillas=totalMillas*3;
+	}
+
+	return totalMillas;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -89,3 +89,7 @@ void controller_convierteOpcionAcadena(int opcion, char* tipoChar,char* opcionAs
 int controller_ingresPassenger(char name[],char lastName[],char typePassenger[],float* price, char flyCode[],char estadoVuelo[],int lenCadena);
 int controller_scanPasajeroParaImprimir(LinkedList* pArrayListPassenger, int posicion);
 int controller_findPassengerById(LinkedList* pArrayListPassenger, int id,int* posicion);
+int controller_buscaPorEstadoVuelo(void* pArrayListPassenger);
+int controller_contadorPasajerosPorClase(void* pArrayListPassenger);
+void controller_calcularMillas(void* pArrayListPassenger);
+int calcularMillas(float precio, char* tipoPasajero);

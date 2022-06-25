@@ -17,6 +17,7 @@ typedef struct
 	char tipoPasajero[51];
 	char codigoVuelo[51];
 	char statusFlight[51];
+	int millas;
 
 }Passenger;
 
@@ -44,6 +45,9 @@ int Passenger_getPrecio(Passenger* this,float* precio);
 
 int Passenger_setEstadoVuelo(Passenger* this,char* statusFlight);
 int Passenger_getEstadoVuelo(Passenger* this,char* statusFlight);
+
+int Passenger_getMillas(Passenger* this,int* millas);
+int Passenger_setMillas(Passenger* this,int millas);
 
 void Passenger_freeDePasajero(Passenger* this);
 

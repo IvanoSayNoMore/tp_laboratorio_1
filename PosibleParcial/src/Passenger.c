@@ -132,8 +132,6 @@ int Passenger_getCodigoVuelo(Passenger* this,char* codigoVuelo)
 		retorno=RETORNOPOSITIVO;
 	}
 
-
-
 	return retorno;
 }
 
@@ -204,3 +202,24 @@ int Passenger_getEstadoVuelo(Passenger* this,char* statusFlight)
 	return retorno;
 }
 
+int Passenger_getMillas(Passenger* this,int* millas)
+{
+	int retorno=RETORNONEGATIVO;
+	if(this != NULL && millas>0)
+	{
+		*millas=this->millas;
+		retorno=RETORNOPOSITIVO;
+	}
+	return retorno;
+}
+
+int Passenger_setMillas(Passenger* this,int millas)
+{
+	int retorno=RETORNONEGATIVO;
+	if(this != NULL && millas>0)
+	{
+		this->millas=millas;
+		retorno=RETORNOPOSITIVO;
+	}
+	return retorno;
+}
