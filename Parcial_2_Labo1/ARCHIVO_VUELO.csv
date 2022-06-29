@@ -1,0 +1,248 @@
+id,name,lastName,price,flycode,typePassenger,statusFlight
+42,Ame,García,50000,BA2491A,ExecutiveClass,Aterrizado
+43,Bradney,Miranda,25000,BA2491A,ExecutiveClass,Aterrizado
+44,Margarete,Bravo,50000,BA2491A,ExecutiveClass,Aterrizado
+74,Cristie,Vidal,25000,IB0800A,ExecutiveClass,Aterrizado
+75,Solomon,Salinas,10000,IB0800A,ExecutiveClass,Aterrizado
+76,Nananne,Zúñiga,33000,IB0800A,ExecutiveClass,Aterrizado
+77,Sacha,Peña,25000,IB0800A,ExecutiveClass,Aterrizado
+78,Morse,Godoy,25000,IB0800A,ExecutiveClass,Aterrizado
+79,Roland,Lagos,25000,IB0800A,ExecutiveClass,Aterrizado
+80,Jesselyn,Maldonado,30000,IB0800A,ExecutiveClass,Aterrizado
+81,Kylila,Bustos,12000,IB0800A,ExecutiveClass,Aterrizado
+82,Kendre,Medina,25000,IB0800A,ExecutiveClass,Aterrizado
+83,Lesya,Pino,15000,IB0800A,ExecutiveClass,Aterrizado
+84,Tatiania,Palma,20000,IB0800A,ExecutiveClass,Aterrizado
+85,Trenton,Moreno,12000,IB0800A,ExecutiveClass,Aterrizado
+88,George,Navarrete,30000,MM0987B,ExecutiveClass,En Horario
+89,Guenevere,Sáez,30000,MM0987B,ExecutiveClass,En Horario
+90,Margaretha,Alvarado,10000,MM0987B,ExecutiveClass,En Horario
+91,Sully,Donoso,15000,MM0987B,ExecutiveClass,En Horario
+92,Lonni,Poblete,50000,MM0987B,ExecutiveClass,En Horario
+93,Nicky,Bustamante,42000,MM0987B,ExecutiveClass,En Horario
+94,My,Toro,18000,MM0987B,ExecutiveClass,En Horario
+95,Kyrstin,Ortega,37000,IB0800A,ExecutiveClass,Aterrizado
+96,Martino,Venegas,15000,IB0800A,ExecutiveClass,Aterrizado
+97,Marcellus,Guerrero,50000,IB0800A,ExecutiveClass,Aterrizado
+98,Jacquelin,Mendoza,30000,IB0800A,ExecutiveClass,Aterrizado
+99,Aleda,Farías,50000,IB0800A,ExecutiveClass,Aterrizado
+100,Georgeta,San Martín,10000,IB0800A,ExecutiveClass,Aterrizado
+101,Marcille,González,10000,IB0800A,ExecutiveClass,Aterrizado
+102,Ertha,Fernández,10000,IB0800A,ExecutiveClass,Aterrizado
+103,Desiri,Rodríguez,25000,MM0987B,ExecutiveClass,En Horario
+104,Geneva,López,33000,MM0987B,ExecutiveClass,En Horario
+105,Kilian,Martínez,42000,MM0987B,ExecutiveClass,En Horario
+106,Nance,Sánchez,10000,MM0987B,ExecutiveClass,En Horario
+107,Gaven,Pérez,10000,MM0987B,ExecutiveClass,En Horario
+108,Carlie,Gómez,10000,MM0987B,ExecutiveClass,En Horario
+109,Trixie,Martín,42000,IB0800A,ExecutiveClass,Aterrizado
+110,Dominick,Jiménez,30000,IB0800A,ExecutiveClass,Aterrizado
+111,Petey,Ruiz,15000,IB0800A,ExecutiveClass,Aterrizado
+112,Tersina,Hernández,30000,IB0800A,ExecutiveClass,Aterrizado
+113,Johnathon,Díaz,15000,IB0800A,ExecutiveClass,Aterrizado
+114,Freddie,Moreno,12000,IB0800A,ExecutiveClass,Aterrizado
+115,Harmon,Álvarez,50000,IB0800A,ExecutiveClass,Aterrizado
+116,Tracey,Muñoz,20000,IB0800A,ExecutiveClass,Aterrizado
+117,Cherrita,Romero,33000,MM0987B,ExecutiveClass,En Horario
+118,Stu,Alonso,12000,MM0987B,ExecutiveClass,En Horario
+119,Glenda,Gutiérrez,37000,MM0987B,ExecutiveClass,En Horario
+120,Lorettalorna,Navarro,25000,MM0987B,ExecutiveClass,En Horario
+121,Patrizio,Torres,15000,IB0800A,ExecutiveClass,Aterrizado
+122,Linda,Domínguez,30000,IB0800A,ExecutiveClass,Aterrizado
+123,Pippa,Vázquez,20000,IB0800A,ExecutiveClass,Aterrizado
+128,Zacharie,Díaz,30000,BA2491A,ExecutiveClass,Aterrizado
+129,Vina,Pérez,42000,BA2491A,ExecutiveClass,Aterrizado
+130,Omero,Soto,10000,BA2491A,ExecutiveClass,Aterrizado
+131,Tom,Contreras,33000,BA2491A,ExecutiveClass,Aterrizado
+132,Dante,Silva,30000,BA2491A,ExecutiveClass,Aterrizado
+133,Cordy,Martínez,18000,BA2491A,ExecutiveClass,Aterrizado
+134,Stephenie,Sepúlveda,50000,BA2491A,ExecutiveClass,Aterrizado
+135,Dunstan,Morales,20000,BA2491A,ExecutiveClass,Aterrizado
+136,Gideon,Rodríguez,15000,BA2491A,ExecutiveClass,Aterrizado
+137,Johnette,López,10000,BA2491A,ExecutiveClass,Aterrizado
+138,Brynn,Fuentes,50000,BA2491A,ExecutiveClass,Aterrizado
+139,Yankee,Hernández,42000,BA2491A,ExecutiveClass,Aterrizado
+140,Corbin,Torres,42000,BA2491A,ExecutiveClass,Aterrizado
+175,Lorant,Cárdenas,50000,MM0987B,ExecutiveClass,En Horario
+176,Wanids,Olivares,30000,MM0987B,ExecutiveClass,En Horario
+177,Robbi,Alarcón,10000,MM0987B,ExecutiveClass,En Horario
+178,Mellicent,Gallardo,50000,MM0987B,ExecutiveClass,En Horario
+179,Lynea,Ortiz,20000,MM0987B,ExecutiveClass,En Horario
+180,Nial,Garrido,15000,MM0987B,ExecutiveClass,En Horario
+181,Guillaume,Salazar,37000,MM0987B,ExecutiveClass,En Horario
+182,Loutitia,Guzmán,25000,MM0987B,ExecutiveClass,En Horario
+183,Ruthe,Henríquez,30000,MM0987B,ExecutiveClass,En Horario
+184,Eric,Saavedra,50000,MM0987B,ExecutiveClass,En Horario
+185,Marcellus,Navarro,30000,MM0987B,ExecutiveClass,En Horario
+186,Ian,Aguilera,42000,MM0987B,ExecutiveClass,En Horario
+187,Sebastien,Parra,37000,MM0987B,ExecutiveClass,En Horario
+188,Scarface,Romero,50000,MM0987B,ExecutiveClass,En Horario
+189,Maible,Aravena,18000,MM0987B,ExecutiveClass,En Horario
+190,Waldon,Vargas,30000,MM0987B,ExecutiveClass,En Horario
+191,Bethina,Vázquez,15000,MM0987B,ExecutiveClass,En Horario
+192,Farand,Cáceres,42000,MM0987B,ExecutiveClass,En Horario
+193,Zolly,Yáñez,25000,MM0987B,ExecutiveClass,En Horario
+195,Roderigo,Escobar,20000,BA2491A,ExecutiveClass,Aterrizado
+196,Otho,Ruiz,20000,BA2491A,ExecutiveClass,Aterrizado
+197,Alasteir,Valdés,20000,BA2491A,ExecutiveClass,Aterrizado
+242,Broddie,Alonso,42000,TU6789B,ExecutiveClass,Aterrizado
+243,Brigham,Gutiérrez,25000,TU6789B,ExecutiveClass,Aterrizado
+244,Cal,Navarro,42000,TU6789B,ExecutiveClass,Aterrizado
+245,Donal,Torres,18000,TU6789B,ExecutiveClass,Aterrizado
+246,Adam,Domínguez,20000,TU6789B,ExecutiveClass,Aterrizado
+247,Dotty,Vázquez,42000,TU6789B,ExecutiveClass,Aterrizado
+248,Maynard,Ramos,18000,TU6789B,ExecutiveClass,Aterrizado
+249,Jessee,González,30000,TU6789B,ExecutiveClass,Aterrizado
+250,Tiphani,Muñoz,42000,TU6789B,ExecutiveClass,Aterrizado
+251,Jenna,Rojas,30000,TU6789B,ExecutiveClass,Aterrizado
+260,Tadd,Rodríguez,50000,TU6789B,ExecutiveClass,Aterrizado
+261,Josiah,López,10000,TU6789B,ExecutiveClass,Aterrizado
+262,Melisa,Fuentes,12000,TU6789B,ExecutiveClass,Aterrizado
+263,Orelee,Hernández,20000,TU6789B,ExecutiveClass,Aterrizado
+264,Stephen,Torres,37000,TU6789B,ExecutiveClass,Aterrizado
+265,Blair,Araya,50000,TU6789B,ExecutiveClass,Aterrizado
+266,Arel,Flores,30000,TU6789B,ExecutiveClass,Aterrizado
+267,Abbie,Espinoza,25000,TU6789B,ExecutiveClass,Aterrizado
+268,Channa,Valenzuela,50000,TU6789B,ExecutiveClass,Aterrizado
+269,Shirl,Castillo,20000,TU6789B,ExecutiveClass,Aterrizado
+270,Edlin,Tapia,20000,TU6789B,ExecutiveClass,Aterrizado
+271,Larina,Reyes,18000,TU6789B,ExecutiveClass,Aterrizado
+272,Duncan,Gutiérrez,37000,TU6789B,ExecutiveClass,Aterrizado
+273,Bond,Castro,10000,TU6789B,ExecutiveClass,Aterrizado
+274,Dyann,Pizarro,50000,TU6789B,ExecutiveClass,Aterrizado
+275,Charmian,Álvarez,15000,TU6789B,ExecutiveClass,Aterrizado
+276,Dru,Vásquez,50000,TU6789B,ExecutiveClass,Aterrizado
+277,Kiel,Sánchez,50000,TU6789B,ExecutiveClass,Aterrizado
+278,Emory,Fernández,15000,TU6789B,ExecutiveClass,Aterrizado
+279,Alberik,Ramírez,50000,TU6789B,ExecutiveClass,Aterrizado
+280,Koenraad,Carrasco,20000,TU6789B,ExecutiveClass,Aterrizado
+281,Rafaellle,Gómez,50000,TU6789B,ExecutiveClass,Aterrizado
+282,Edie,Cortés,25000,TU6789B,ExecutiveClass,Aterrizado
+283,Osbert,Herrera,15000,TU6789B,ExecutiveClass,Aterrizado
+284,Sidonia,Núñez,10000,TU6789B,ExecutiveClass,Aterrizado
+285,Bartel,Jara,37000,TU6789B,ExecutiveClass,Aterrizado
+295,Catriona,Vega,42000,TU6789B,ExecutiveClass,Aterrizado
+296,Leigh,Campos,37000,TU6789B,ExecutiveClass,Aterrizado
+297,Ddene,Sandoval,12000,TU6789B,ExecutiveClass,Aterrizado
+391,Sherwin,Espinoza,50000,MM0987B,ExecutiveClass,En Horario
+392,Vikki,Valenzuela,33000,MM0987B,ExecutiveClass,En Horario
+393,Barret,Castillo,10000,MM0987B,ExecutiveClass,En Horario
+394,Gaelan,Tapia,25000,MM0987B,ExecutiveClass,En Horario
+395,Livy,Reyes,20000,MM0987B,ExecutiveClass,En Horario
+396,Iorgos,Gutiérrez,18000,MM0987B,ExecutiveClass,En Horario
+397,Charil,Castro,33000,MM0987B,ExecutiveClass,En Horario
+398,Easter,Pizarro,30000,MM0987B,ExecutiveClass,En Horario
+399,Esdras,Álvarez,37000,MM0987B,ExecutiveClass,En Horario
+442,Tam,Leiva,20000,GU2345F,ExecutiveClass,En Vuelo
+443,Davon,Escobar,20000,GU2345F,ExecutiveClass,En Vuelo
+444,Chrissy,Ruiz,18000,GU2345F,ExecutiveClass,En Vuelo
+445,Ozzie,Valdés,20000,GU2345F,ExecutiveClass,En Vuelo
+446,Rina,Vidal,20000,GU2345F,ExecutiveClass,En Vuelo
+447,Guy,Salinas,42000,GU2345F,ExecutiveClass,En Vuelo
+448,Lenora,Zúñiga,18000,GU2345F,ExecutiveClass,En Vuelo
+449,Julietta,Peña,42000,GU2345F,ExecutiveClass,En Vuelo
+450,Alexandr,Godoy,18000,GU2345F,ExecutiveClass,En Vuelo
+451,Margalit,Lagos,15000,GU2345F,ExecutiveClass,En Vuelo
+452,Samara,Maldonado,50000,GU2345F,ExecutiveClass,En Vuelo
+453,Portie,Bustos,15000,GU2345F,ExecutiveClass,En Vuelo
+454,Korella,Medina,33000,GU2345F,ExecutiveClass,En Vuelo
+455,Hilly,Pino,30000,GU2345F,ExecutiveClass,En Vuelo
+456,Leeanne,Palma,10000,GU2345F,ExecutiveClass,En Vuelo
+457,Arnaldo,Moreno,10000,GU2345F,ExecutiveClass,En Vuelo
+458,Kassi,Sanhueza,37000,GU2345F,ExecutiveClass,En Vuelo
+459,Karen,Carvajal,20000,GU2345F,ExecutiveClass,En Vuelo
+460,Mac,Navarrete,20000,GU2345F,ExecutiveClass,En Vuelo
+461,Anthia,Sáez,37000,GU2345F,ExecutiveClass,En Vuelo
+462,Marsiella,Alvarado,20000,GU2345F,ExecutiveClass,En Vuelo
+463,Shea,Donoso,12000,GU2345F,ExecutiveClass,En Vuelo
+464,Liana,Poblete,15000,GU2345F,ExecutiveClass,En Vuelo
+465,Carley,Bustamante,12000,GU2345F,ExecutiveClass,En Vuelo
+466,Carlye,Toro,37000,GU2345F,ExecutiveClass,En Vuelo
+467,Svend,Ortega,25000,GU2345F,ExecutiveClass,En Vuelo
+468,Kendell,Venegas,25000,GU2345F,ExecutiveClass,En Vuelo
+469,Chrisy,Guerrero,15000,GU2345F,ExecutiveClass,En Vuelo
+470,Rod,Mendoza,50000,GU2345F,ExecutiveClass,En Vuelo
+471,Ramsay,Farías,20000,GU2345F,ExecutiveClass,En Vuelo
+472,Saidee,San Martín,50000,GU2345F,ExecutiveClass,En Vuelo
+473,Erek,González,10000,GU2345F,ExecutiveClass,En Vuelo
+474,Salomi,Fernández,10000,GU2345F,ExecutiveClass,En Vuelo
+475,Coletta,Rodríguez,50000,GU2345F,ExecutiveClass,En Vuelo
+476,Abigael,López,12000,GU2345F,ExecutiveClass,En Vuelo
+603,Cahra,Pérez,50000,HY4567D,ExecutiveClass,Demorado
+604,Arvin,Gómez,50000,HY4567D,ExecutiveClass,Demorado
+605,Minda,Martín,15000,HY4567D,ExecutiveClass,Demorado
+606,Dedie,Jiménez,33000,HY4567D,ExecutiveClass,Demorado
+607,Lydia,Ruiz,15000,HY4567D,ExecutiveClass,Demorado
+608,Joshia,Hernández,25000,HY4567D,ExecutiveClass,Demorado
+609,Bernita,Díaz,15000,HY4567D,ExecutiveClass,Demorado
+610,Sayre,Moreno,33000,HY4567D,ExecutiveClass,Demorado
+611,Pearla,Álvarez,20000,HY4567D,ExecutiveClass,Demorado
+612,Fidole,Muñoz,30000,HY4567D,ExecutiveClass,Demorado
+613,Evin,Romero,12000,HY4567D,ExecutiveClass,Demorado
+614,Fredia,Alonso,20000,HY4567D,ExecutiveClass,Demorado
+615,Idalina,Gutiérrez,50000,HY4567D,ExecutiveClass,Demorado
+616,Hetti,Navarro,30000,HY4567D,ExecutiveClass,Demorado
+617,Kirk,Torres,30000,HY4567D,ExecutiveClass,Demorado
+618,Orson,Domínguez,25000,HY4567D,ExecutiveClass,Demorado
+619,Lyndsay,Vázquez,42000,HY4567D,ExecutiveClass,Demorado
+620,Lissy,Ramos,37000,HY4567D,ExecutiveClass,Demorado
+621,Odessa,González,50000,HY4567D,ExecutiveClass,Demorado
+622,Hestia,Muñoz,18000,HY4567D,ExecutiveClass,Demorado
+623,Dorotea,Rojas,10000,HY4567D,ExecutiveClass,Demorado
+624,Giraud,Díaz,15000,HY4567D,ExecutiveClass,Demorado
+625,Tonya,Pérez,37000,HY4567D,ExecutiveClass,Demorado
+626,Menard,Soto,37000,HY4567D,ExecutiveClass,Demorado
+627,Nicola,Contreras,12000,HY4567D,ExecutiveClass,Demorado
+628,Maddy,Silva,25000,HY4567D,ExecutiveClass,Demorado
+629,Mace,Martínez,18000,HY4567D,ExecutiveClass,Demorado
+630,Lyndy,Sepúlveda,37000,HY4567D,ExecutiveClass,Demorado
+631,Ivonne,Morales,20000,HY4567D,ExecutiveClass,Demorado
+765,Jenny,Castillo,33000,FR5678G,ExecutiveClass,En Horario
+766,Toby,Tapia,20000,FR5678G,ExecutiveClass,En Horario
+767,Brynne,Reyes,18000,FR5678G,ExecutiveClass,En Horario
+768,Blakeley,Gutiérrez,18000,FR5678G,ExecutiveClass,En Horario
+769,Egan,Castro,10000,FR5678G,ExecutiveClass,En Horario
+770,Barbey,Pizarro,20000,FR5678G,ExecutiveClass,En Horario
+771,Portia,Álvarez,33000,FR5678G,ExecutiveClass,En Horario
+772,Alica,Vásquez,37000,FR5678G,ExecutiveClass,En Horario
+773,Juliana,Sánchez,50000,FR5678G,ExecutiveClass,En Horario
+774,Barde,Fernández,18000,FR5678G,ExecutiveClass,En Horario
+775,Wilie,Ramírez,30000,FR5678G,ExecutiveClass,En Horario
+776,Letta,Carrasco,10000,FR5678G,ExecutiveClass,En Horario
+777,Ree,Gómez,42000,FR5678G,ExecutiveClass,En Horario
+778,Ingmar,Cortés,18000,FR5678G,ExecutiveClass,En Horario
+779,Melva,Herrera,42000,FR5678G,ExecutiveClass,En Horario
+780,Tootsie,Núñez,25000,FR5678G,ExecutiveClass,En Horario
+781,Felike,Jara,33000,FR5678G,ExecutiveClass,En Horario
+782,Laughton,Vergara,15000,FR5678G,ExecutiveClass,En Horario
+783,Crosby,Rivera,12000,FR5678G,ExecutiveClass,En Horario
+784,Marianne,Figueroa,33000,FR5678G,ExecutiveClass,En Horario
+785,Francine,Riquelme,42000,FR5678G,ExecutiveClass,En Horario
+786,Edan,García,50000,FR5678G,ExecutiveClass,En Horario
+787,Fayre,Miranda,18000,FR5678G,ExecutiveClass,En Horario
+788,Adelaida,Bravo,37000,FR5678G,ExecutiveClass,En Horario
+789,Florella,Vera,25000,FR5678G,ExecutiveClass,En Horario
+790,Noll,Molina,30000,FR5678G,ExecutiveClass,En Horario
+791,Ki,Vega,42000,FR5678G,ExecutiveClass,En Horario
+792,Jermayne,Campos,33000,FR5678G,ExecutiveClass,En Horario
+793,Grayce,Sandoval,33000,FR5678G,ExecutiveClass,En Horario
+794,Harv,Orellana,42000,FR5678G,ExecutiveClass,En Horario
+795,Lorianna,Cárdenas,15000,FR5678G,ExecutiveClass,En Horario
+796,Hersh,Olivares,33000,FR5678G,ExecutiveClass,En Horario
+797,Diahann,Alarcón,33000,FR5678G,ExecutiveClass,En Horario
+798,Yelena,Gallardo,50000,FR5678G,ExecutiveClass,En Horario
+799,Emmaline,Ortiz,37000,FR5678G,ExecutiveClass,En Horario
+800,Daffi,Garrido,12000,FR5678G,ExecutiveClass,En Horario
+801,Janine,Salazar,50000,FR5678G,ExecutiveClass,En Horario
+802,Sheilah,Guzmán,42000,FR5678G,ExecutiveClass,En Horario
+803,Lazaro,Henríquez,10000,FR5678G,ExecutiveClass,En Horario
+804,Earle,Saavedra,30000,FR5678G,ExecutiveClass,En Horario
+906,Lynn,Vergara,37000,BR3456J,ExecutiveClass,Demorado
+907,Tabb,Rivera,50000,BR3456J,ExecutiveClass,Demorado
+919,Calypso,Cárdenas,12000,BR3456J,ExecutiveClass,Demorado
+920,Gretna,Olivares,42000,BR3456J,ExecutiveClass,Demorado
+921,Odie,Alarcón,20000,BR3456J,ExecutiveClass,Demorado
+922,Wenda,Gallardo,12000,BR3456J,ExecutiveClass,Demorado
+923,Ezekiel,Ortiz,20000,BR3456J,ExecutiveClass,Demorado
+924,Orlan,Garrido,25000,BR3456J,ExecutiveClass,Demorado
+925,Wittie,Salazar,37000,BR3456J,ExecutiveClass,Demorado
