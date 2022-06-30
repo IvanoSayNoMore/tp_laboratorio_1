@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 int count_BuscadorFirstClass(void* this)
 {
 	int retorno=-1;
