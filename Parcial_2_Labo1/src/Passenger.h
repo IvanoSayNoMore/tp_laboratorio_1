@@ -23,7 +23,7 @@ typedef struct
 
 Passenger* Passenger_new();
 Passenger* Passenger_newParametros(int id,char* nombreStr,char* apellidoStr,float price,char* flyCode,char* tipoPasajeroStr,char* estadoVuelo);
-void Passenger_delete();
+void Passenger_delete(Passenger* this);
 
 int Passenger_setId(Passenger* this,int id);
 int Passenger_getId(Passenger* this,int* id);
